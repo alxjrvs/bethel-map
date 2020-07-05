@@ -1,7 +1,9 @@
 import { Hex } from "honeycomb-grid"
 import { Graphics } from "pixi.js"
 
-export const drawCircle = (hex: Hex<{ size: number }>): Graphics => {
+type DrawCircle = (hex: Hex<{ size: number }>) => Graphics
+
+export const drawCircle: DrawCircle = hex => {
   const circle = new Graphics()
   const { x, y } = hex.toPoint()
   circle.lineStyle(2, 0xffffff)

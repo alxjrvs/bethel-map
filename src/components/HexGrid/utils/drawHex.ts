@@ -1,18 +1,21 @@
 import { Graphics } from "pixi.js"
 import { Hex } from "honeycomb-grid"
 
-type drawHexOptions = {
+type DrawHexOptions = {
   lineStyleWidth?: number
   lineStyleColor?: number
   fill?: number
   alpha?: number
 }
-export const drawHex = (
+
+type DrawHex = (
   hex: Hex<{ size: number }>,
-  { lineStyleWidth, lineStyleColor, fill, alpha }: drawHexOptions = {}
-): Graphics => {
+  options?: DrawHexOptions
+) => Graphics
+export const drawHex: DrawHex = (hex, options = {}) => {
+  const { lineStyleWidth, lineStyleColor, fill, alpha } = options
   const point = hex.toPoint()
-  const corners = hex.corners().map((corner) => corner.add(point))
+  const corners = hex.corners().map(corner => corner.add(point))
   const [firstCorner, ...otherCorners] = corners
 
   const graphicalHex = new Graphics()

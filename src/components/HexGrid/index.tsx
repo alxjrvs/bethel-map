@@ -19,7 +19,7 @@ export const HexGrid: FC<HexGridProps> = ({
 }) => {
   const pixi = useApp()
   useEffect(() => {
-    Grid.rectangle({ width: 22, height: 28 }).forEach((hex) => {
+    Grid.rectangle({ width: 22, height: 28 }).forEach(hex => {
       const pixiHex = drawFullHex(hex, showAll, setCoords, currentCoords)
       pixi.stage.addChild(pixiHex)
     })

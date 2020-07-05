@@ -23,6 +23,7 @@
   "rules": {
     "semi": ["error", "never"],
     "react/prop-types": [0],
+    "arrow-parens": ["error", "as-needed"],
     "unused-imports/no-unused-imports-ts": "error"
   }
 }
