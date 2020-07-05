@@ -1,4 +1,4 @@
-import { PartialHexConfigLookup, HexConfig, HexConfigLookup } from "../types";
+import { PartialHexConfigLookup, HexConfig, HexConfigLookup } from "../types"
 
 export const assignHexList = (
   keys: Array<string | PartialHexConfigLookup>,
@@ -6,7 +6,7 @@ export const assignHexList = (
 ): HexConfigLookup =>
   keys.reduce<HexConfigLookup>((lookup, currentValue) => {
     if (typeof currentValue === "string") {
-      return { ...lookup, [currentValue]: config };
+      return { ...lookup, [currentValue]: config }
     }
-    return { ...lookup, [currentValue[0]]: { ...config, ...currentValue[1] } };
-  }, {});
+    return { ...lookup, [currentValue[0]]: { ...config, ...currentValue[1] } }
+  }, {})

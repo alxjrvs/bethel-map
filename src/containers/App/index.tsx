@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Stage } from "@inlet/react-pixi";
-import { HexGrid } from "../../components/HexGrid";
-import { PointLike } from "honeycomb-grid";
+import React, { useState, FC } from "react"
+import { Stage } from "@inlet/react-pixi"
+import { HexGrid } from "../../components/HexGrid"
+import { PointLike } from "honeycomb-grid"
 
-export const App = () => {
-  const [currentCoords, setCoords] = useState<PointLike[]>([]);
+export const App: FC = () => {
+  const [currentCoords, setCoords] = useState<PointLike[]>([])
   return (
     <>
       <div>
@@ -29,5 +29,5 @@ export const App = () => {
         />
       </Stage>
     </>
-  );
-};
+  )
+}

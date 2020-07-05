@@ -7,7 +7,7 @@ import {
   width,
 } from "../../../../constants"
 
-export const generateBorderOceans = (): HexConfigLookup => {
+export const generateBorderOceans = () => {
   const borderOceanHexConfigs: HexConfigLookup = {}
   xCoords.forEach((x) => {
     borderOceanHexConfigs[`${x}-0`] = baseOceanHexConfig

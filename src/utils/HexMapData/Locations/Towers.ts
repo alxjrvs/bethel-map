@@ -1,5 +1,5 @@
-import { assignHexList } from "../../assignHexList";
-import { baseHexConfig } from "../../../constants";
+import { assignHexList } from "../../assignHexList"
+import { baseHexConfig } from "../../../constants"
 
 export const TowersList = [
   "3-23",
@@ -9,9 +9,9 @@ export const TowersList = [
   "14-14",
   "3-11",
   "5-2",
-];
+]
 
 export const Towers = assignHexList(TowersList, {
   ...baseHexConfig,
   fill: 0xae00ff,
-});
+})

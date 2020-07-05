@@ -1,9 +1,9 @@
 export type HexConfig = {
-  fill: number;
-  lineFill: number;
-  lineWidth?: number;
-};
+  fill: number
+  lineFill: number
+  lineWidth?: number
+}
 
-export type HexConfigLookup = { [key: string]: HexConfig };
+export type HexConfigLookup = { [key: string]: HexConfig }
 
-export type PartialHexConfigLookup = [string, Partial<HexConfig>];
+export type PartialHexConfigLookup = [string, Partial<HexConfig>]

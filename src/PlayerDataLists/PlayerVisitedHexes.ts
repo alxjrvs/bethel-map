@@ -12,4 +12,4 @@ export const PlayerVisitedHexes = [
   "5-21",
   "2-24",
   "3-22",
-];
+]
