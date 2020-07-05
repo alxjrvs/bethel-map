@@ -1,29 +1,19 @@
 import { assignHexList } from "../utils/assignHexList";
 import { RestStopList, PointOfInterestList, ShrinesList, TowersList } from ".";
 import { baseHexConfig } from "../constants";
+import { Towers } from "./Towers";
+import { RestStops } from "./RestStop";
+import { PointsOfInterest } from "./PointOfInterest";
+import { Shrines } from "./Shrine";
 
-export * from "./ShrineList";
-export * from "./RestStopList";
-export * from "./PointOfInterestList";
-export * from "./TowersList";
+export * from "./Shrine";
+export * from "./RestStop";
+export * from "./PointOfInterest";
+export * from "./Towers";
 
-export const RestStops = assignHexList(RestStopList, {
-  ...baseHexConfig,
-  fill: 0xff0000,
-});
-
-export const PointsOfInterest = assignHexList(PointOfInterestList, {
-  ...baseHexConfig,
-  fill: 0xff4500,
-});
-
-export const Shrines = assignHexList(ShrinesList, {
-  ...baseHexConfig,
-  fill: 0xf5ee9d,
-  lineWidth: 3,
-});
-
-export const Towers = assignHexList(TowersList, {
-  ...baseHexConfig,
-  fill: 0x2d7aa1,
-});
+export const Locations = {
+  ...Towers,
+  ...RestStops,
+  ...PointsOfInterest,
+  ...Shrines,
+};
