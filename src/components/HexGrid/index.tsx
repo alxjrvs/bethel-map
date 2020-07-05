@@ -1,16 +1,11 @@
-import React, { useEffect, Dispatch, SetStateAction, FC } from "react"
+import React, { useEffect, FC } from "react"
 import { useApp, Graphics as GraphicsClass } from "@inlet/react-pixi"
-import { extendHex, defineGrid, PointLike } from "honeycomb-grid"
+import { extendHex, defineGrid } from "honeycomb-grid"
 import { drawFullHex } from "./utils/drawFullHex"
+import { HexGridProps } from "../../types"
 
 const BaseHex = extendHex({ size: 17, offset: 1 })
 const Grid = defineGrid(BaseHex)
-
-type HexGridProps = {
-  setCoords: Dispatch<SetStateAction<PointLike>>
-  currentCoords: PointLike
-  showAll: boolean
-}
 
 export const HexGrid: FC<HexGridProps> = ({
   setCoords,
