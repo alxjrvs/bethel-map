@@ -1,7 +1,26 @@
-import { generateBorderOceans } from "./utils/generateBorderOceans"
 import { assignHexList } from "../../assignHexList"
-import { baseOceanHexConfig } from "../../../constants"
+import {
+  baseOceanHexConfig,
+  xCoords,
+  height,
+  yCoords,
+  width,
+} from "../../../constants"
+import { HexConfigLookup } from "../../../types"
 
+export const generateBorderOceans = (): HexConfigLookup => {
+  const borderOceanHexConfigs: HexConfigLookup = {}
+  xCoords.forEach((x) => {
+    borderOceanHexConfigs[`${x}-0`] = baseOceanHexConfig
+    borderOceanHexConfigs[`${x}-${height - 1}`] = baseOceanHexConfig
+  })
+  yCoords.forEach((y) => {
+    borderOceanHexConfigs[`0-${y}`] = baseOceanHexConfig
+    borderOceanHexConfigs[`${width - 1}-${y}`] = baseOceanHexConfig
+  })
+
+  return borderOceanHexConfigs
+}
 export const BorderOceans = generateBorderOceans()
 export const VisibleWaterList = ["1-25", "1-26", "3-26", "4-26", "7-26"]
 export const WaterList = [
