@@ -1,7 +1,8 @@
-import { assignHexList } from "../../assignHexList"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
+import { HexConfigKeyArray } from "../../../types"
 
-export const WeirdList = [
+export const WeirdList: HexConfigKeyArray = [
   "14-4",
   "13-4",
   "12-4",
@@ -23,7 +24,7 @@ export const WeirdList = [
   "9-14",
 ]
 
-export const Weird = assignHexList(WeirdList, {
+export const Weird = buildHexList(WeirdList, {
   ...baseHexConfig,
   fill: 0xff00ff,
 })

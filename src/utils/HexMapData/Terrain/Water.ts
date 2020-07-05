@@ -1,4 +1,4 @@
-import { assignHexList } from "../../assignHexList"
+import { buildHexList } from "../../buildHexList"
 import {
   baseOceanHexConfig,
   xCoords,
@@ -6,7 +6,7 @@ import {
   yCoords,
   width,
 } from "../../../constants"
-import { HexConfigLookup } from "../../../types"
+import { HexConfigLookup, HexConfigKeyArray } from "../../../types"
 
 export const generateBorderOceans = (): HexConfigLookup => {
   const borderOceanHexConfigs: HexConfigLookup = {}
@@ -23,7 +23,7 @@ export const generateBorderOceans = (): HexConfigLookup => {
 }
 export const BorderOceans = generateBorderOceans()
 export const VisibleWaterList = ["1-25", "1-26", "3-26", "4-26", "7-26"]
-export const WaterList = [
+export const WaterList: HexConfigKeyArray = [
   ...Object.keys(BorderOceans),
   ...VisibleWaterList,
   "1-16",
@@ -102,4 +102,4 @@ export const WaterList = [
   "12-22",
 ]
 
-export const Water = assignHexList(WaterList, baseOceanHexConfig)
+export const Water = buildHexList(WaterList, baseOceanHexConfig)

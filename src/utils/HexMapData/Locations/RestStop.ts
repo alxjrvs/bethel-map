@@ -1,8 +1,8 @@
-import { PartialHexConfigLookup } from "../../../types"
-import { assignHexList } from "../../assignHexList"
+import { HexConfigKeyArray } from "../../../types"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
 
-export const RestStopList: PartialHexConfigLookup[] = [
+export const RestStopList: HexConfigKeyArray = [
   ["10-10", {}],
   ["13-20", {}],
   ["15-6", {}],
@@ -13,7 +13,7 @@ export const RestStopList: PartialHexConfigLookup[] = [
   ["1-11", {}],
 ]
 
-export const RestStops = assignHexList(RestStopList, {
+export const RestStops = buildHexList(RestStopList, {
   ...baseHexConfig,
   fill: 0xff0000,
 })

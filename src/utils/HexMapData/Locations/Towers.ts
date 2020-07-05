@@ -1,7 +1,8 @@
-import { assignHexList } from "../../assignHexList"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
+import { HexConfigKeyArray } from "../../../types"
 
-export const TowersList = [
+export const TowersList: HexConfigKeyArray = [
   "3-23",
   "17-8",
   "9-10",
@@ -11,7 +12,7 @@ export const TowersList = [
   "5-2",
 ]
 
-export const Towers = assignHexList(TowersList, {
+export const Towers = buildHexList(TowersList, {
   ...baseHexConfig,
   fill: 0xae00ff,
 })

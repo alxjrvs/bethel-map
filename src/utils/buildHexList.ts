@@ -1,9 +1,11 @@
-import { PartialHexConfigLookup, HexConfig, HexConfigLookup } from "../types"
+import { HexConfigKeyArray, HexConfig, HexConfigLookup } from "../types"
 
-export const assignHexList = (
-  keys: Array<string | PartialHexConfigLookup>,
+type BuildHexList = (
+  keys: HexConfigKeyArray,
   config: HexConfig
-): HexConfigLookup =>
+) => HexConfigLookup
+
+export const buildHexList: BuildHexList = (keys, config) =>
   keys.reduce<HexConfigLookup>((lookup, currentValue) => {
     if (typeof currentValue === "string") {
       return { ...lookup, [currentValue]: config }

@@ -1,8 +1,8 @@
-import { PartialHexConfigLookup } from "../../../types"
-import { assignHexList } from "../../assignHexList"
+import { HexConfigKeyArray } from "../../../types"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
 
-export const ShrinesList: PartialHexConfigLookup[] = [
+export const ShrinesList: HexConfigKeyArray = [
   ["1-1", {}],
   ["2-11", {}],
   ["16-5", {}],
@@ -11,7 +11,7 @@ export const ShrinesList: PartialHexConfigLookup[] = [
   ["3-25", {}],
 ]
 
-export const Shrines = assignHexList(ShrinesList, {
+export const Shrines = buildHexList(ShrinesList, {
   ...baseHexConfig,
   fill: 0xf5ee9d,
   lineWidth: 3,

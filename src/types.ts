@@ -5,5 +5,5 @@ export type HexConfig = {
 }
 
 export type HexConfigLookup = { [key: string]: HexConfig }
-
-export type PartialHexConfigLookup = [string, Partial<HexConfig>]
+type DetailedHexConfigKey = [string, Partial<HexConfig>]
+export type HexConfigKeyArray = Array<string | DetailedHexConfigKey>

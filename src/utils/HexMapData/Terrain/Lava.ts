@@ -1,7 +1,8 @@
-import { assignHexList } from "../../assignHexList"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
+import { HexConfigKeyArray } from "../../../types"
 
-export const LavaList = [
+export const LavaList: HexConfigKeyArray = [
   "5-5",
   "4-4",
   "5-4",
@@ -23,7 +24,7 @@ export const LavaList = [
   "4-10",
 ]
 
-export const Lava = assignHexList(LavaList, {
+export const Lava = buildHexList(LavaList, {
   ...baseHexConfig,
   fill: 0xff9d00,
 })

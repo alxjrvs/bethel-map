@@ -1,7 +1,8 @@
-import { assignHexList } from "../../assignHexList"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
+import { HexConfigKeyArray } from "../../../types"
 
-export const ForestList = [
+export const ForestList: HexConfigKeyArray = [
   "1-18",
   "1-19",
   "1-21",
@@ -124,7 +125,7 @@ export const ForestList = [
   "5-20",
 ]
 
-export const Forests = assignHexList(ForestList, {
+export const Forests = buildHexList(ForestList, {
   ...baseHexConfig,
   fill: 0x0e9e0b,
 })

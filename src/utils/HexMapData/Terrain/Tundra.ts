@@ -1,7 +1,8 @@
-import { assignHexList } from "../../assignHexList"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
+import { HexConfigKeyArray } from "../../../types"
 
-export const TundraList = [
+export const TundraList: HexConfigKeyArray = [
   "14-7",
   "15-7",
   "13-6",
@@ -45,7 +46,7 @@ export const TundraList = [
   "17-8",
 ]
 
-export const Tundra = assignHexList(TundraList, {
+export const Tundra = buildHexList(TundraList, {
   ...baseHexConfig,
   fill: 0xf1f2eb,
 })

@@ -1,7 +1,8 @@
-import { assignHexList } from "../../assignHexList"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
+import { HexConfigKeyArray } from "../../../types"
 
-export const ChasmList = [
+export const ChasmList: HexConfigKeyArray = [
   "1-9",
   "10-13",
   "10-15",
@@ -66,7 +67,7 @@ export const ChasmList = [
   "9-15",
 ]
 
-export const Chasm = assignHexList(ChasmList, {
+export const Chasm = buildHexList(ChasmList, {
   ...baseHexConfig,
   fill: 0x383328,
 })

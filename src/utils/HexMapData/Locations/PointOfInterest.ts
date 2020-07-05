@@ -1,8 +1,8 @@
-import { PartialHexConfigLookup } from "../../../types"
-import { assignHexList } from "../../assignHexList"
+import { HexConfigKeyArray } from "../../../types"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
 
-export const PointOfInterestList: PartialHexConfigLookup[] = [
+export const PointOfInterestList: HexConfigKeyArray = [
   ["11-20", {}],
   ["2-25", {}],
   ["4-16", {}],
@@ -15,7 +15,7 @@ export const PointOfInterestList: PartialHexConfigLookup[] = [
   ["3-19", {}],
   ["1-21", {}],
 ]
-export const PointsOfInterest = assignHexList(PointOfInterestList, {
+export const PointsOfInterest = buildHexList(PointOfInterestList, {
   ...baseHexConfig,
   fill: 0x00ff04,
 })

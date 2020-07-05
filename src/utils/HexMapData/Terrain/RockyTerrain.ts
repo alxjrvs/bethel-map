@@ -1,7 +1,8 @@
-import { assignHexList } from "../../assignHexList"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
+import { HexConfigKeyArray } from "../../../types"
 
-export const RockyTerrainList = [
+export const RockyTerrainList: HexConfigKeyArray = [
   "5-25",
   "5-26",
   "6-25",
@@ -125,7 +126,7 @@ export const RockyTerrainList = [
   "20-10",
 ]
 
-export const RockyTerrain = assignHexList(RockyTerrainList, {
+export const RockyTerrain = buildHexList(RockyTerrainList, {
   ...baseHexConfig,
   fill: 0xad8050,
 })

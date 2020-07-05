@@ -1,7 +1,8 @@
-import { assignHexList } from "../../assignHexList"
+import { buildHexList } from "../../buildHexList"
 import { baseHexConfig } from "../../../constants"
+import { HexConfigKeyArray } from "../../../types"
 
-export const SandList = [
+export const SandList: HexConfigKeyArray = [
   "9-22",
   "9-23",
   "10-24",
@@ -59,7 +60,7 @@ export const SandList = [
   "17-16",
 ]
 
-export const Sand = assignHexList(SandList, {
+export const Sand = buildHexList(SandList, {
   ...baseHexConfig,
   fill: 0xeff7b7,
 })
