@@ -1,6 +1,6 @@
 import { generateBorderOceans } from "./utils/generateBorderOceans";
-import { assignHexList } from "../utils/assignHexList";
-import { baseOceanHexConfig } from "../constants";
+import { assignHexList } from "../../assignHexList";
+import { baseOceanHexConfig } from "../../../constants";
 
 export const BorderOceans = generateBorderOceans();
 export const VisibleWaterList = ["1-25", "1-26", "3-26", "4-26", "7-26"];

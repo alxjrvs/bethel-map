@@ -8,8 +8,11 @@ import {
   PlayerVisitedHexes,
   PlayerVisibleHexes,
 } from "../../../PlayerDataLists";
-import { BorderOceans, VisibleWaterList } from "../../../Terrain";
-import { HexConfigsMap } from "../../../utils/HexMapData";
+import {
+  HexConfigsMap,
+  BorderOceans,
+  VisibleWaterList,
+} from "../../../utils/HexMapData";
 import { HexConfig } from "../../../types";
 import { baseHexConfig } from "../../../constants";
 

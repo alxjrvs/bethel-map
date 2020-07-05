@@ -1,4 +1,4 @@
-import { TowersList } from "../Locations";
+import { TowersList } from "./HexMapData";
 
 const shortModifiers = [-1, 0, 1];
 const longModifiers = [...shortModifiers, -2, 2, -3, 3, 4, -4];

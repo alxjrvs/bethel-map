@@ -1,7 +1,6 @@
 import { PlayerVisitedHexes } from "./PlayerVisitedHexes";
 import { findNearbyKeys } from "../utils/findNearbyKeys";
-import { VisibleWaterList, BorderOceans } from "../Terrain";
-import { Shrines } from "../Locations";
+import { VisibleWaterList, BorderOceans, Shrines } from "../utils/HexMapData";
 
 export const PlayerVisibleHexes = [
   ...VisibleWaterList,

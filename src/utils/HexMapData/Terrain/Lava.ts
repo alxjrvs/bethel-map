@@ -1,5 +1,5 @@
-import { assignHexList } from "../utils/assignHexList";
-import { baseHexConfig } from "../constants";
+import { assignHexList } from "../../assignHexList";
+import { baseHexConfig } from "../../../constants";
 
 export const LavaList = [
   "5-5",

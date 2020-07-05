@@ -1,11 +1,11 @@
-import { HexConfigLookup } from "../../types";
+import { HexConfigLookup } from "../../../../types";
 import {
   xCoords,
   baseOceanHexConfig,
   height,
   yCoords,
   width,
-} from "../../constants";
+} from "../../../../constants";
 
 export const generateBorderOceans = () => {
   const borderOceanHexConfigs: HexConfigLookup = {};

@@ -1,6 +1,6 @@
-import { PartialHexConfigLookup } from "../types";
-import { assignHexList } from "../utils/assignHexList";
-import { baseHexConfig } from "../constants";
+import { PartialHexConfigLookup } from "../../../types";
+import { assignHexList } from "../../assignHexList";
+import { baseHexConfig } from "../../../constants";
 
 export const RestStopList: PartialHexConfigLookup[] = [
   ["10-10", {}],
