@@ -7,8 +7,8 @@ const BaseHex = extendHex({ size: 17, offset: 1 })
 const Grid = defineGrid(BaseHex)
 
 type HexGridProps = {
-  setCoords: Dispatch<SetStateAction<PointLike[]>>
-  currentCoords: PointLike[]
+  setCoords: Dispatch<SetStateAction<PointLike>>
+  currentCoords: PointLike
   showAll: boolean
 }
 

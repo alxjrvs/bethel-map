@@ -4,16 +4,9 @@ import { HexGrid } from "../../components/HexGrid"
 import { PointLike } from "honeycomb-grid"
 
 export const App: FC = () => {
-  const [currentCoords, setCoords] = useState<PointLike[]>([])
+  const [currentCoords, setCoords] = useState<PointLike>({ x: 9, y: 20 })
   return (
     <>
-      <div>
-        <div>
-          {currentCoords.length
-            ? currentCoords.map(({ x, y }) => `"${x}-${y}", `)
-            : "no coords"}
-        </div>
-      </div>
       <Stage options={{ backgroundColor: 0xffffff }} height={800} width={700}>
         <HexGrid
           setCoords={setCoords}

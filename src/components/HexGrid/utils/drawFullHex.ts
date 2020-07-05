@@ -15,6 +15,7 @@ import {
 } from "../../../utils/HexMapData"
 import { HexConfig } from "../../../types"
 import { baseHexConfig } from "../../../constants"
+import { coordsToKey } from "../../../utils/coordsToKey"
 
 const NonFogHexKeys = [
   ...PlayerVisitedHexes,
@@ -26,7 +27,7 @@ export const drawVisualHex = (
   hex: Hex<{ size: number }>,
   key: string,
   showAll: boolean,
-  setCoords: Dispatch<SetStateAction<PointLike[]>>,
+  setCoords: Dispatch<SetStateAction<PointLike>>,
   { lineWidth, lineFill, fill }: HexConfig
 ): Graphics => {
   let visualHex: Graphics
@@ -61,22 +62,19 @@ export const drawVisualHex = (
 
   visualHex.interactive = true
   visualHex.on("click", () => {
-    setCoords((coords) => {
-      return [...coords, hex.coordinates()]
-    })
+    console.log(key)
+    setCoords(hex.coordinates())
   })
-
   return visualHex
 }
 
 export const drawFullHex = (
   hex: Hex<{ size: number }>,
   showAll: boolean,
-  setCoords: Dispatch<SetStateAction<PointLike[]>>,
-  currentCoords: PointLike[]
+  setCoords: Dispatch<SetStateAction<PointLike>>,
+  currentCoords: PointLike
 ): Graphics => {
-  const { x, y } = hex.coordinates()
-  const key = `${x}-${y}`
+  const key = coordsToKey(hex.coordinates())
 
   const base = drawHex(hex)
   const visualHex = drawVisualHex(
@@ -87,7 +85,7 @@ export const drawFullHex = (
     HexConfigsMap[key]
   )
 
-  if (currentCoords.some((coord) => isEqual(coord, hex.coordinates()))) {
+  if (isEqual(currentCoords, hex.coordinates())) {
     const circle = drawCircle(hex)
     visualHex.addChild(circle)
   }
