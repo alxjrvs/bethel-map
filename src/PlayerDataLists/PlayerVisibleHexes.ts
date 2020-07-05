@@ -7,7 +7,4 @@ export const PlayerVisibleHexes = [
   ...Object.keys(BorderOceans),
   ...Object.keys(Shrines),
   ...PlayerVisitedHexes.flatMap(findNearbyKeys),
-  "11-21",
-  "11-19",
-  "10-20",
 ]
