@@ -2,7 +2,7 @@ import React, { useState, FC } from "react"
 import { PointLike } from "honeycomb-grid"
 import { HexStage } from "./HexStage"
 
-const showAdmin = false
+const showAdmin = true
 export const App: FC = () => {
   const [currentCoords, setCoords] = useState<PointLike>({ x: 9, y: 20 })
   return showAdmin ? (

@@ -9,6 +9,7 @@ import { HexConfig } from "../../../types"
 import { Graphics } from "pixi.js"
 import { drawHex } from "./drawHex"
 import { baseHexConfig } from "../../../constants"
+import { addInteractors } from "./addInteractors"
 
 const FoglessHexKeys = [
   ...PlayerVisitedHexes,
@@ -31,20 +32,32 @@ export const drawVisualHex: DrawVisualHex = (
   setCoords,
   { lineWidth, lineFill, fill }: HexConfig
 ) => {
-  let visualHex: Graphics
+  const clickCallback = () => {
+    console.log(key)
+    setCoords(hex.coordinates())
+  }
+
+  const callbacks = { clickCallback }
+
   if (showAll) {
-    visualHex = drawHex(hex, {
-      lineStyleWidth: lineWidth,
-      lineStyleColor: lineFill,
-      fill,
-    })
-  } else {
-    if (PlayerVisibleHexes.includes(key)) {
-      visualHex = drawHex(hex, {
+    return addInteractors(
+      drawHex(hex, {
         lineStyleWidth: lineWidth,
         lineStyleColor: lineFill,
         fill,
-      })
+      }),
+      { clickCallback }
+    )
+  } else {
+    if (PlayerVisibleHexes.includes(key)) {
+      const visualHex = addInteractors(
+        drawHex(hex, {
+          lineStyleWidth: lineWidth,
+          lineStyleColor: lineFill,
+          fill,
+        }),
+        callbacks
+      )
 
       if (!FoglessHexKeys.includes(key)) {
         const fogHex = drawHex(hex, {
@@ -54,17 +67,14 @@ export const drawVisualHex: DrawVisualHex = (
 
         visualHex.addChild(fogHex)
       }
+      return visualHex
     } else {
-      visualHex = drawHex(hex, {
-        fill: baseHexConfig.fill,
-      })
+      return addInteractors(
+        drawHex(hex, {
+          fill: baseHexConfig.fill,
+        }),
+        callbacks
+      )
     }
   }
-
-  visualHex.interactive = true
-  visualHex.on("click", () => {
-    console.log(key)
-    setCoords(hex.coordinates())
-  })
-  return visualHex
 }

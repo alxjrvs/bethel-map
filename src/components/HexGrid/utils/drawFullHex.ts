@@ -1,6 +1,6 @@
 import { Hex, PointLike } from "honeycomb-grid"
 import { Dispatch, SetStateAction } from "react"
-import { drawHex } from "./drawHex"
+
 import { Graphics } from "pixi.js"
 import isEqual from "lodash.isequal"
 import { drawCircle } from "./drawCircle"
@@ -23,7 +23,6 @@ export const drawFullHex: DrawFullHex = (
 ) => {
   const key = coordsToKey(hex.coordinates())
 
-  const base = drawHex(hex)
   const visualHex = drawVisualHex(
     hex,
     key,
@@ -33,9 +32,7 @@ export const drawFullHex: DrawFullHex = (
   )
 
   if (isEqual(currentCoords, hex.coordinates())) {
-    const circle = drawCircle(hex)
-    visualHex.addChild(circle)
+    visualHex.addChild(drawCircle(hex))
   }
-  base.addChild(visualHex)
-  return base
+  return visualHex
 }
