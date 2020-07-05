@@ -1,6 +1,3 @@
-import { assignHexList } from "../utils/assignHexList";
-import { RestStopList, PointOfInterestList, ShrinesList, TowersList } from ".";
-import { baseHexConfig } from "../constants";
 import { Towers } from "./Towers";
 import { RestStops } from "./RestStop";
 import { PointsOfInterest } from "./PointOfInterest";

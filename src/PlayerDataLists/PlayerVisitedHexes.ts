@@ -1,5 +1,3 @@
-import { TowersList } from "../Locations";
-
 export const PlayerVisitedHexes = [
   "3-25",
   "2-26",
