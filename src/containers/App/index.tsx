@@ -4,7 +4,7 @@ import { HexGrid } from "../../components/HexGrid";
 import { PointLike } from "honeycomb-grid";
 
 export const App = () => {
-  const [{ x, y }, setCoords] = useState<PointLike>({ x: 0, y: 0 });
+  const [{ x, y }, setCoords] = useState<PointLike>({ x: 9, y: 20 });
   return (
     <>
       <div>
