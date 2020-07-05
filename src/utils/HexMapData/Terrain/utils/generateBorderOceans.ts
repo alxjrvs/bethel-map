@@ -18,7 +18,5 @@ export const generateBorderOceans = (): HexConfigLookup => {
     borderOceanHexConfigs[`${width - 1}-${y}`] = baseOceanHexConfig
   })
 
-  console.log("WTF")
-
   return borderOceanHexConfigs
 }
