@@ -1,4 +1,4 @@
-import { HexConfigKeyArray, HexConfig, HexConfigLookup } from "../types"
+import { HexConfigKeyArray, HexConfig, HexConfigLookup } from "../../../types"
 
 type BuildHexList = (
   keys: HexConfigKeyArray,

@@ -1,5 +1,5 @@
 import { HexConfigKeyArray } from "../../../types"
-import { buildHexList } from "../../buildHexList"
+import { buildHexList } from "../utils/buildHexList"
 import { baseHexConfig } from "../../../constants"
 
 export const RestStopList: HexConfigKeyArray = [

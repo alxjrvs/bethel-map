@@ -10,7 +10,7 @@ import { Graphics } from "pixi.js"
 import { drawHex } from "./drawHex"
 import { baseHexConfig } from "../../../constants"
 
-const NonFogHexKeys = [
+const FoglessHexKeys = [
   ...PlayerVisitedHexes,
   ...Object.keys(BorderOceans),
   ...VisibleWaterList,
@@ -46,7 +46,7 @@ export const drawVisualHex: DrawVisualHex = (
         fill,
       })
 
-      if (!NonFogHexKeys.includes(key)) {
+      if (!FoglessHexKeys.includes(key)) {
         const fogHex = drawHex(hex, {
           fill: baseHexConfig.fill,
           alpha: 0.7,

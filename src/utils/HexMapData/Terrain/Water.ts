@@ -1,4 +1,4 @@
-import { buildHexList } from "../../buildHexList"
+import { buildHexList } from "../utils/buildHexList"
 import {
   baseOceanHexConfig,
   xCoords,
