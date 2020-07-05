@@ -7,15 +7,14 @@ import {
   ForestList,
   TundraList,
 } from ".";
-import {
-  baseOceanHexConfig,
-  baseHexConfig,
-  xCoords,
-  height,
-  yCoords,
-  width,
-} from "../constants";
-import { HexConfigLookup } from "../types";
+import { baseOceanHexConfig, baseHexConfig } from "../constants";
+
+export * from "./WaterList";
+export * from "./ChasmList";
+export * from "./RockyTerrainList";
+export * from "./ForestList";
+export * from "./BeachList";
+export * from "./TundraList";
 
 export const Water = assignHexList(WaterList, baseOceanHexConfig);
 export const Forests = assignHexList(ForestList, {
@@ -42,19 +41,3 @@ export const Beaches = assignHexList(BeachList, {
   ...baseHexConfig,
   fill: 0xeff7b7,
 });
-
-const generateBorderOceans = () => {
-  const borderOceanHexConfigs: HexConfigLookup = {};
-  xCoords.forEach((x) => {
-    borderOceanHexConfigs[`${x}-0`] = baseOceanHexConfig;
-    borderOceanHexConfigs[`${x}-${height - 1}`] = baseOceanHexConfig;
-  });
-  yCoords.forEach((y) => {
-    borderOceanHexConfigs[`0-${y}`] = baseOceanHexConfig;
-    borderOceanHexConfigs[`${width - 1}-${y}`] = baseOceanHexConfig;
-  });
-
-  return borderOceanHexConfigs;
-};
-
-export const BorderOceans = generateBorderOceans();

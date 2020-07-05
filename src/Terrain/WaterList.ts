@@ -1,8 +1,15 @@
+import { generateBorderOceans } from "./utils/generateBorderOceans";
+
+export const BorderOceans = generateBorderOceans();
 export const VisibleWaterList = ["1-25", "1-26", "3-26", "4-26"];
 export const WaterList = [
+  ...Object.keys(BorderOceans),
   ...VisibleWaterList,
   "1-13",
   "20-21",
+  "15-8",
+  "16-8",
+  "17-9",
   "16-23",
   "15-24",
   "19-20",

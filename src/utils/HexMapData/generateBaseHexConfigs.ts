@@ -1,5 +1,5 @@
-import { HexConfigLookup } from "./types";
-import { xCoords, yCoords, baseHexConfig } from "./constants";
+import { HexConfigLookup } from "../../types";
+import { xCoords, yCoords, baseHexConfig } from "../../constants";
 
 export const generateBaseHexConfigs = () => {
   const baseHexConfigs: HexConfigLookup = {};
