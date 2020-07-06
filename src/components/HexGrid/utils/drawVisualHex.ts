@@ -1,44 +1,37 @@
+import { Hex } from "honeycomb-grid"
+import { Graphics } from "pixi.js"
+
 import {
   PlayerVisitedHexes,
   PlayerVisibleHexes,
 } from "../../../PlayerDataLists"
-import { BorderOceans, VisibleWaterList } from "../../../utils/HexMapData"
-import { Hex, PointLike } from "honeycomb-grid"
-import { Dispatch, SetStateAction } from "react"
+import { VisibleWaterList } from "../../../utils/HexMapData"
 import { HexConfig } from "../../../types"
-import { Graphics } from "pixi.js"
 import { drawHex } from "./drawHex"
 import { baseHexConfig } from "../../../constants"
 import { addInteractors } from "./addInteractors"
 
-const FoglessHexKeys = [
-  ...PlayerVisitedHexes,
-  ...Object.keys(BorderOceans),
-  ...VisibleWaterList,
-]
+const FoglessHexKeys = [...PlayerVisitedHexes, ...VisibleWaterList]
 
-type DrawVisualHex = (
-  hex: Hex<{ size: number }>,
-  key: string,
-  showAll: boolean,
-  setCoords: Dispatch<SetStateAction<PointLike>>,
-  { lineWidth, lineFill, fill }: HexConfig
-) => Graphics
+type Callbacks = {
+  clickCallback: () => void
+}
+type DrawViualHexParams = {
+  hex: Hex<{ size: number }>
+  key: string
+  showAll: boolean
+  hexConfig: HexConfig
+  callbacks: Callbacks
+}
+type DrawVisualHex = (paras: DrawViualHexParams) => Graphics
 
-export const drawVisualHex: DrawVisualHex = (
+export const drawVisualHex: DrawVisualHex = ({
   hex,
   key,
   showAll,
-  setCoords,
-  { lineWidth, lineFill, fill }: HexConfig
-) => {
-  const clickCallback = () => {
-    console.log(key)
-    setCoords(hex.coordinates())
-  }
-
-  const callbacks = { clickCallback }
-
+  hexConfig: { lineWidth, lineFill, fill },
+  callbacks,
+}) => {
   if (showAll) {
     return addInteractors(
       drawHex(hex, {
@@ -46,7 +39,7 @@ export const drawVisualHex: DrawVisualHex = (
         lineStyleColor: lineFill,
         fill,
       }),
-      { clickCallback }
+      callbacks
     )
   } else {
     if (PlayerVisibleHexes.includes(key)) {

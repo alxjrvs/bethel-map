@@ -9,7 +9,7 @@ export const TowersList: HexConfigKeyArray = [
   "15-23",
   "14-14",
   "3-11",
-  "5-2",
+  "3-4",
 ]
 
 export const Towers = buildHexList(TowersList, {

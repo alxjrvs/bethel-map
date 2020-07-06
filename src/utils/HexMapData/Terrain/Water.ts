@@ -22,7 +22,15 @@ export const generateBorderOceans = (): HexConfigLookup => {
   return borderOceanHexConfigs
 }
 export const BorderOceans = generateBorderOceans()
-export const VisibleWaterList = ["1-25", "1-26", "3-26", "4-26", "7-26"]
+export const VisibleWaterList = [
+  "1-25",
+  "1-26",
+  "3-26",
+  "4-26",
+  "7-26",
+  "6-26",
+  ...Object.keys(BorderOceans),
+]
 export const WaterList: HexConfigKeyArray = [
   ...Object.keys(BorderOceans),
   ...VisibleWaterList,

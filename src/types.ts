@@ -15,5 +15,5 @@ export type HexConfigKeyArray = Array<string | DetailedHexConfigKey>
 export type HexGridProps = {
   setCoords: Dispatch<SetStateAction<PointLike>>
   currentCoords: PointLike
-  showAll: boolean
+  showAll?: boolean
 }
