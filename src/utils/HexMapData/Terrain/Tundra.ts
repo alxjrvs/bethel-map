@@ -44,6 +44,10 @@ export const TundraList: HexConfigKeyArray = [
   "19-5",
   "19-7",
   "17-8",
+  "1-11",
+  "2-11",
+  "16-5",
+  "15-6",
 ]
 
 export const Tundra = buildHexList(TundraList, {

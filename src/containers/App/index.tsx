@@ -21,7 +21,7 @@ export const App: FC = () => {
                   <HexStage
                     setCoords={setCoords}
                     currentCoords={currentCoords}
-                    showAll={true}
+                    showAll
                   />
                 </Col>
                 <Col lg="6">
@@ -37,14 +37,14 @@ export const App: FC = () => {
 
           <Route path="*">
             <Row>
-              <Col style={{ background: "red" }} lg="4">
+              <Col style={{ background: "red" }} lg="6">
                 <HexStage
                   setCoords={setCoords}
                   currentCoords={currentCoords}
                   showAll={false}
                 />
               </Col>
-              <Col lg="8">{key}</Col>
+              <Col lg="6">{key}</Col>
             </Row>
           </Route>
         </Switch>

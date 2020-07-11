@@ -124,6 +124,8 @@ export const RockyTerrainList: HexConfigKeyArray = [
   "18-2",
   "19-2",
   "20-10",
+  "10-10",
+  "10-11",
 ]
 
 export const RockyTerrain = buildHexList(RockyTerrainList, {

@@ -1,7 +1,5 @@
 import { HexConfig, Shape } from "./types"
 import { extendHex, defineGrid } from "honeycomb-grid"
-import { PlayerVisitedHexes } from "./PlayerDataLists"
-import { VisibleWaterList, Tombs } from "./utils/HexMapData"
 
 export const height = 28
 export const width = 22
@@ -32,9 +30,3 @@ export const baseOceanHexConfig: HexConfig = {
 
 export const BaseHex = extendHex({ size: 17, offset: 1 })
 export const HexGrid = defineGrid(BaseHex).rectangle({ width: 22, height: 28 })
-
-export const FoglessHexKeys = [
-  ...PlayerVisitedHexes,
-  ...VisibleWaterList,
-  ...Object.keys(Tombs),
-]

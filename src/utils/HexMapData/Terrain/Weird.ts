@@ -22,6 +22,9 @@ export const WeirdList: HexConfigKeyArray = [
   "3-1",
   "18-13",
   "9-14",
+  "18-12",
+  "1-1",
+  "2-1",
 ]
 
 export const Weird = buildHexList(WeirdList, {

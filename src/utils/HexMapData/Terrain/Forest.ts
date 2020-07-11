@@ -123,6 +123,8 @@ export const ForestList: HexConfigKeyArray = [
   "3-20",
   "4-20",
   "5-20",
+  "3-25",
+  "2-26",
 ]
 
 export const Forests = buildHexList(ForestList, {

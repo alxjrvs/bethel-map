@@ -14,9 +14,10 @@ export const PointOfInterestList: HexConfigKeyArray = [
   ["12-22", {}],
   ["3-19", {}],
   ["1-21", {}],
+  ["6-25", {}],
 ]
 export const PointsOfInterest = buildHexList(PointOfInterestList, {
   ...baseHexConfig,
   shape: Shape.circle,
-  fill: 65284,
+  fill: 16711680,
 })
