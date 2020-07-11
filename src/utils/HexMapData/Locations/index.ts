@@ -1,9 +1,9 @@
 import { Towers } from "./Towers"
 import { RestStops } from "./RestStop"
 import { PointsOfInterest } from "./PointOfInterest"
-import { Shrines } from "./Shrine"
+import { Tombs } from "./Tomb"
 
-export * from "./Shrine"
+export * from "./Tomb"
 export * from "./RestStop"
 export * from "./PointOfInterest"
 export * from "./Towers"
@@ -12,5 +12,5 @@ export const Locations = {
   ...Towers,
   ...RestStops,
   ...PointsOfInterest,
-  ...Shrines,
+  ...Tombs,
 }

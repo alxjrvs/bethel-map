@@ -2,7 +2,7 @@ import { HexConfigKeyArray } from "../../../types"
 import { buildHexList } from "../utils/buildHexList"
 import { baseHexConfig } from "../../../constants"
 
-export const ShrinesList: HexConfigKeyArray = [
+export const TombsList: HexConfigKeyArray = [
   ["1-1", {}],
   ["2-11", {}],
   ["16-5", {}],
@@ -11,7 +11,7 @@ export const ShrinesList: HexConfigKeyArray = [
   ["3-25", {}],
 ]
 
-export const Shrines = buildHexList(ShrinesList, {
+export const Tombs = buildHexList(TombsList, {
   ...baseHexConfig,
   fill: 0xf5ee9d,
   lineWidth: 3,

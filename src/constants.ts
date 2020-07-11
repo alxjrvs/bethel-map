@@ -21,4 +21,6 @@ export const baseHexConfig: HexConfig = {
 export const baseOceanHexConfig: HexConfig = {
   fill: 0x0000ff,
   lineFill: 0x000000,
+  description: "The oceans swells and storms around Beth'el.",
+  name: "Raging Ocean",
 }

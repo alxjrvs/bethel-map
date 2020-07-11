@@ -6,6 +6,8 @@ export type HexConfig = {
   fill: number
   lineFill: number
   lineWidth?: number
+  description?: string | string[]
+  name?: string
 }
 
 export type HexConfigLookup = { [key: string]: HexConfig }
