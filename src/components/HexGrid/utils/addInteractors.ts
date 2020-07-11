@@ -1,17 +1,10 @@
-import { Graphics } from "pixi.js"
+import { DrawInstructions } from "../types"
 
-type AddInteractors = (
-  hexGraphics: Graphics,
-  callbacks: {
-    clickCallback?: () => void
-  }
-) => Graphics
+type AddInteractors = (callbacks: {
+  clickCallback?: () => void
+}) => DrawInstructions
 
-export const addInteractors: AddInteractors = (
-  hexGraphics,
-  { clickCallback }
-) => {
-  hexGraphics.interactive = true
-  clickCallback && hexGraphics.on("click", clickCallback)
-  return hexGraphics
+export const addInteractors: AddInteractors = ({ clickCallback }) => g => {
+  g.interactive = true
+  clickCallback && g.on("click", clickCallback)
 }

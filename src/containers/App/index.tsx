@@ -1,11 +1,11 @@
 import React, { useState, FC } from "react"
 import { PointLike } from "honeycomb-grid"
-import { HexStage } from "../HexStage"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { isDev } from "../../utils/isDev"
 import { Row, Col } from "react-bootstrap"
 import { coordsToKey } from "../../utils/coordsToKey"
 import styles from "./App.module.scss"
+import { HexStage } from "../HexStage"
 
 export const App: FC = () => {
   const [currentCoords, setCoords] = useState<PointLike>({ x: 9, y: 20 })

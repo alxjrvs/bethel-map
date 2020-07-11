@@ -1,15 +1,28 @@
-import React, { useEffect, FC } from "react"
-import { useApp, Graphics as GraphicsClass } from "@inlet/react-pixi"
+import { FC } from "react"
+
 import { extendHex, defineGrid } from "honeycomb-grid"
-import isEqual from "lodash.isequal"
 
 import { HexGridProps } from "../../types"
 import { coordsToKey } from "../../utils/coordsToKey"
-import { drawVisualHex } from "./utils/drawVisualHex"
-import { HexConfigsMap } from "../../utils/HexMapData"
-import { drawCircle } from "./utils/drawCircle"
-import { PlayerCurrentHex } from "../../PlayerDataLists"
 
+import { HexConfigsMap, VisibleWaterList, Tombs } from "../../utils/HexMapData"
+import React from "react"
+
+import { isEqual } from "lodash"
+import { drawCircle } from "./utils/drawCircle"
+import { PlayerVisitedHexes, PlayerVisibleHexes } from "../../PlayerDataLists"
+import { drawHex } from "./utils/drawHex"
+import { baseHexConfig } from "../../constants"
+import { Graphics } from "@inlet/react-pixi"
+import { DrawInstructions } from "./types"
+import { addInteractors } from "./utils/addInteractors"
+import { getCorners } from "./utils/getCorners"
+
+const FoglessHexKeys = [
+  ...PlayerVisitedHexes,
+  ...VisibleWaterList,
+  ...Object.keys(Tombs),
+]
 const BaseHex = extendHex({ size: 17, offset: 1 })
 const Grid = defineGrid(BaseHex)
 
@@ -18,37 +31,63 @@ export const HexGrid: FC<HexGridProps> = ({
   currentCoords,
   showAll = false,
 }) => {
-  const pixi = useApp()
-  useEffect(() => {
-    while (pixi.stage.children[0]) {
-      pixi.stage.removeChild(pixi.stage.children[0])
-    }
-    Grid.rectangle({ width: 22, height: 28 }).forEach(hex => {
-      const key = coordsToKey(hex.coordinates())
-      const clickCallback = () => {
-        console.log(key)
-        setCoords(hex.coordinates())
-      }
+  return (
+    <>
+      {Grid.rectangle({ width: 22, height: 28 }).flatMap(hex => {
+        const key = coordsToKey(hex.coordinates())
+        const hexConfig = HexConfigsMap[key]
+        const clickCallback = () => {
+          console.log(key)
+          setCoords(hex.coordinates())
+        }
 
-      const pixiHex = drawVisualHex({
-        hex,
-        key,
-        showAll,
-        hexConfig: HexConfigsMap[key],
-        callbacks: { clickCallback },
-      })
+        const instructions: Array<DrawInstructions> = []
+        if (showAll) {
+          instructions.push(
+            drawHex(getCorners(hex), {
+              lineStyleWidth: hexConfig.lineWidth,
+              lineStyleColor: hexConfig.lineFill,
+              fill: hexConfig.fill,
+            })
+          )
+        } else if (PlayerVisibleHexes.includes(key)) {
+          instructions.push(
+            drawHex(getCorners(hex), {
+              lineStyleWidth: hexConfig.lineWidth,
+              lineStyleColor: hexConfig.lineFill,
+              fill: hexConfig.fill,
+            })
+          )
+          !FoglessHexKeys.includes(key) &&
+            instructions.push(
+              drawHex(getCorners(hex), {
+                fill: baseHexConfig.fill,
+                alpha: 0.7,
+              })
+            )
+        } else {
+          instructions.push(
+            drawHex(getCorners(hex), {
+              fill: baseHexConfig.fill,
+            })
+          )
+        }
 
-      if (key === PlayerCurrentHex) {
-        pixiHex.addChild(drawCircle(hex))
-      }
+        isEqual(hex.coordinates(), currentCoords) &&
+          instructions.push(drawCircle(hex.toPoint(), 0x000000))
 
-      if (isEqual(hex.coordinates(), currentCoords)) {
-        pixiHex.addChild(drawCircle(hex, 0x000000))
-      }
-
-      pixi.stage.addChild(pixiHex)
-    })
-  }, [currentCoords, pixi.stage, setCoords, showAll])
-
-  return <GraphicsClass />
+        return (
+          <Graphics
+            key={key}
+            draw={g => {
+              g.clear()
+              g.interactive = false
+              instructions.forEach(fn => fn(g))
+              addInteractors({ clickCallback })(g)
+            }}
+          />
+        )
+      })}
+    </>
+  )
 }

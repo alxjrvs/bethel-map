@@ -1,14 +1,14 @@
-import { Hex } from "honeycomb-grid"
+import { Point } from "honeycomb-grid"
 import { Graphics } from "pixi.js"
+import { DrawInstructions } from "../types"
 
-type DrawCircle = (hex: Hex<{ size: number }>, fill?: number) => Graphics
+type DrawCircle = (point: Point, fill?: number) => DrawInstructions
 
-export const drawCircle: DrawCircle = (hex, fill = 0x7532a8) => {
-  const circle = new Graphics()
-  const { x, y } = hex.toPoint()
-  circle.lineStyle(2, 0xffffff)
-  circle.beginFill(fill)
-  circle.drawCircle(x + 15, y + 17, 5)
-  circle.endFill()
-  return circle
+export const drawCircle: DrawCircle = ({ x, y }, fill = 0x7532a8) => (
+  g: Graphics
+) => {
+  g.lineStyle(2, 0xffffff)
+  g.beginFill(fill)
+  g.drawCircle(x + 15, y + 17, 5)
+  g.endFill()
 }

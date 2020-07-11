@@ -8,7 +8,7 @@ export const HexStage: FC<HexGridProps> = ({
   currentCoords,
   showAll = false,
 }) => (
-  <Stage height={700}>
+  <Stage height={700} width={650} options={{ backgroundColor: 0x0000ff }}>
     <HexGrid
       setCoords={setCoords}
       currentCoords={currentCoords}
