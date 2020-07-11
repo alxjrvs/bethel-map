@@ -128,5 +128,5 @@ export const RockyTerrainList: HexConfigKeyArray = [
 
 export const RockyTerrain = buildHexList(RockyTerrainList, {
   ...baseHexConfig,
-  fill: 0xad8050,
+  fill: 11370576,
 })

@@ -25,5 +25,5 @@ export const RestStopList: HexConfigKeyArray = [
 
 export const RestStops = buildHexList(RestStopList, {
   ...baseHexConfig,
-  fill: 0xff0000,
+  fill: 16711680,
 })

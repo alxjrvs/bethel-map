@@ -26,5 +26,5 @@ export const LavaList: HexConfigKeyArray = [
 
 export const Lava = buildHexList(LavaList, {
   ...baseHexConfig,
-  fill: 0xff9d00,
+  fill: 16751872,
 })

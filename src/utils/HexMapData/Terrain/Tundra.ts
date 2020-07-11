@@ -48,5 +48,5 @@ export const TundraList: HexConfigKeyArray = [
 
 export const Tundra = buildHexList(TundraList, {
   ...baseHexConfig,
-  fill: 0xf1f2eb,
+  fill: 15856363,
 })

@@ -13,6 +13,6 @@ export const TombsList: HexConfigKeyArray = [
 
 export const Tombs = buildHexList(TombsList, {
   ...baseHexConfig,
-  fill: 0xf5ee9d,
+  fill: 16117405,
   lineWidth: 3,
 })

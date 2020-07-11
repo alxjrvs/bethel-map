@@ -26,5 +26,5 @@ export const WeirdList: HexConfigKeyArray = [
 
 export const Weird = buildHexList(WeirdList, {
   ...baseHexConfig,
-  fill: 0xff00ff,
+  fill: 16711935,
 })

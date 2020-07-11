@@ -62,5 +62,5 @@ export const SandList: HexConfigKeyArray = [
 
 export const Sand = buildHexList(SandList, {
   ...baseHexConfig,
-  fill: 0xeff7b7,
+  fill: 15726519,
 })

@@ -69,5 +69,5 @@ export const ChasmList: HexConfigKeyArray = [
 
 export const Chasm = buildHexList(ChasmList, {
   ...baseHexConfig,
-  fill: 0x383328,
+  fill: 3683112,
 })

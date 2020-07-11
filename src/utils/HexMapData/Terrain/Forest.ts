@@ -127,5 +127,5 @@ export const ForestList: HexConfigKeyArray = [
 
 export const Forests = buildHexList(ForestList, {
   ...baseHexConfig,
-  fill: 0x0e9e0b,
+  fill: 957963,
 })

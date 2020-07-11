@@ -1,18 +1,17 @@
 import React, { FC } from "react"
 import { HexGridProps } from "../../types"
 import { Stage } from "@inlet/react-pixi"
-import { HexGrid } from "../../components/HexGrid"
+import { Hex } from "../../components/Hex"
 
-export const HexStage: FC<HexGridProps> = ({
-  setCoords,
-  currentCoords,
-  showAll = false,
-}) => (
-  <Stage height={700} width={650} options={{ backgroundColor: 0x0000ff }}>
-    <HexGrid
-      setCoords={setCoords}
-      currentCoords={currentCoords}
-      showAll={showAll}
-    />
-  </Stage>
-)
+import { HexGrid } from "../../constants"
+import { coordsToKey } from "../../utils/coordsToKey"
+
+export const HexStage: FC<HexGridProps> = props => {
+  return (
+    <Stage height={700} width={650} options={{ backgroundColor: 255 }}>
+      {HexGrid.map(hex => (
+        <Hex key={coordsToKey(props.currentCoords)} hex={hex} {...props} />
+      ))}
+    </Stage>
+  )
+}

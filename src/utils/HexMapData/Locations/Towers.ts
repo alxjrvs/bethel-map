@@ -14,5 +14,5 @@ export const TowersList: HexConfigKeyArray = [
 
 export const Towers = buildHexList(TowersList, {
   ...baseHexConfig,
-  fill: 0xae00ff,
+  fill: 11403519,
 })
