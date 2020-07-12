@@ -131,5 +131,5 @@ export const Forest = buildHexList(ForestList, {
   ...rawHexConfig,
   fill: 957963,
   name: "Forest",
-  description: ["A Dense forset of thick trees"],
+  description: ["A Dense forest of thick trees"],
 })
