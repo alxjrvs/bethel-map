@@ -1,6 +1,8 @@
 import { VisibleWaterList, BorderOceans, Tombs } from "../utils/HexMapData"
 import { findNearbyKeys } from "./utils/findNearbyKeys"
 
+export const PlayerCurrentHex = "9-20"
+
 export const PlayerVisitedHexes = [
   "3-25",
   "2-26",
@@ -18,7 +20,6 @@ export const PlayerVisitedHexes = [
   "1-24",
 ]
 
-export const PlayerCurrentHex = "9-20"
 export const PlayerVisibleHexes = [
   ...VisibleWaterList,
   ...Object.keys(BorderOceans),

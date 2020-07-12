@@ -6,6 +6,8 @@ import { Point } from "honeycomb-grid"
 export enum Shape {
   circle = "circle",
   hex = "hex",
+  tower = "tower",
+  bang = "bang",
 }
 
 export type BaseHexConfig = {

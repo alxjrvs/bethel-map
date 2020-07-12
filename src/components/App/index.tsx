@@ -6,10 +6,11 @@ import { isDev } from "../../utils/isDev"
 import styles from "./App.module.scss"
 import { HexStage } from "../HexStage"
 import { DataDisplay } from "../DataDisplay"
+import { PlayerCurrentHex } from "../../PlayerDataLists"
 
 export const App: FC = () => {
-  const [currentCoords, setCurrentCoords] = useState("9-20")
-  const [highlightedCoords, setHighlightedCoords] = useState("9-20")
+  const [currentCoords, setCurrentCoords] = useState(PlayerCurrentHex)
+  const [highlightedCoords, setHighlightedCoords] = useState(PlayerCurrentHex)
   return (
     <div className={styles.Container}>
       <Router>

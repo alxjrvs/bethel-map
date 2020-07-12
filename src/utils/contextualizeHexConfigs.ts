@@ -1,6 +1,6 @@
 import { Hex } from "honeycomb-grid"
 import { HexConfig, Fog, Shape } from "../types"
-import { getCorners } from "../components/Hex/utils/getCorners"
+import { getCorners } from "./getCorners"
 import { coordsToKey } from "./coordsToKey"
 import { BaseHexConfigsMap, Terrain } from "./HexMapData"
 import Color from "color"
@@ -32,9 +32,9 @@ export const mapToContextualizedHexConfigFactory = ({
     16
   )
   const fill =
-    baseHexConfig.shape === Shape.circle
-      ? baseHexConfig.fill
-      : calcFogTranformation(fog, baseHexConfig.fill)
+    baseHexConfig.shape === Shape.hex
+      ? calcFogTranformation(fog, baseHexConfig.fill)
+      : baseHexConfig.fill
   const lineWidth = currentCoords === key ? 3 : 1
   const lineFill =
     currentCoords === key ? currentLineFill : baseHexConfig.lineFill
