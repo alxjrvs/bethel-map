@@ -54,5 +54,5 @@ export const PointOfInterestList: BaseHexConfigKeyArray = [
 export const PointsOfInterest = buildHexList(PointOfInterestList, {
   ...rawHexConfig,
   shape: Shape.bang,
-  fill: 16711680,
+  fill: 16556291,
 })
