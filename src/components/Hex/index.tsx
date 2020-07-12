@@ -20,11 +20,17 @@ type HexProps = HexGridProps & {
 export const Hex: FC<HexProps> = ({
   hex,
   showAll,
-  setCoords,
   currentCoords,
+  setHighlightedCoords,
+  highlightedCoords,
 }) => {
+  const hexCoordinates = hex.coordinates()
+  const hexPoint = hex.toPoint()
+  const hexCorners = getCorners(hex)
   const currentKey = coordsToKey(currentCoords)
-  const key = coordsToKey(hex.coordinates())
+  const highlightedKey = coordsToKey(highlightedCoords)
+  const key = coordsToKey(hexCoordinates)
+
   const hexConfig = HexConfigsMap[key] || baseHexConfig
   const terrainConfig = Terrain[key]
   const fog = showAll ? Fog.none : calcFogType(key)
@@ -32,13 +38,13 @@ export const Hex: FC<HexProps> = ({
   const instructions: Array<DrawInstructions> = []
 
   if (hexConfig.shape === Shape.hex) {
-    instructions.push(drawHex(getCorners(hex), hexConfig, fog))
+    instructions.push(drawHex(hexCorners, hexConfig, fog))
   }
 
   if (hexConfig.shape === Shape.circle) {
     instructions.push(
       drawHex(
-        getCorners(hex),
+        hexCorners,
         {
           ...hexConfig,
           fill: terrainConfig.fill,
@@ -46,15 +52,26 @@ export const Hex: FC<HexProps> = ({
         fog
       )
     )
-    instructions.push(drawCircle(hex.toPoint(), hexConfig, fog))
+    instructions.push(drawCircle(hexPoint, hexConfig, fog))
+  }
+
+  if (key === highlightedKey) {
+    instructions.push(
+      drawCircle(hexPoint, {
+        ...hexConfig,
+        fill: fog === Fog.hard ? baseHexConfig.fill : hexConfig.fill,
+      })
+    )
   }
 
   if (key === currentKey) {
-    instructions.push(drawCircle(hex.toPoint(), { fill: 8388736 }))
+    instructions.push(drawCircle(hexPoint, { fill: 8388736 }))
   }
 
   instructions.push(
-    addInteractors({ clickCallback: () => setCoords(hex.coordinates()) })
+    addInteractors({
+      clickCallback: () => setHighlightedCoords(hexCoordinates),
+    })
   )
 
   return (

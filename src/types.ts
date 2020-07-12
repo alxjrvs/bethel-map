@@ -24,7 +24,8 @@ export type HexConfigKeyArray = Array<string | DetailedHexConfigKey>
 export type DrawInstructions = (g: Graphics) => unknown
 
 export type HexGridProps = {
-  setCoords: Dispatch<SetStateAction<PointLike>>
+  setHighlightedCoords: Dispatch<SetStateAction<PointLike>>
+  highlightedCoords: PointLike
   currentCoords: PointLike
   showAll?: boolean
 }
