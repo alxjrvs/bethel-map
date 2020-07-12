@@ -1,23 +1,20 @@
 import { Graphics } from "pixi.js"
 import { Point } from "honeycomb-grid"
-import { DrawInstructions, BaseHexConfig, Fog } from "../../../types"
-import { calcFogTranformation } from "./calcFogTransform"
+import { DrawInstructions, BaseHexConfig } from "../../../types"
 
 type DrawHex = (
   corners: Point[],
-  baseHexConfig: Partial<BaseHexConfig>,
-  fog: Fog
+  baseHexConfig: Partial<BaseHexConfig>
 ) => DrawInstructions
 
 export const drawHex: DrawHex = (
   [firstCorner, ...otherCorners],
-  baseHexConfig = {},
-  fog
+  baseHexConfig = {}
 ) => (g: Graphics) => {
   const { lineWidth = 1, lineFill, fill } = baseHexConfig
   g.zIndex = lineWidth
   g.lineStyle(lineWidth, lineFill || 0)
-  g.beginFill(calcFogTranformation(fog, fill || 0))
+  g.beginFill(fill)
 
   g.moveTo(firstCorner.x, firstCorner.y)
   otherCorners.forEach(({ x, y }) => g.lineTo(x, y))
