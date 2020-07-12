@@ -1,5 +1,5 @@
 import { buildHexList } from "../utils/buildHexList"
-import { baseBaseHexConfig } from "../../../constants"
+import { rawHexConfig } from "../../../constants"
 import { BaseHexConfigKeyArray } from "../../../types"
 
 export const LavaList: BaseHexConfigKeyArray = [
@@ -25,7 +25,7 @@ export const LavaList: BaseHexConfigKeyArray = [
 ]
 
 export const Lava = buildHexList(LavaList, {
-  ...baseBaseHexConfig,
+  ...rawHexConfig,
   fill: 16751872,
   name: "Lava",
   description: ["Blistering hot molten earth covers most of the terrain."],

@@ -1,5 +1,5 @@
 import { buildHexList } from "../utils/buildHexList"
-import { baseBaseHexConfig } from "../../../constants"
+import { rawHexConfig } from "../../../constants"
 import { BaseHexConfigKeyArray } from "../../../types"
 
 export const SandList: BaseHexConfigKeyArray = [
@@ -61,7 +61,7 @@ export const SandList: BaseHexConfigKeyArray = [
 ]
 
 export const Sand = buildHexList(SandList, {
-  ...baseBaseHexConfig,
+  ...rawHexConfig,
   fill: 15726519,
   name: "Sand",
   description: [

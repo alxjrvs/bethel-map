@@ -1,5 +1,5 @@
 import { buildHexList } from "../utils/buildHexList"
-import { baseBaseHexConfig } from "../../../constants"
+import { rawHexConfig } from "../../../constants"
 import { BaseHexConfigKeyArray } from "../../../types"
 
 export const ChasmList: BaseHexConfigKeyArray = [
@@ -68,7 +68,7 @@ export const ChasmList: BaseHexConfigKeyArray = [
 ]
 
 export const Chasm = buildHexList(ChasmList, {
-  ...baseBaseHexConfig,
+  ...rawHexConfig,
   fill: 3683112,
   name: "Chasm",
   description: ["A deep Chasm is carved into the island."],

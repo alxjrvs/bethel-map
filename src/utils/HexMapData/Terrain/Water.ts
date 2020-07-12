@@ -4,7 +4,7 @@ import {
   height,
   yCoords,
   width,
-  baseBaseHexConfig,
+  rawHexConfig,
 } from "../../../constants"
 import {
   BaseHexConfigLookup,
@@ -13,7 +13,7 @@ import {
 } from "../../../types"
 
 const baseOceanBaseHexConfig: BaseHexConfig = {
-  ...baseBaseHexConfig,
+  ...rawHexConfig,
   fill: 255,
   lineFill: 0,
   description: ["Who knows what secrets the Water of Beth'El provides?"],

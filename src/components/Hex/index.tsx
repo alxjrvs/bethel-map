@@ -5,19 +5,16 @@ import { drawHex } from "./utils/drawHex"
 import { drawCircle } from "./utils/drawCircle"
 import { addInteractors } from "./utils/addInteractors"
 import { Graphics as GraphicsComponent } from "@inlet/react-pixi"
-import { DrawInstructions, Fog, Shape, HexConfig } from "../../types"
-import { baseBaseHexConfig } from "../../constants"
+import { DrawInstructions, Shape, HexConfig } from "../../types"
 
 type HexProps = {
   hex: HexConfig
   setHighlightedCoords: Dispatch<SetStateAction<string>>
   highlightedCoords: string
-  currentCoords: string
 }
 
 export const Hex: FC<HexProps> = ({
   hex: { key, corners, point, terrain, fog, ...hexConfig },
-  currentCoords,
   setHighlightedCoords,
   highlightedCoords,
 }) => {
@@ -31,14 +28,6 @@ export const Hex: FC<HexProps> = ({
 
   if (hexConfig.shape === Shape.circle) {
     instructions.push(drawCircle(point, hexConfig, fog))
-  }
-
-  if (key === currentCoords) {
-    instructions.push(
-      drawCircle(point, {
-        fill: fog === Fog.hard ? baseBaseHexConfig.fill : hexConfig.fill,
-      })
-    )
   }
 
   if (key === highlightedCoords) {

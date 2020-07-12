@@ -1,6 +1,6 @@
 import { BaseHexConfigKeyArray } from "../../../types"
 import { buildHexList } from "../utils/buildHexList"
-import { baseBaseHexConfig } from "../../../constants"
+import { rawHexConfig } from "../../../constants"
 
 export const RestStopList: BaseHexConfigKeyArray = [
   ["10-10", {}],
@@ -24,7 +24,7 @@ export const RestStopList: BaseHexConfigKeyArray = [
 ]
 
 export const RestStops = buildHexList(RestStopList, {
-  ...baseBaseHexConfig,
+  ...rawHexConfig,
   fill: 16711680,
   name: "A Felled Tree",
   description: ["It seems to be leaking Sap."],

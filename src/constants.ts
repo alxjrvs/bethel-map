@@ -13,7 +13,7 @@ for (let i = 0; i <= width; i += 1) {
   xCoords.push(i)
 }
 
-export const baseBaseHexConfig: BaseHexConfig = {
+export const rawHexConfig: BaseHexConfig = {
   shape: Shape.hex,
   fill: 11252410,
   lineFill: 0,

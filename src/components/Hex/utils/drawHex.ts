@@ -14,10 +14,9 @@ export const drawHex: DrawHex = (
   baseHexConfig = {},
   fog
 ) => (g: Graphics) => {
-  const { lineWidth, lineFill, fill } = baseHexConfig
-  const lineStyle = lineWidth === undefined ? 1 : lineWidth
-  g.zIndex = 1
-  g.lineStyle(lineStyle, lineFill || 0)
+  const { lineWidth = 1, lineFill, fill } = baseHexConfig
+  g.zIndex = lineWidth
+  g.lineStyle(lineWidth, lineFill || 0)
   g.beginFill(calcFogTranformation(fog, fill || 0))
 
   g.moveTo(firstCorner.x, firstCorner.y)

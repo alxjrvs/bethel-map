@@ -1,6 +1,6 @@
 import React, { FC, Dispatch, SetStateAction } from "react"
 
-import { Stage } from "@inlet/react-pixi"
+import { Stage, Container } from "@inlet/react-pixi"
 import { Hex } from "../Hex"
 
 import { extendHex, defineGrid } from "honeycomb-grid"
@@ -15,15 +15,21 @@ type HexStageProps = {
   showAll: boolean
 }
 
-export const HexStage: FC<HexStageProps> = ({ showAll, ...props }) => {
+export const HexStage: FC<HexStageProps> = ({
+  showAll,
+  currentCoords,
+  ...props
+}) => {
   const HexGrid = defineGrid(BaseHex)
     .rectangle({ width: 22, height: 28 })
-    .map(mapToContextualizedHexConfigFactory(showAll))
+    .map(mapToContextualizedHexConfigFactory({ showAll, currentCoords }))
   return (
     <Stage height={700} width={650} options={{ backgroundColor: 255 }}>
-      {HexGrid.map(hex => (
-        <Hex key={hex.key} hex={hex} {...props} />
-      ))}
+      <Container sortableChildren>
+        {HexGrid.map(hex => (
+          <Hex key={hex.key} hex={hex} {...props} />
+        ))}
+      </Container>
     </Stage>
   )
 }

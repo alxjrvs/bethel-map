@@ -1,5 +1,5 @@
 import { buildHexList } from "../utils/buildHexList"
-import { baseBaseHexConfig } from "../../../constants"
+import { rawHexConfig } from "../../../constants"
 import { BaseHexConfigKeyArray } from "../../../types"
 
 export const WeirdList: BaseHexConfigKeyArray = [
@@ -28,7 +28,7 @@ export const WeirdList: BaseHexConfigKeyArray = [
 ]
 
 export const Weird = buildHexList(WeirdList, {
-  ...baseBaseHexConfig,
+  ...rawHexConfig,
   fill: 16711935,
   name: "Weird Space",
   description: [

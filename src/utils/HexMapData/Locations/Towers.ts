@@ -1,5 +1,5 @@
 import { buildHexList } from "../utils/buildHexList"
-import { baseBaseHexConfig } from "../../../constants"
+import { rawHexConfig } from "../../../constants"
 import { BaseHexConfigKeyArray } from "../../../types"
 
 export const TowersList: BaseHexConfigKeyArray = [
@@ -13,7 +13,7 @@ export const TowersList: BaseHexConfigKeyArray = [
 ]
 
 export const Towers = buildHexList(TowersList, {
-  ...baseBaseHexConfig,
+  ...rawHexConfig,
   fill: 11403519,
   // shape: Shape.circle,
   name: "Observation Tower",

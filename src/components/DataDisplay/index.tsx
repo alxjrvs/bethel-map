@@ -2,7 +2,7 @@ import React, { FC, Dispatch, SetStateAction } from "react"
 import { BaseHexConfigsMap, Terrain } from "../../utils/HexMapData"
 import { calcFogType } from "../../utils/calcFogType"
 import { BaseHexConfig, Fog } from "../../types"
-import { baseBaseHexConfig } from "../../constants"
+import { rawHexConfig } from "../../constants"
 import styles from "./DataDisplay.module.scss"
 
 type DataDisplayProps = {
@@ -20,7 +20,7 @@ export const DataDisplay: FC<DataDisplayProps> = ({
 
   switch (fog) {
     case Fog.hard:
-      config = baseBaseHexConfig
+      config = rawHexConfig
       break
     case Fog.soft:
       config = terrainConfig
