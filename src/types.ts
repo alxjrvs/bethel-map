@@ -1,5 +1,3 @@
-import { Dispatch, SetStateAction } from "react"
-
 import { Graphics } from "pixi.js"
 import { Point } from "honeycomb-grid"
 
@@ -24,13 +22,6 @@ type DetailedBaseHexConfigKey = [string, Partial<BaseHexConfig>]
 export type BaseHexConfigKeyArray = Array<string | DetailedBaseHexConfigKey>
 
 export type DrawInstructions = (g: Graphics) => unknown
-
-export type HexGridProps = {
-  setHighlightedCoords: Dispatch<SetStateAction<string>>
-  highlightedCoords: string
-  currentCoords: string
-  showAll: boolean
-}
 
 export enum Fog {
   hard = "hard",
