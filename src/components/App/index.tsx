@@ -17,23 +17,21 @@ export const App: FC = () => {
         <Switch>
           {isDev() && (
             <Route path="/sekret">
-              {highlightedCoords}
-              <HexStage
-                {...{
-                  currentCoords,
-                  highlightedCoords,
-                  setHighlightedCoords,
-                }}
-                showAll
-              />
-              <HexStage
-                {...{
-                  currentCoords,
-                  highlightedCoords,
-                  setHighlightedCoords,
-                }}
-                showAll={false}
-              />
+              <div className={styles.Presentation}>
+                <HexStage
+                  {...{
+                    currentCoords,
+                    highlightedCoords,
+                    setHighlightedCoords,
+                  }}
+                  showAll
+                />
+              </div>
+              <div className={styles.Presentation}>
+                <DataDisplay
+                  {...{ setCurrentCoords, highlightedCoords, currentCoords }}
+                />
+              </div>
             </Route>
           )}
 
