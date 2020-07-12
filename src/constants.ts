@@ -18,4 +18,5 @@ export const rawHexConfig: BaseHexConfig = {
   fill: 11252410,
   lineFill: 0,
   name: "Unknown...",
+  description: ["Who knows what mysteries might lay here..."],
 }
