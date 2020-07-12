@@ -1,10 +1,10 @@
-import { buildHexList } from "../utils/buildHexList"
-import { xCoords, height, yCoords, width, rawHexConfig } from "../constants"
+import { buildHexList } from "../../utils/buildHexList"
+import { xCoords, height, yCoords, width, rawHexConfig } from "../../constants"
 import {
   BaseHexConfigLookup,
   BaseHexConfigKeyArray,
   BaseHexConfig,
-} from "../types"
+} from "../../types"
 
 const baseOceanBaseHexConfig: BaseHexConfig = {
   ...rawHexConfig,

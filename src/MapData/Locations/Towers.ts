@@ -1,6 +1,6 @@
-import { buildHexList } from "../utils/buildHexList"
-import { rawHexConfig } from "../constants"
-import { BaseHexConfigKeyArray, Shape } from "../types"
+import { buildHexList } from "../../utils/buildHexList"
+import { rawHexConfig } from "../../constants"
+import { BaseHexConfigKeyArray, Shape } from "../../types"
 
 export const TowersList: BaseHexConfigKeyArray = [
   "3-23",

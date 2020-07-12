@@ -1,15 +1,14 @@
 import { Fog } from "../types"
-import { PlayerVisitedHexes, PlayerVisibleHexes } from "../PlayerDataLists"
-import { VisibleWaterList } from "../Terrain"
-import { Tombs } from "../Locations"
+import { MapDataState } from "../state/MapDataContext"
 
-const FoglessHexKeys = [...PlayerVisitedHexes, ...VisibleWaterList]
-
-const ShowFeatureHexKeys = [...Object.keys(Tombs)]
-export const calcFogType = (key: string, showAll = false): Fog => {
+export const calcFogType = (
+  key: string,
+  showAll: boolean,
+  { players: { visible }, meta: { showFeature, fogless } }: MapDataState
+): Fog => {
   if (showAll) return Fog.none
-  if (FoglessHexKeys.includes(key)) return Fog.none
-  if (ShowFeatureHexKeys.includes(key)) return Fog.showFeature
-  if (PlayerVisibleHexes.includes(key)) return Fog.soft
+  if (fogless.includes(key)) return Fog.none
+  if (showFeature.includes(key)) return Fog.showFeature
+  if (visible.includes(key)) return Fog.soft
   return Fog.hard
 }

@@ -1,6 +1,6 @@
-import { buildHexList } from "../utils/buildHexList"
-import { rawHexConfig } from "../constants"
-import { BaseHexConfigKeyArray } from "../types"
+import { buildHexList } from "../../utils/buildHexList"
+import { rawHexConfig } from "../../constants"
+import { BaseHexConfigKeyArray } from "../../types"
 
 export const ForestList: BaseHexConfigKeyArray = [
   "1-18",
@@ -127,7 +127,7 @@ export const ForestList: BaseHexConfigKeyArray = [
   "2-26",
 ]
 
-export const Forests = buildHexList(ForestList, {
+export const Forest = buildHexList(ForestList, {
   ...rawHexConfig,
   fill: 957963,
   name: "Forest",

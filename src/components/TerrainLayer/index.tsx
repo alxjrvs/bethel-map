@@ -8,22 +8,24 @@ import { calcFogType } from "../../utils/calcFogType"
 import { lightenNumeric } from "../../utils/numericColorUtils"
 import { calcFogTranformation } from "../../utils/calcFogTransformation"
 import { mapToContextualizedHexConfig } from "../../utils/mapToContextualizedHexConfig"
-import { Terrain } from "../../Terrain"
+import { MapDataState } from "../../state/MapDataContext"
 
 type TerrainLayerProps = {
   showAll: boolean
+  mapData: MapDataState
   currentCoords: string
   setHighlightedCoords: Dispatch<SetStateAction<string>>
 }
 export const TerrainLayer: FC<TerrainLayerProps> = ({
   showAll,
+  mapData,
   currentCoords,
   setHighlightedCoords,
 }) => {
   const TerrainHexGrid = BaseGrid.map(mapToContextualizedHexConfig).map(
     ({ key, ...config }) => {
-      const baseHexConfig = Terrain[key]
-      const fog = calcFogType(key, showAll)
+      const baseHexConfig = mapData.terrain.all[key]
+      const fog = calcFogType(key, showAll, mapData)
       const currentLineFill = lightenNumeric(rawHexConfig.fill, 0.2)
 
       return {

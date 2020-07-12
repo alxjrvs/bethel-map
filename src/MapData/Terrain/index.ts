@@ -4,8 +4,8 @@ import { Chasm } from "./Chasm"
 import { Water } from "./Water"
 import { RockyTerrain } from "./RockyTerrain"
 import { Tundra } from "./Tundra"
-import { Forests } from "./Forest"
 import { Lava } from "./Lava"
+import { Forest } from "./Forest"
 
 export * from "./Water"
 export * from "./Chasm"
@@ -24,5 +24,5 @@ export const Terrain = {
   ...Weird,
   ...Tundra,
   ...Water,
-  ...Forests,
+  ...Forest,
 }
