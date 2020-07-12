@@ -5,6 +5,7 @@ import { Hex } from "../Hex"
 
 import { extendHex, defineGrid } from "honeycomb-grid"
 import { mapToContextualizedHexConfigFactory } from "../../utils/contextualizeHexConfigs"
+import { useIsAdmin } from "../hooks/useIsAdmin"
 
 const BaseHex = extendHex({ size: 17, offset: 1 })
 
@@ -12,14 +13,10 @@ type HexStageProps = {
   setHighlightedCoords: Dispatch<SetStateAction<string>>
   highlightedCoords: string
   currentCoords: string
-  showAll: boolean
 }
 
-export const HexStage: FC<HexStageProps> = ({
-  showAll,
-  currentCoords,
-  ...props
-}) => {
+export const HexStage: FC<HexStageProps> = ({ currentCoords, ...props }) => {
+  const showAll = useIsAdmin()
   const HexGrid = defineGrid(BaseHex)
     .rectangle({ width: 22, height: 28 })
     .map(mapToContextualizedHexConfigFactory({ showAll, currentCoords }))

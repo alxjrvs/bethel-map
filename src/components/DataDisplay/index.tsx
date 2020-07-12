@@ -4,6 +4,7 @@ import { calcFogType } from "../../utils/calcFogType"
 import { BaseHexConfig, Fog } from "../../types"
 import { rawHexConfig } from "../../constants"
 import styles from "./DataDisplay.module.scss"
+import { useIsAdmin } from "../hooks/useIsAdmin"
 
 type DataDisplayProps = {
   setCurrentCoords: Dispatch<SetStateAction<string>>
@@ -13,9 +14,10 @@ export const DataDisplay: FC<DataDisplayProps> = ({
   setCurrentCoords,
   highlightedCoords,
 }) => {
+  const showAll = useIsAdmin()
   const baseHexConfig = BaseHexConfigsMap[highlightedCoords]
   const terrainConfig = Terrain[highlightedCoords]
-  const fog = calcFogType(highlightedCoords)
+  const fog = calcFogType(highlightedCoords, showAll)
   let config: BaseHexConfig
 
   switch (fog) {

@@ -26,7 +26,7 @@ export const mapToContextualizedHexConfigFactory = ({
   const key = coordsToKey(hex.coordinates())
   const baseHexConfig = BaseHexConfigsMap[key]
   const terrain = Terrain[key]
-  const fog = showAll ? Fog.none : calcFogType(key)
+  const fog = calcFogType(key, showAll)
   const currentLineFill = parseInt(
     Color(rawHexConfig.fill).lighten(0.2).hex().split("#")[1],
     16

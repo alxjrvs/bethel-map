@@ -7,7 +7,8 @@ const FoglessHexKeys = [
   ...VisibleWaterList,
   ...Object.keys(Tombs),
 ]
-export const calcFogType = (key: string): Fog => {
+export const calcFogType = (key: string, showAll = false): Fog => {
+  if (showAll) return Fog.none
   if (FoglessHexKeys.includes(key)) return Fog.none
   if (PlayerVisibleHexes.includes(key)) return Fog.soft
   return Fog.hard

@@ -1,7 +1,6 @@
 import React, { useState, FC } from "react"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import { isDev } from "../../utils/isDev"
 
 import styles from "./App.module.scss"
 import { HexStage } from "../HexStage"
@@ -15,26 +14,6 @@ export const App: FC = () => {
     <div className={styles.Container}>
       <Router>
         <Switch>
-          {isDev() && (
-            <Route path="/sekret">
-              <div className={styles.Presentation}>
-                <HexStage
-                  {...{
-                    currentCoords,
-                    highlightedCoords,
-                    setHighlightedCoords,
-                  }}
-                  showAll
-                />
-              </div>
-              <div className={styles.Presentation}>
-                <DataDisplay
-                  {...{ setCurrentCoords, highlightedCoords, currentCoords }}
-                />
-              </div>
-            </Route>
-          )}
-
           <Route path="*">
             <div className={styles.Presentation}>
               <HexStage
@@ -43,12 +22,14 @@ export const App: FC = () => {
                   highlightedCoords,
                   setHighlightedCoords,
                 }}
-                showAll={false}
               />
             </div>
             <div className={styles.Presentation}>
               <DataDisplay
-                {...{ setCurrentCoords, highlightedCoords, currentCoords }}
+                {...{
+                  setCurrentCoords,
+                  highlightedCoords,
+                }}
               />
             </div>
           </Route>
