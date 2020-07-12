@@ -8,6 +8,7 @@ type DrawTower = (
 ) => DrawInstructions
 
 export const drawTower: DrawTower = ({ x, y }, { fill }) => g => {
+  g.beginFill(fill)
   g.lineStyle(1, parseInt(Color(fill).lighten(0.5).hex().split("#")[1], 16))
   g.drawRect(x + 13, y + 8, 5, 20)
   g.endFill()
