@@ -1,6 +1,6 @@
 import { buildHexList } from "../utils/buildHexList"
-import { rawHexConfig } from "../../constants"
-import { BaseHexConfigKeyArray } from "../../types"
+import { rawHexConfig } from "../constants"
+import { BaseHexConfigKeyArray } from "../types"
 
 export const RockyTerrainList: BaseHexConfigKeyArray = [
   "5-25",

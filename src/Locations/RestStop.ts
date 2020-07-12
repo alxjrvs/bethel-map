@@ -1,7 +1,7 @@
-import { BaseHexConfigKeyArray, Shape } from "../../types"
+import { BaseHexConfigKeyArray, Shape } from "../types"
 import { buildHexList } from "../utils/buildHexList"
-import { rawHexConfig } from "../../constants"
-import { lightenNumeric } from "../../utils/numericColorUtils"
+import { rawHexConfig } from "../constants"
+import { lightenNumeric } from "../utils/numericColorUtils"
 
 export const RestStopList: BaseHexConfigKeyArray = [
   ["10-10", {}],

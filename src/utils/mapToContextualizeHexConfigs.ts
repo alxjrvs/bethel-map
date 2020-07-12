@@ -2,12 +2,13 @@ import { Hex } from "honeycomb-grid"
 import { HexConfig, Shape } from "../types"
 import { getCorners } from "./getCorners"
 import { coordsToKey } from "./coordsToKey"
-import { Terrain, Locations } from "../HexMapData"
 
 import { rawHexConfig } from "../constants"
 import { calcFogType } from "./calcFogType"
 import { lightenNumeric } from "./numericColorUtils"
 import { calcFogTranformation } from "./calcFogTransformation"
+import { Locations } from "../Locations"
+import { Terrain } from "../Terrain"
 
 export const mapToContextualizedHexConfigFactory = ({
   showAll,
