@@ -16,6 +16,7 @@ export const App: FC = () => {
         <Switch>
           {isDev() && (
             <Route path="/sekret">
+              {highlightedCoords}
               <HexStage
                 {...{
                   currentCoords,

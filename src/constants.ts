@@ -1,4 +1,4 @@
-import { HexConfig, Shape } from "./types"
+import { BaseHexConfig, Shape } from "./types"
 import { extendHex, defineGrid } from "honeycomb-grid"
 
 export const height = 28
@@ -14,18 +14,11 @@ for (let i = 0; i <= width; i += 1) {
   xCoords.push(i)
 }
 
-export const baseHexConfig: HexConfig = {
+export const baseBaseHexConfig: BaseHexConfig = {
   shape: Shape.hex,
   fill: 11252410,
   lineFill: 0,
-}
-
-export const baseOceanHexConfig: HexConfig = {
-  ...baseHexConfig,
-  fill: 255,
-  lineFill: 0,
-  description: "The oceans swells and storms around Beth'el.",
-  name: "Raging Ocean",
+  name: "Unknown...",
 }
 
 export const BaseHex = extendHex({ size: 17, offset: 1 })

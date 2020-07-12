@@ -7,18 +7,18 @@ export enum Shape {
   hex = "hex",
 }
 
-export type HexConfig = {
+export type BaseHexConfig = {
   shape: Shape
   fill: number
   lineFill: number
   lineWidth?: number
-  description?: string | string[]
+  description?: string[]
   name?: string
 }
 
-export type HexConfigLookup = { [key: string]: HexConfig }
-type DetailedHexConfigKey = [string, Partial<HexConfig>]
-export type HexConfigKeyArray = Array<string | DetailedHexConfigKey>
+export type BaseHexConfigLookup = { [key: string]: BaseHexConfig }
+type DetailedBaseHexConfigKey = [string, Partial<BaseHexConfig>]
+export type BaseHexConfigKeyArray = Array<string | DetailedBaseHexConfigKey>
 
 export type DrawInstructions = (g: Graphics) => unknown
 

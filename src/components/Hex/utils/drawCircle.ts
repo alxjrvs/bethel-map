@@ -1,10 +1,11 @@
 import { Point } from "honeycomb-grid"
 import { Graphics } from "pixi.js"
-import { DrawInstructions, HexConfig, Fog } from "../../../types"
+import { DrawInstructions, BaseHexConfig, Fog } from "../../../types"
+import Color from "color"
 
 type DrawCircle = (
   point: Point,
-  hexConfig: Pick<HexConfig, "fill">,
+  hexConfig: Pick<BaseHexConfig, "fill">,
   fog?: Fog
 ) => DrawInstructions
 
@@ -14,7 +15,7 @@ export const drawCircle: DrawCircle = (
   fog = Fog.none
 ) => (g: Graphics) => {
   if (fog !== Fog.hard) {
-    g.lineStyle(2, 16777215)
+    g.lineStyle(3, parseInt(Color(fill).lighten(0.8).hex().split("#")[1], 16))
     g.beginFill(fill)
     g.drawCircle(x + 15, y + 17, 5)
     g.endFill()

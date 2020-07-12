@@ -1,25 +1,36 @@
 import { buildHexList } from "../utils/buildHexList"
 import {
-  baseOceanHexConfig,
   xCoords,
   height,
   yCoords,
   width,
+  baseBaseHexConfig,
 } from "../../../constants"
-import { HexConfigLookup, HexConfigKeyArray } from "../../../types"
+import {
+  BaseHexConfigLookup,
+  BaseHexConfigKeyArray,
+  BaseHexConfig,
+} from "../../../types"
 
-export const generateBorderOceans = (): HexConfigLookup => {
-  const borderOceanHexConfigs: HexConfigLookup = {}
+const baseOceanBaseHexConfig: BaseHexConfig = {
+  ...baseBaseHexConfig,
+  fill: 255,
+  lineFill: 0,
+  description: ["Who knows what secrets the Water of Beth'El provides?"],
+  name: "Deep Water",
+}
+export const generateBorderOceans = (): BaseHexConfigLookup => {
+  const borderOceanBaseHexConfigs: BaseHexConfigLookup = {}
   xCoords.forEach(x => {
-    borderOceanHexConfigs[`${x}-0`] = baseOceanHexConfig
-    borderOceanHexConfigs[`${x}-${height - 1}`] = baseOceanHexConfig
+    borderOceanBaseHexConfigs[`${x}-0`] = baseOceanBaseHexConfig
+    borderOceanBaseHexConfigs[`${x}-${height - 1}`] = baseOceanBaseHexConfig
   })
   yCoords.forEach(y => {
-    borderOceanHexConfigs[`0-${y}`] = baseOceanHexConfig
-    borderOceanHexConfigs[`${width - 1}-${y}`] = baseOceanHexConfig
+    borderOceanBaseHexConfigs[`0-${y}`] = baseOceanBaseHexConfig
+    borderOceanBaseHexConfigs[`${width - 1}-${y}`] = baseOceanBaseHexConfig
   })
 
-  return borderOceanHexConfigs
+  return borderOceanBaseHexConfigs
 }
 export const BorderOceans = generateBorderOceans()
 export const VisibleWaterList = [
@@ -31,7 +42,7 @@ export const VisibleWaterList = [
   "6-26",
   ...Object.keys(BorderOceans),
 ]
-export const WaterList: HexConfigKeyArray = [
+export const WaterList: BaseHexConfigKeyArray = [
   ...Object.keys(BorderOceans),
   ...VisibleWaterList,
   "1-16",
@@ -110,4 +121,4 @@ export const WaterList: HexConfigKeyArray = [
   "12-22",
 ]
 
-export const Water = buildHexList(WaterList, baseOceanHexConfig)
+export const Water = buildHexList(WaterList, baseOceanBaseHexConfig)

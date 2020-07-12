@@ -1,8 +1,8 @@
 import { buildHexList } from "../utils/buildHexList"
-import { baseHexConfig } from "../../../constants"
-import { HexConfigKeyArray } from "../../../types"
+import { baseBaseHexConfig } from "../../../constants"
+import { BaseHexConfigKeyArray } from "../../../types"
 
-export const RockyTerrainList: HexConfigKeyArray = [
+export const RockyTerrainList: BaseHexConfigKeyArray = [
   "5-25",
   "5-26",
   "6-25",
@@ -129,6 +129,8 @@ export const RockyTerrainList: HexConfigKeyArray = [
 ]
 
 export const RockyTerrain = buildHexList(RockyTerrainList, {
-  ...baseHexConfig,
+  ...baseBaseHexConfig,
   fill: 11370576,
+  name: "Dry and Rocky",
+  description: ["This area is humid and dry, with sparse plant life."],
 })

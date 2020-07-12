@@ -1,9 +1,6 @@
-import { Fog } from "../../../types"
-import {
-  PlayerVisitedHexes,
-  PlayerVisibleHexes,
-} from "../../../PlayerDataLists"
-import { VisibleWaterList, Tombs } from "../../../utils/HexMapData"
+import { Fog } from "../types"
+import { PlayerVisitedHexes, PlayerVisibleHexes } from "../PlayerDataLists"
+import { VisibleWaterList, Tombs } from "./HexMapData"
 
 const FoglessHexKeys = [
   ...PlayerVisitedHexes,

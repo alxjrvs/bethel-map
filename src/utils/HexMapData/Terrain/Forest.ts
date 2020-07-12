@@ -1,8 +1,8 @@
 import { buildHexList } from "../utils/buildHexList"
-import { baseHexConfig } from "../../../constants"
-import { HexConfigKeyArray } from "../../../types"
+import { baseBaseHexConfig } from "../../../constants"
+import { BaseHexConfigKeyArray } from "../../../types"
 
-export const ForestList: HexConfigKeyArray = [
+export const ForestList: BaseHexConfigKeyArray = [
   "1-18",
   "1-19",
   "1-21",
@@ -128,6 +128,8 @@ export const ForestList: HexConfigKeyArray = [
 ]
 
 export const Forests = buildHexList(ForestList, {
-  ...baseHexConfig,
+  ...baseBaseHexConfig,
   fill: 957963,
+  name: "Forest",
+  description: ["A Dense forset of thick trees"],
 })

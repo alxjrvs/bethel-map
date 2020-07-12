@@ -4,7 +4,7 @@ import { Locations } from "./Locations"
 export * from "./Terrain"
 export * from "./Locations"
 
-export const HexConfigsMap = {
+export const BaseHexConfigsMap = {
   ...Terrain,
   ...Locations,
 }
