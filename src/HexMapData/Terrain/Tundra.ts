@@ -1,6 +1,6 @@
 import { buildHexList } from "../utils/buildHexList"
-import { rawHexConfig } from "../../../constants"
-import { BaseHexConfigKeyArray } from "../../../types"
+import { rawHexConfig } from "../../constants"
+import { BaseHexConfigKeyArray } from "../../types"
 
 export const TundraList: BaseHexConfigKeyArray = [
   "14-7",

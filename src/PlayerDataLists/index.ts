@@ -1,4 +1,4 @@
-import { VisibleWaterList, BorderOceans, Tombs } from "../utils/HexMapData"
+import { VisibleWaterList, BorderOceans, Tombs } from "../HexMapData"
 import { findNearbyKeys } from "./utils/findNearbyKeys"
 
 export const PlayerCurrentHex = "9-20"

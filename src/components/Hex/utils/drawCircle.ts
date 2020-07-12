@@ -1,17 +1,18 @@
 import { Point } from "honeycomb-grid"
 import { Graphics } from "pixi.js"
 import { DrawInstructions, BaseHexConfig } from "../../../types"
-import { lightenNumeric } from "../../../utils/numericColorUtils"
+import { rawHexConfig } from "../../../constants"
 
 type DrawCircle = (
   point: Point,
-  hexConfig: Pick<BaseHexConfig, "fill">
+  hexConfig: Partial<Pick<BaseHexConfig, "fill" | "lineFill">>
 ) => DrawInstructions
 
-export const drawCircle: DrawCircle = ({ x, y }, { fill = 7680680 }) => (
-  g: Graphics
-) => {
-  g.lineStyle(3, lightenNumeric(fill, 0.8))
+export const drawCircle: DrawCircle = (
+  { x, y },
+  { fill = 7680680, lineFill = rawHexConfig.fill }
+) => (g: Graphics) => {
+  g.lineStyle(3, lineFill)
   g.beginFill(fill)
   g.drawCircle(x + 15, y + 17, 5)
   g.endFill()

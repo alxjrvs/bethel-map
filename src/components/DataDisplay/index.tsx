@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import { BaseHexConfigsMap, Terrain } from "../../utils/HexMapData"
+import { BaseHexConfigsMap, Terrain } from "../../HexMapData"
 import { calcFogType } from "../../utils/calcFogType"
 import { BaseHexConfig, Fog } from "../../types"
 import { rawHexConfig } from "../../constants"
@@ -12,8 +12,8 @@ export const DataDisplay: FC = () => {
   const [, setCurrentCoords] = useCurrentCoordinates()
   const [highlightedCoords] = useHighlightedCoordinates()
   const showAll = useIsAdmin()
-  const baseHexConfig = BaseHexConfigsMap[highlightedCoords]
   const terrainConfig = Terrain[highlightedCoords]
+  const baseHexConfig = BaseHexConfigsMap[highlightedCoords] || terrainConfig
   const fog = calcFogType(highlightedCoords, showAll)
 
   let config: BaseHexConfig
@@ -23,6 +23,9 @@ export const DataDisplay: FC = () => {
       break
     case Fog.soft:
       config = terrainConfig
+      break
+    case Fog.showFeature:
+      config = baseHexConfig
       break
     case Fog.none:
       config = baseHexConfig

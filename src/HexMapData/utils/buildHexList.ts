@@ -2,7 +2,7 @@ import {
   BaseHexConfigKeyArray,
   BaseHexConfig,
   BaseHexConfigLookup,
-} from "../../../types"
+} from "../../types"
 
 type BuildHexList = (
   keys: BaseHexConfigKeyArray,

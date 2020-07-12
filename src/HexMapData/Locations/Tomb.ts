@@ -1,6 +1,6 @@
-import { BaseHexConfigKeyArray } from "../../../types"
+import { BaseHexConfigKeyArray, Shape } from "../../types"
 import { buildHexList } from "../utils/buildHexList"
-import { rawHexConfig } from "../../../constants"
+import { rawHexConfig } from "../../constants"
 
 export const TombsList: BaseHexConfigKeyArray = [
   ["1-1", {}],
@@ -26,6 +26,7 @@ export const TombsList: BaseHexConfigKeyArray = [
 export const Tombs = buildHexList(TombsList, {
   ...rawHexConfig,
   fill: 16117405,
-  name: "A Fallen God's Tomb.",
+  name: "A Fallen God's Tomb",
+  shape: Shape.circle,
   lineWidth: 6,
 })

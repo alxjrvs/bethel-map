@@ -35,6 +35,7 @@ export type HexGridProps = {
 export enum Fog {
   hard = "hard",
   soft = "soft",
+  showFeature = "showFeature",
   none = "none",
 }
 

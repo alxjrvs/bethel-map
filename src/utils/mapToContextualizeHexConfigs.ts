@@ -1,18 +1,13 @@
 import { Hex } from "honeycomb-grid"
-import { HexConfig, Fog, Shape } from "../types"
+import { HexConfig, Shape } from "../types"
 import { getCorners } from "./getCorners"
 import { coordsToKey } from "./coordsToKey"
-import { BaseHexConfigsMap, Terrain } from "./HexMapData"
+import { Terrain, Locations } from "../HexMapData"
 
 import { rawHexConfig } from "../constants"
 import { calcFogType } from "./calcFogType"
-import { lightenNumeric, darkenNumeric } from "./numericColorUtils"
-
-const calcFogTranformation = (fog: Fog | undefined, fill: number): number => {
-  if (fog === Fog.hard) return rawHexConfig.fill
-  if (fog === Fog.soft) return darkenNumeric(fill, 0.6)
-  return fill
-}
+import { lightenNumeric } from "./numericColorUtils"
+import { calcFogTranformation } from "./calcFogTransformation"
 
 export const mapToContextualizedHexConfigFactory = ({
   showAll,
@@ -20,11 +15,12 @@ export const mapToContextualizedHexConfigFactory = ({
 }: {
   showAll: boolean
   currentCoords: string
-}) => (hex: Hex<{ size: number }>): HexConfig => {
+}) => (hex: Hex<{ size: number }>): HexConfig | undefined => {
   const point = hex.toPoint()
   const corners = getCorners(hex)
   const key = coordsToKey(hex.coordinates())
-  const baseHexConfig = BaseHexConfigsMap[key]
+  const baseHexConfig = Locations[key]
+  if (!baseHexConfig) return
   const terrain = Terrain[key]
   const fog = calcFogType(key, showAll)
   const currentLineFill = lightenNumeric(rawHexConfig.fill, 0.2)
