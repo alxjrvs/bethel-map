@@ -1,6 +1,6 @@
 import { Point } from "honeycomb-grid"
-import { BaseHexConfig, DrawInstructions } from "../../../types"
-import { lightenNumeric } from "../../../utils/numericColorUtils"
+import { BaseHexConfig, DrawInstructions } from "../types"
+import { lightenNumeric } from "./numericColorUtils"
 
 type DrawTower = (
   point: Point,

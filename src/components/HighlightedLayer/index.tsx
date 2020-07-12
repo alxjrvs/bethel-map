@@ -2,7 +2,7 @@ import React, { FC } from "react"
 import { Container } from "@inlet/react-pixi"
 import { BaseGrid } from "../../constants"
 import { coordsToKey } from "../../utils/coordsToKey"
-import { Highlighted } from "../Hex"
+import { Highlighted } from "./Highlighted"
 
 type HighltedLayerProps = {
   highlightedCoords: string

@@ -1,10 +1,10 @@
 import React, { FC } from "react"
 
-import { drawCircle } from "./utils/drawCircle"
+import { drawCircle } from "../../utils/drawCircle"
 import { Graphics as GraphicsComponent } from "@inlet/react-pixi"
 import { DrawInstructions, Shape, HexConfig, Fog } from "../../types"
-import { drawBang } from "./utils/drawBang"
-import { drawTower } from "./utils/drawTower"
+import { drawBang } from "../../utils/drawBang"
+import { drawTower } from "../../utils/drawTower"
 
 type HexProps = {
   hex: HexConfig

@@ -6,7 +6,7 @@ import { Locations } from "../../Locations"
 import { coordsToKey } from "../../utils/coordsToKey"
 import { mapToContextualizedHexConfigFactory } from "../../utils/mapToContextualizeHexConfigs"
 import { Fog } from "../../types"
-import { Marker } from "../Hex"
+import { Marker } from "./Marker"
 
 type MarkerLayerProps = {
   showAll: boolean

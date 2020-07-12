@@ -2,7 +2,7 @@ import React, { FC } from "react"
 import { HexConfig } from "../../types"
 
 import { Graphics as GraphicsComponent } from "@inlet/react-pixi"
-import { drawCircle } from "./utils/drawCircle"
+import { drawCircle } from "../../utils/drawCircle"
 import { lightenNumeric } from "../../utils/numericColorUtils"
 import { rawHexConfig } from "../../constants"
 

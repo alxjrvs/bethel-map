@@ -1,4 +1,4 @@
-import { DrawInstructions } from "../../../types"
+import { DrawInstructions } from "../types"
 
 type AddInteractors = (callbacks: {
   clickCallback?: () => void

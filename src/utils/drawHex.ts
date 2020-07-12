@@ -1,6 +1,6 @@
 import { Graphics } from "pixi.js"
 import { Point } from "honeycomb-grid"
-import { DrawInstructions, BaseHexConfig } from "../../../types"
+import { DrawInstructions, BaseHexConfig } from "../types"
 
 type DrawHex = (
   corners: Point[],

@@ -1,7 +1,6 @@
 import React, { FC, Dispatch, SetStateAction } from "react"
 import { Container } from "@inlet/react-pixi"
-import { TerrainHex } from "../Hex"
-
+import { TerrainHex } from "./TerrainHex"
 import { BaseGrid } from "../../constants"
 import { mapToTerrainHexDataFactory } from "../../utils/mapToTerrainHexDataFactory"
 

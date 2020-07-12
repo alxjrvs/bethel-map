@@ -2,8 +2,8 @@ import React, { FC, Dispatch, SetStateAction } from "react"
 import { HexConfig } from "../../types"
 
 import { Graphics as GraphicsComponent } from "@inlet/react-pixi"
-import { drawHex } from "./utils/drawHex"
-import { addInteractors } from "./utils/addInteractors"
+import { drawHex } from "../../utils/drawHex"
+import { addInteractors } from "../../utils/addInteractors"
 
 type HexProps = {
   hex: Omit<HexConfig, "terrain">

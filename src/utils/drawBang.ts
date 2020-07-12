@@ -1,5 +1,5 @@
 import { Point } from "honeycomb-grid"
-import { BaseHexConfig, DrawInstructions } from "../../../types"
+import { BaseHexConfig, DrawInstructions } from "../types"
 
 type DrawBang = (
   point: Point,
