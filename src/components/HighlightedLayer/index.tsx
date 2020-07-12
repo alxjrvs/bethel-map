@@ -17,9 +17,9 @@ export const HighlightedLayer: FC<HighltedLayerProps> = ({
 
   return (
     <Container sortableChildren>
-      {HighlightedGrid.map(
-        hex => hex && <Highlighted key={hex.key} hex={hex} />
-      )}
+      {HighlightedGrid.map(hex => (
+        <Highlighted key={hex.key} hex={hex} />
+      ))}
     </Container>
   )
 }
