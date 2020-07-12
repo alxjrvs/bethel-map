@@ -12,14 +12,14 @@ import { drawTower } from "./utils/drawTower"
 
 type HexProps = {
   hex: HexConfig
-  setHighlightedCoords: Dispatch<SetStateAction<string>>
   highlightedCoords: string
+  setHighlightedCoords: Dispatch<SetStateAction<string>>
 }
 
 export const Hex: FC<HexProps> = ({
   hex: { key, corners, point, terrain, fog, ...hexConfig },
-  setHighlightedCoords,
   highlightedCoords,
+  setHighlightedCoords,
 }) => {
   const instructions: Array<DrawInstructions> = []
 
@@ -48,7 +48,10 @@ export const Hex: FC<HexProps> = ({
 
   instructions.push(
     addInteractors({
-      clickCallback: () => setHighlightedCoords(key),
+      clickCallback: () => {
+        console.log("click")
+        setHighlightedCoords(key)
+      },
     })
   )
 

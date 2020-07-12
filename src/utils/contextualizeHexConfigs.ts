@@ -3,14 +3,14 @@ import { HexConfig, Fog, Shape } from "../types"
 import { getCorners } from "./getCorners"
 import { coordsToKey } from "./coordsToKey"
 import { BaseHexConfigsMap, Terrain } from "./HexMapData"
-import Color from "color"
+
 import { rawHexConfig } from "../constants"
 import { calcFogType } from "./calcFogType"
+import { lightenNumeric, darkenNumeric } from "./numericColorUtils"
 
 const calcFogTranformation = (fog: Fog | undefined, fill: number): number => {
   if (fog === Fog.hard) return rawHexConfig.fill
-  if (fog === Fog.soft)
-    return parseInt(Color(fill).darken(0.6).hex().split("#")[1], 16)
+  if (fog === Fog.soft) return darkenNumeric(fill, 0.6)
   return fill
 }
 
@@ -27,10 +27,8 @@ export const mapToContextualizedHexConfigFactory = ({
   const baseHexConfig = BaseHexConfigsMap[key]
   const terrain = Terrain[key]
   const fog = calcFogType(key, showAll)
-  const currentLineFill = parseInt(
-    Color(rawHexConfig.fill).lighten(0.2).hex().split("#")[1],
-    16
-  )
+  const currentLineFill = lightenNumeric(rawHexConfig.fill, 0.2)
+
   const fill =
     baseHexConfig.shape === Shape.hex
       ? calcFogTranformation(fog, baseHexConfig.fill)

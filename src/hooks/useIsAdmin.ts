@@ -1,4 +1,4 @@
-import { isDev } from "../../utils/isDev"
+import { isDev } from "../utils/isDev"
 import { useLocation } from "react-router-dom"
 
 export const useIsAdmin = (): boolean => {

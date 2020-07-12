@@ -1,6 +1,6 @@
 import { Point } from "honeycomb-grid"
 import { BaseHexConfig, DrawInstructions } from "../../../types"
-import Color from "color"
+import { lightenNumeric } from "../../../utils/numericColorUtils"
 
 type DrawTower = (
   point: Point,
@@ -9,7 +9,7 @@ type DrawTower = (
 
 export const drawTower: DrawTower = ({ x, y }, { fill }) => g => {
   g.beginFill(fill)
-  g.lineStyle(1, parseInt(Color(fill).lighten(0.5).hex().split("#")[1], 16))
+  g.lineStyle(1, lightenNumeric(fill))
   g.drawRect(x + 12.5, y + 3, 5, 28)
   g.endFill()
 }

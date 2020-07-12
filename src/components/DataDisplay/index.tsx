@@ -1,25 +1,22 @@
-import React, { FC, Dispatch, SetStateAction } from "react"
+import React, { FC } from "react"
 import { BaseHexConfigsMap, Terrain } from "../../utils/HexMapData"
 import { calcFogType } from "../../utils/calcFogType"
 import { BaseHexConfig, Fog } from "../../types"
 import { rawHexConfig } from "../../constants"
 import styles from "./DataDisplay.module.scss"
-import { useIsAdmin } from "../hooks/useIsAdmin"
+import { useIsAdmin } from "../../hooks/useIsAdmin"
+import { useCurrentCoordinates } from "../../state/CurrentCoordinatesContext"
+import { useHighlightedCoordinates } from "../../state/HighlightedCoordinatesContext"
 
-type DataDisplayProps = {
-  setCurrentCoords: Dispatch<SetStateAction<string>>
-  highlightedCoords: string
-}
-export const DataDisplay: FC<DataDisplayProps> = ({
-  setCurrentCoords,
-  highlightedCoords,
-}) => {
+export const DataDisplay: FC = () => {
+  const [, setCurrentCoords] = useCurrentCoordinates()
+  const [highlightedCoords] = useHighlightedCoordinates()
   const showAll = useIsAdmin()
   const baseHexConfig = BaseHexConfigsMap[highlightedCoords]
   const terrainConfig = Terrain[highlightedCoords]
   const fog = calcFogType(highlightedCoords, showAll)
-  let config: BaseHexConfig
 
+  let config: BaseHexConfig
   switch (fog) {
     case Fog.hard:
       config = rawHexConfig
@@ -31,6 +28,7 @@ export const DataDisplay: FC<DataDisplayProps> = ({
       config = baseHexConfig
       break
   }
+
   return (
     <div>
       <h1>{config.name}</h1>
