@@ -1,6 +1,7 @@
 import { Dispatch, SetStateAction } from "react"
 
 import { Graphics } from "pixi.js"
+import { Point } from "honeycomb-grid"
 
 export enum Shape {
   circle = "circle",
@@ -26,11 +27,19 @@ export type HexGridProps = {
   setHighlightedCoords: Dispatch<SetStateAction<string>>
   highlightedCoords: string
   currentCoords: string
-  showAll?: boolean
+  showAll: boolean
 }
 
 export enum Fog {
   hard = "hard",
   soft = "soft",
   none = "none",
+}
+
+export type HexConfig = BaseHexConfig & {
+  key: string
+  terrain: BaseHexConfig
+  fog: Fog
+  point: Point
+  corners: Point[]
 }

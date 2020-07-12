@@ -1,61 +1,49 @@
-import React, { FC } from "react"
+import React, { FC, Dispatch, SetStateAction } from "react"
 
-import { coordsToKey } from "../../utils/coordsToKey"
-import { BaseHexConfigsMap, Terrain } from "../../utils/HexMapData"
 import { drawHex } from "./utils/drawHex"
-import { getCorners } from "./utils/getCorners"
 
 import { drawCircle } from "./utils/drawCircle"
 import { addInteractors } from "./utils/addInteractors"
 import { Graphics as GraphicsComponent } from "@inlet/react-pixi"
-import { DrawInstructions, Fog, HexGridProps, Shape } from "../../types"
-import { calcFogType } from "../../utils/calcFogType"
-import { Hex as HexType } from "honeycomb-grid"
+import { DrawInstructions, Fog, Shape, HexConfig } from "../../types"
 import { baseBaseHexConfig } from "../../constants"
 
-type HexProps = HexGridProps & {
-  hex: HexType<{ size: number }>
+type HexProps = {
+  hex: HexConfig
+  setHighlightedCoords: Dispatch<SetStateAction<string>>
+  highlightedCoords: string
+  currentCoords: string
 }
 
 export const Hex: FC<HexProps> = ({
-  hex,
-  showAll,
+  hex: { key, corners, point, terrain, fog, ...hexConfig },
   currentCoords,
   setHighlightedCoords,
   highlightedCoords,
 }) => {
-  const hexPoint = hex.toPoint()
-  const hexCorners = getCorners(hex)
-  const hexKey = coordsToKey(hex.coordinates())
-
-  const BaseHexConfig = BaseHexConfigsMap[hexKey]
-  const terrainConfig = Terrain[hexKey]
-  const fog = showAll ? Fog.none : calcFogType(hexKey)
-
   const instructions: Array<DrawInstructions> = []
 
-  instructions.push(drawHex(hexCorners, terrainConfig, fog))
+  instructions.push(drawHex(corners, terrain, fog))
 
-  if (BaseHexConfig.shape === Shape.hex) {
-    instructions.push(drawHex(hexCorners, BaseHexConfig, fog))
+  if (hexConfig.shape === Shape.hex) {
+    instructions.push(drawHex(corners, hexConfig, fog))
   }
 
-  if (BaseHexConfig.shape === Shape.circle) {
-    instructions.push(drawCircle(hexPoint, BaseHexConfig, fog))
+  if (hexConfig.shape === Shape.circle) {
+    instructions.push(drawCircle(point, hexConfig, fog))
   }
 
-  if (hexKey === currentCoords) {
+  if (key === currentCoords) {
     instructions.push(
-      drawCircle(hexPoint, {
-        ...BaseHexConfig,
-        fill: fog === Fog.hard ? baseBaseHexConfig.fill : BaseHexConfig.fill,
+      drawCircle(point, {
+        fill: fog === Fog.hard ? baseBaseHexConfig.fill : hexConfig.fill,
       })
     )
   }
 
-  if (hexKey === highlightedCoords) {
+  if (key === highlightedCoords) {
     instructions.push(
-      drawCircle(hexPoint, {
+      drawCircle(point, {
         fill: 4095,
       })
     )
@@ -63,13 +51,13 @@ export const Hex: FC<HexProps> = ({
 
   instructions.push(
     addInteractors({
-      clickCallback: () => setHighlightedCoords(hexKey),
+      clickCallback: () => setHighlightedCoords(key),
     })
   )
 
   return (
     <GraphicsComponent
-      key={hexKey}
+      key={key}
       draw={g => {
         g.clear()
         instructions.forEach(fn => fn(g))

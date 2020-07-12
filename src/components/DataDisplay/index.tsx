@@ -3,6 +3,7 @@ import { BaseHexConfigsMap, Terrain } from "../../utils/HexMapData"
 import { calcFogType } from "../../utils/calcFogType"
 import { BaseHexConfig, Fog } from "../../types"
 import { baseBaseHexConfig } from "../../constants"
+import styles from "./DataDisplay.module.scss"
 
 type DataDisplayProps = {
   setCurrentCoords: Dispatch<SetStateAction<string>>
@@ -12,7 +13,7 @@ export const DataDisplay: FC<DataDisplayProps> = ({
   setCurrentCoords,
   highlightedCoords,
 }) => {
-  const BaseHexConfig = BaseHexConfigsMap[highlightedCoords]
+  const baseHexConfig = BaseHexConfigsMap[highlightedCoords]
   const terrainConfig = Terrain[highlightedCoords]
   const fog = calcFogType(highlightedCoords)
   let config: BaseHexConfig
@@ -25,7 +26,7 @@ export const DataDisplay: FC<DataDisplayProps> = ({
       config = terrainConfig
       break
     case Fog.none:
-      config = BaseHexConfig
+      config = baseHexConfig
       break
   }
   return (
@@ -35,7 +36,7 @@ export const DataDisplay: FC<DataDisplayProps> = ({
       <button onClick={() => setCurrentCoords(highlightedCoords)}>
         Move Here
       </button>
-      <h3>{highlightedCoords}</h3>
+      <span className={styles.Coordinates}>{highlightedCoords}</span>
     </div>
   )
 }

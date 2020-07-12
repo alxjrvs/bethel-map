@@ -11,11 +11,12 @@ type DrawHex = (
 
 export const drawHex: DrawHex = (
   [firstCorner, ...otherCorners],
-  BaseHexConfig = {},
+  baseHexConfig = {},
   fog
 ) => (g: Graphics) => {
-  const { lineWidth, lineFill, fill } = BaseHexConfig
+  const { lineWidth, lineFill, fill } = baseHexConfig
   const lineStyle = lineWidth === undefined ? 1 : lineWidth
+  g.zIndex = 1
   g.lineStyle(lineStyle, lineFill || 0)
   g.beginFill(calcFogTranformation(fog, fill || 0))
 

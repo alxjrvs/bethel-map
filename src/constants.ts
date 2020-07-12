@@ -1,5 +1,4 @@
 import { BaseHexConfig, Shape } from "./types"
-import { extendHex, defineGrid } from "honeycomb-grid"
 
 export const height = 28
 export const width = 22
@@ -20,6 +19,3 @@ export const baseBaseHexConfig: BaseHexConfig = {
   lineFill: 0,
   name: "Unknown...",
 }
-
-export const BaseHex = extendHex({ size: 17, offset: 1 })
-export const HexGrid = defineGrid(BaseHex).rectangle({ width: 22, height: 28 })

@@ -6,7 +6,13 @@ export const TombsList: BaseHexConfigKeyArray = [
   ["1-1", {}],
   ["2-11", {}],
   ["16-5", {}],
-  ["10-11", {}],
+  [
+    "10-11",
+    {
+      name: "The Dying God",
+      description: ["According to the natives, a God lays here dying."],
+    },
+  ],
   ["12-20", {}],
   [
     "3-25",
@@ -21,4 +27,5 @@ export const Tombs = buildHexList(TombsList, {
   ...baseBaseHexConfig,
   fill: 16117405,
   name: "A Fallen God's Tomb.",
+  lineWidth: 3,
 })
