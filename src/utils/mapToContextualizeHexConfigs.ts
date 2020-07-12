@@ -8,7 +8,6 @@ import { calcFogType } from "./calcFogType"
 import { lightenNumeric } from "./numericColorUtils"
 import { calcFogTranformation } from "./calcFogTransformation"
 import { Locations } from "../Locations"
-import { Terrain } from "../Terrain"
 
 export const mapToContextualizedHexConfigFactory = ({
   showAll,
@@ -21,8 +20,6 @@ export const mapToContextualizedHexConfigFactory = ({
   const corners = getCorners(hex)
   const key = coordsToKey(hex.coordinates())
   const baseHexConfig = Locations[key]
-  if (!baseHexConfig) return
-  const terrain = Terrain[key]
   const fog = calcFogType(key, showAll)
   const currentLineFill = lightenNumeric(rawHexConfig.fill, 0.2)
 
@@ -40,10 +37,6 @@ export const mapToContextualizedHexConfigFactory = ({
     lineFill,
     fill,
     key,
-    terrain: {
-      ...terrain,
-      fill: calcFogTranformation(fog, terrain.fill),
-    },
     fog,
     point,
     corners,

@@ -10,7 +10,7 @@ type HexProps = {
   hex: HexConfig
 }
 
-export const Markers: FC<HexProps> = ({
+export const Marker: FC<HexProps> = ({
   hex: { key, point, fog, ...hexConfig },
 }) => {
   const instructions: Array<DrawInstructions> = []

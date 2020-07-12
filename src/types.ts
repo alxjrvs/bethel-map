@@ -41,7 +41,6 @@ export enum Fog {
 
 export type HexConfig = BaseHexConfig & {
   key: string
-  terrain: BaseHexConfig
   fog: Fog
   point: Point
   corners: Point[]

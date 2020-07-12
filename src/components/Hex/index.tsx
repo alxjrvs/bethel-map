@@ -1,3 +1,3 @@
-export * from "./Markers"
+export * from "./Marker"
 export * from "./Highlighted"
 export * from "./TerrainHex"
