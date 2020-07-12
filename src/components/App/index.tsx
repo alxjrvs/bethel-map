@@ -1,19 +1,15 @@
 import React, { useState, FC } from "react"
-import { PointLike } from "honeycomb-grid"
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { isDev } from "../../utils/isDev"
 
-import { coordsToKey } from "../../utils/coordsToKey"
 import styles from "./App.module.scss"
 import { HexStage } from "../HexStage"
+import { DataDisplay } from "../DataDisplay"
 
 export const App: FC = () => {
-  const [currentCoords] = useState<PointLike>({ x: 9, y: 20 })
-  const [highlightedCoords, setHighlightedCoords] = useState<PointLike>({
-    x: 9,
-    y: 20,
-  })
-  const highlightedKey = coordsToKey(highlightedCoords)
+  const [currentCoords, setCurrentCoords] = useState("9-20")
+  const [highlightedCoords, setHighlightedCoords] = useState("9-20")
   return (
     <div className={styles.Container}>
       <Router>
@@ -50,7 +46,11 @@ export const App: FC = () => {
                 showAll={false}
               />
             </div>
-            <div className={styles.Presentation}>{highlightedKey}</div>
+            <div className={styles.Presentation}>
+              <DataDisplay
+                {...{ setCurrentCoords, highlightedCoords, currentCoords }}
+              />
+            </div>
           </Route>
         </Switch>
       </Router>

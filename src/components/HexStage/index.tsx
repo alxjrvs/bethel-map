@@ -8,10 +8,13 @@ import { coordsToKey } from "../../utils/coordsToKey"
 
 export const HexStage: FC<HexGridProps> = props => {
   return (
-    <Stage height={700} width={650} options={{ backgroundColor: 255 }}>
-      {HexGrid.map(hex => (
-        <Hex key={coordsToKey(hex.coordinates())} hex={hex} {...props} />
-      ))}
-    </Stage>
+    <>
+      {props.currentCoords}
+      <Stage height={700} width={650} options={{ backgroundColor: 255 }}>
+        {HexGrid.map(hex => (
+          <Hex key={coordsToKey(hex.coordinates())} hex={hex} {...props} />
+        ))}
+      </Stage>
+    </>
   )
 }

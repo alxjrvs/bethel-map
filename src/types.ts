@@ -1,6 +1,5 @@
 import { Dispatch, SetStateAction } from "react"
 
-import { PointLike } from "honeycomb-grid"
 import { Graphics } from "pixi.js"
 
 export enum Shape {
@@ -24,9 +23,9 @@ export type HexConfigKeyArray = Array<string | DetailedHexConfigKey>
 export type DrawInstructions = (g: Graphics) => unknown
 
 export type HexGridProps = {
-  setHighlightedCoords: Dispatch<SetStateAction<PointLike>>
-  highlightedCoords: PointLike
-  currentCoords: PointLike
+  setHighlightedCoords: Dispatch<SetStateAction<string>>
+  highlightedCoords: string
+  currentCoords: string
   showAll?: boolean
 }
 

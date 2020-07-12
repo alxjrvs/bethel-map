@@ -24,16 +24,13 @@ export const Hex: FC<HexProps> = ({
   setHighlightedCoords,
   highlightedCoords,
 }) => {
-  const hexCoordinates = hex.coordinates()
   const hexPoint = hex.toPoint()
   const hexCorners = getCorners(hex)
-  const currentKey = coordsToKey(currentCoords)
-  const highlightedKey = coordsToKey(highlightedCoords)
-  const key = coordsToKey(hexCoordinates)
+  const hexKey = coordsToKey(hex.coordinates())
 
-  const hexConfig = HexConfigsMap[key] || baseHexConfig
-  const terrainConfig = Terrain[key]
-  const fog = showAll ? Fog.none : calcFogType(key)
+  const hexConfig = HexConfigsMap[hexKey]
+  const terrainConfig = Terrain[hexKey]
+  const fog = showAll ? Fog.none : calcFogType(hexKey)
 
   const instructions: Array<DrawInstructions> = []
 
@@ -55,7 +52,7 @@ export const Hex: FC<HexProps> = ({
     instructions.push(drawCircle(hexPoint, hexConfig, fog))
   }
 
-  if (key === highlightedKey) {
+  if (hexKey === highlightedCoords) {
     instructions.push(
       drawCircle(hexPoint, {
         ...hexConfig,
@@ -64,19 +61,20 @@ export const Hex: FC<HexProps> = ({
     )
   }
 
-  if (key === currentKey) {
+  if (hexKey === currentCoords) {
+    console.log()
     instructions.push(drawCircle(hexPoint, { fill: 8388736 }))
   }
 
   instructions.push(
     addInteractors({
-      clickCallback: () => setHighlightedCoords(hexCoordinates),
+      clickCallback: () => setHighlightedCoords(hexKey),
     })
   )
 
   return (
     <GraphicsComponent
-      key={key}
+      key={hexKey}
       draw={g => {
         g.clear()
         instructions.forEach(fn => fn(g))
