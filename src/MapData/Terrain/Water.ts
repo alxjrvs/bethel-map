@@ -34,13 +34,17 @@ export const VisibleWaterList = [
   "4-26",
   "7-26",
   "6-26",
+  "2-16",
+  "1-16",
+  "3-16",
+  "4-16",
   ...Object.keys(BorderOceans),
 ]
 export const WaterList: BaseHexConfigKeyArray = [
   ...Object.keys(BorderOceans),
   ...VisibleWaterList,
-  "1-16",
   "1-14",
+  "2-16",
   "1-15",
   "2-15",
   "1-17",

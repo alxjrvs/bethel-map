@@ -37,8 +37,8 @@ export const DataDisplay: FC = () => {
 
   return (
     <div>
-      <h1>{config.name}</h1>
-      <p>{config.description}</p>
+      <h1>{config?.name || "UNKNOWN"}</h1>
+      <p>{config?.description || "UNKNOWN"}</p>
       <button onClick={() => setCurrentCoords(highlightedCoords)}>
         Move Here
       </button>

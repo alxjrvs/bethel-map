@@ -1,11 +1,19 @@
-export const PlayerCurrentHex = "9-20"
+export const PlayerCurrentHex = "5-15"
 
 export const PlayerVisitedHexes = [
   "3-25",
   "2-26",
+  "6-18",
+  "6-17",
+  "5-16",
+  "13-20",
+  "12-20",
+  "11-20",
+  "10-20",
   "2-25",
   "3-23",
   "9-20",
+  "5-15",
   "8-20",
   "7-20",
   "6-21",

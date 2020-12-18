@@ -4,6 +4,12 @@ import { BaseHexConfigKeyArray } from "../../types"
 
 export const ChasmList: BaseHexConfigKeyArray = [
   "1-9",
+  "8-16",
+  "7-17",
+  "7-16",
+  "6-16",
+  "8-15",
+  "9-19",
   "10-13",
   "10-15",
   "10-17",

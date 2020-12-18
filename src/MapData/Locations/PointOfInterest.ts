@@ -13,7 +13,6 @@ export const PointOfInterestList: BaseHexConfigKeyArray = [
       ],
     },
   ],
-  ["4-16", {}],
   [
     "6-21",
     {
@@ -32,6 +31,13 @@ export const PointOfInterestList: BaseHexConfigKeyArray = [
   ["3-19", {}],
   ["1-21", {}],
   ["6-25", {}],
+  [
+    "5-16",
+    {
+      name: "The Infinite Hive",
+      description: ["A bizarre, non-euclidean maze full of sentient squirrels"],
+    },
+  ],
   [
     "1-24",
     {
