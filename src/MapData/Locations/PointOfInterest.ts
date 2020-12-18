@@ -3,7 +3,15 @@ import { buildHexList } from "../../utils/buildHexList"
 import { rawHexConfig } from "../../constants"
 
 export const PointOfInterestList: BaseHexConfigKeyArray = [
-  ["11-20", {}],
+  [
+    "11-20",
+    {
+      name: "The Clam",
+      description: [
+        "A Giant, eldritch clam waits at the bottom of a whirlpool.",
+      ],
+    },
+  ],
   [
     "2-25",
     {
@@ -23,10 +31,32 @@ export const PointOfInterestList: BaseHexConfigKeyArray = [
       ],
     },
   ],
-  ["7-15", {}],
-  ["7-19", {}],
+  [
+    "7-14",
+    {
+      name: "Observation Post",
+      description: [
+        "The Sunny-side have been using this to investigate a strange new phenomena in the great rift.",
+      ],
+    },
+  ],
+  [
+    "7-19",
+    {
+      name: "Stonework Graveyard",
+      description: ["A graveyard made of stone"],
+    },
+  ],
   ["9-22", {}],
-  ["4-13", {}],
+  [
+    "4-13",
+    {
+      name: "A Rugged Sinner",
+      description: [
+        "Fenrik knows very little about this, but believes it may help you get to the western tomb.",
+      ],
+    },
+  ],
   ["12-22", {}],
   ["3-19", {}],
   ["1-21", {}],
