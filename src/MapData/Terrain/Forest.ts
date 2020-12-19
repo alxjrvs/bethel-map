@@ -100,7 +100,6 @@ export const ForestList: BaseHexConfigKeyArray = [
   "6-21",
   "6-22",
   "6-23",
-  "7-19",
   "7-21",
   "2-19",
   "3-19",
