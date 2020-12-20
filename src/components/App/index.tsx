@@ -47,7 +47,6 @@ const InnerRouter: FC = () => {
     const calcFog = () => {
       if (showAll || hex.visible || hex.borderVisible) return Fog.none
       if (hex.showFeature) return Fog.showFeature
-      debugger
       if (flatten(softHexes).includes(coordsToKey(hex.coords))) return Fog.soft
       return Fog.hard
     }
