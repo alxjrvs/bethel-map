@@ -66,7 +66,7 @@ const InnerRouter: FC = () => {
         visible: fog === Fog.none,
         terrain,
         marker,
-        key,
+        coords: key.split("-"),
         name: marker ? name : undefined,
         description: marker ? description : undefined,
       }))
