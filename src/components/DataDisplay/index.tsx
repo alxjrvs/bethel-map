@@ -1,4 +1,5 @@
 import React, { FC, useMemo } from "react"
+import isEqual from "lodash/isEqual"
 
 import { useCurrentCoordinates } from "../../state/CurrentCoordinatesContext"
 import { useHighlightedCoordinates } from "../../state/HighlightedCoordinatesContext"
@@ -82,7 +83,9 @@ export const DataDisplay: FC<Props> = ({ mapData }) => {
 
   const currentHex = useMemo(
     () =>
-      mapData.find(({ coords }) => coordsToPoint(coords) === highlightedCoords),
+      mapData.find(({ coords }) =>
+        isEqual(coordsToPoint(coords), highlightedCoords)
+      ),
     [highlightedCoords, mapData]
   )
 
