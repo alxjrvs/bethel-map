@@ -40,7 +40,11 @@ export const App: FC = () => {
 
 const softHexes = flatten(
   persistedMapData
-    .filter(({ visible, borderVisible }) => visible && !borderVisible)
+    .filter(({ coords }) =>
+      persistedPlayerData.visited.find(visitedCoords =>
+        isEqual(visitedCoords, coords)
+      )
+    )
     .map(findNearbyCoords)
 )
 
@@ -52,7 +56,7 @@ const InnerRouter: FC = () => {
         showAll ||
         hex.visible ||
         hex.borderVisible ||
-        persistedPlayerData.visited.includes(hex.coords)
+        persistedPlayerData.visited.find(coords => isEqual(hex.coords, coords))
       )
         return Fog.none
       if (hex.showFeature) return Fog.showFeature

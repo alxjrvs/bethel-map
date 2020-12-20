@@ -19,6 +19,7 @@ export const persistedPlayerData = {
     { x: 7, y: 20 },
     { x: 6, y: 21 },
     { x: 4, y: 22 },
+    { x: 4, y: 14 },
     { x: 6, y: 20 },
     { x: 5, y: 21 },
     { x: 2, y: 24 },

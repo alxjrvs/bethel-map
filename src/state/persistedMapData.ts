@@ -4,7 +4,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -46,7 +46,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -88,7 +88,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -130,7 +130,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -172,7 +172,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -214,7 +214,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -256,7 +256,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -298,7 +298,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -340,7 +340,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -382,7 +382,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -424,7 +424,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -466,7 +466,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -508,7 +508,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -550,7 +550,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -592,7 +592,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -634,7 +634,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -676,7 +676,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -718,7 +718,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -760,7 +760,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -802,7 +802,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -844,7 +844,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -886,7 +886,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -928,7 +928,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -1816,7 +1816,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -1858,7 +1858,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -2740,7 +2740,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -2782,7 +2782,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -3664,7 +3664,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -3706,7 +3706,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -4593,7 +4593,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -4635,7 +4635,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -5520,7 +5520,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -5562,7 +5562,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -6447,7 +6447,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -6489,7 +6489,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -7371,7 +7371,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -7413,7 +7413,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -8300,7 +8300,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -8342,7 +8342,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -9224,7 +9224,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -9266,7 +9266,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -10156,7 +10156,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -10198,7 +10198,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -11094,7 +11094,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -11136,7 +11136,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -12021,7 +12021,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -12063,7 +12063,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -12231,7 +12231,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "rocky_terrain",
     marker: "points_of_interest",
     graphics: {
@@ -12950,7 +12950,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -12992,7 +12992,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -13160,7 +13160,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "rocky_terrain",
     graphics: {
       point: {
@@ -13884,7 +13884,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -13926,7 +13926,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -14136,7 +14136,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "rocky_terrain",
     graphics: {
       point: {
@@ -14808,7 +14808,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -14850,7 +14850,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -14892,7 +14892,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -14934,7 +14934,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -14976,7 +14976,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -15018,7 +15018,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -15060,7 +15060,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     marker: "points_of_interest",
     graphics: {
@@ -15735,7 +15735,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -15777,7 +15777,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -16029,7 +16029,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     graphics: {
       point: {
@@ -16659,7 +16659,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -16701,7 +16701,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -16953,7 +16953,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     graphics: {
       point: {
@@ -17583,7 +17583,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -17625,7 +17625,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -17922,7 +17922,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "rocky_terrain",
     marker: "points_of_interest",
     graphics: {
@@ -18513,7 +18513,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -18555,7 +18555,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -18807,7 +18807,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     graphics: {
       point: {
@@ -18849,7 +18849,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "rocky_terrain",
     graphics: {
       point: {
@@ -18891,7 +18891,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "rocky_terrain",
     graphics: {
       point: {
@@ -18933,7 +18933,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "chasm",
     graphics: {
       point: {
@@ -18975,7 +18975,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -19017,7 +19017,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     marker: "points_of_interest",
     graphics: {
@@ -19062,7 +19062,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     marker: "tomb",
     graphics: {
@@ -19107,7 +19107,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     marker: "rest_stop",
     graphics: {
@@ -19446,7 +19446,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -19488,7 +19488,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -19701,7 +19701,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     graphics: {
       point: {
@@ -19743,7 +19743,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     marker: "points_of_interest",
     graphics: {
@@ -20379,7 +20379,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -20421,7 +20421,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -20547,7 +20547,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     graphics: {
       point: {
@@ -20589,7 +20589,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     graphics: {
       point: {
@@ -21311,7 +21311,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -21353,7 +21353,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -21479,7 +21479,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     marker: "towers",
     graphics: {
@@ -22245,7 +22245,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -22287,7 +22287,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -22329,7 +22329,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     marker: "points_of_interest",
     graphics: {
@@ -22376,7 +22376,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     marker: "points_of_interest",
     graphics: {
@@ -23179,7 +23179,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -23221,7 +23221,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -23263,7 +23263,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -23305,7 +23305,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     marker: "points_of_interest",
     graphics: {
@@ -23352,7 +23352,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: false,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "forest",
     marker: "tomb",
     graphics: {
@@ -24114,7 +24114,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -24156,7 +24156,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -24198,7 +24198,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -24289,7 +24289,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -24331,7 +24331,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -24415,7 +24415,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -24457,7 +24457,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25048,7 +25048,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25090,7 +25090,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25132,7 +25132,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25174,7 +25174,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25216,7 +25216,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25258,7 +25258,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25300,7 +25300,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25342,7 +25342,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25384,7 +25384,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25426,7 +25426,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25468,7 +25468,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25510,7 +25510,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25552,7 +25552,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25594,7 +25594,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25636,7 +25636,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25678,7 +25678,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25720,7 +25720,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25762,7 +25762,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25804,7 +25804,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25846,7 +25846,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25888,7 +25888,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25930,7 +25930,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
@@ -25972,7 +25972,7 @@ export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,
-    visible: true,
+    visible: false,
     terrain: "water",
     graphics: {
       point: {
