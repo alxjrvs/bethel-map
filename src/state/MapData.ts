@@ -22,8 +22,6 @@ import {
 } from "../MapData/Locations"
 import { findNearbyKeysFactory } from "../utils/findNearbyKeysFactory"
 import { HexConfigLookup } from "../types"
-import * as fs from "fs"
-import { persistedMapData } from "./persistedMapData"
 
 export type MapDataState = {
   players: {

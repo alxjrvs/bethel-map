@@ -1,5 +1,4 @@
-import { Point } from "honeycomb-grid"
-import { DrawInstructions, HexStyleData } from "../types"
+import { Point, DrawInstructions, HexStyleData } from "../types"
 import { lightenNumeric } from "./numericColorUtils"
 
 type DrawTower = (

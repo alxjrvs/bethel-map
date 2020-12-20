@@ -8,11 +8,10 @@ import { TerrainLayer } from "../TerrainLayer"
 import { MarkerLayer } from "../MarkerLayer.tsx"
 import { HighlightedLayer } from "../HighlightedLayer"
 
-import { Grid } from "honeycomb-grid"
 import { HexConfig } from "../../types"
 
 interface Props {
-  mapData: Grid<HexConfig>
+  mapData: HexConfig[]
 }
 export const HexStage: FC<Props> = ({ mapData }) => {
   const [highlightedCoords, setHighlightedCoords] = useHighlightedCoordinates()
@@ -23,7 +22,10 @@ export const HexStage: FC<Props> = ({ mapData }) => {
         mapData={mapData}
       />
       <MarkerLayer mapData={mapData} />
-      <HighlightedLayer highlightedCoords={highlightedCoords} />
+      <HighlightedLayer
+        mapData={mapData}
+        highlightedCoords={highlightedCoords}
+      />
     </Stage>
   )
 }

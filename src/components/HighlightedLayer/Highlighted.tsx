@@ -6,9 +6,13 @@ import { lightenNumeric } from "../../utils/numericColorUtils"
 import { HexConfig } from "../../types"
 
 type HexProps = {
-  hex: Pick<HexConfig, "point">
+  hex: Pick<HexConfig, "graphics">
 }
-export const Highlighted: FC<HexProps> = ({ hex: { point } }) => (
+export const Highlighted: FC<HexProps> = ({
+  hex: {
+    graphics: { point },
+  },
+}) => (
   <GraphicsComponent
     draw={g => {
       g.clear()

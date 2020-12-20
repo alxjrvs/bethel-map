@@ -5,13 +5,14 @@ import { useHighlightedCoordinates } from "../../state/HighlightedCoordinatesCon
 
 import styles from "./DataDisplay.module.scss"
 
-import { Grid } from "honeycomb-grid"
 import { HexConfig, Fog } from "../../types"
+import { coordsToKey } from "../../utils/coordsToKey"
 
 interface Props {
-  mapData: Grid<HexConfig>
+  mapData: HexConfig[]
 }
 
+// Move descriptions here
 const displayDescription = (hex?: HexConfig) => {
   const unknownDescription = "What waits for you on the Isle of Beth'el?"
   if (!hex) return unknownDescription
@@ -31,7 +32,8 @@ export const DataDisplay: FC<Props> = ({ mapData }) => {
   const [highlightedCoords] = useHighlightedCoordinates()
 
   const currentHex = useMemo(
-    () => mapData.find(({ key }) => key === highlightedCoords),
+    () =>
+      mapData.find(({ coords }) => coordsToKey(coords) === highlightedCoords),
     [highlightedCoords, mapData]
   )
 

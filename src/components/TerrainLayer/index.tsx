@@ -3,11 +3,10 @@ import { Container } from "@inlet/react-pixi"
 import { TerrainHex } from "./TerrainHex"
 
 import { HexConfig } from "../../types"
-
-import { Grid } from "honeycomb-grid"
+import { coordsToKey } from "../../utils/coordsToKey"
 
 type TerrainLayerProps = {
-  mapData: Grid<HexConfig>
+  mapData: HexConfig[]
   setHighlightedCoords: Dispatch<SetStateAction<string>>
 }
 export const TerrainLayer: FC<TerrainLayerProps> = ({
@@ -16,7 +15,11 @@ export const TerrainLayer: FC<TerrainLayerProps> = ({
 }) => (
   <Container sortableChildren>
     {mapData.map(hex => (
-      <TerrainHex key={hex.key} hex={hex} {...{ setHighlightedCoords }} />
+      <TerrainHex
+        key={coordsToKey(hex.coords)}
+        hex={hex}
+        {...{ setHighlightedCoords }}
+      />
     ))}
   </Container>
 )

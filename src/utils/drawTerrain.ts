@@ -1,16 +1,15 @@
 import { Graphics } from "pixi.js"
-import { Point } from "honeycomb-grid"
-import { DrawInstructions, HexStyleData, Terrain, Fog } from "../types"
+import { Point, DrawInstructions, HexStyleData, Terrain, Fog } from "../types"
 import { darkenNumeric } from "./numericColorUtils"
 
 type DrawHex = (
-  corners: Point[],
+  corners: [Point, Point, Point, Point, Point, Point],
   terrain: Terrain,
   fog: Fog
 ) => DrawInstructions
 type PaintHex = (
   g: Graphics,
-  corners: Point[],
+  corners: [Point, Point, Point, Point, Point, Point],
   style: Partial<HexStyleData>,
   fog: Fog
 ) => void

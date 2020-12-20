@@ -1,6 +1,5 @@
-import { Point } from "honeycomb-grid"
 import { Graphics } from "pixi.js"
-import { DrawInstructions, HexStyleData } from "../types"
+import { Point, DrawInstructions, HexStyleData } from "../types"
 
 type DrawCircle = (
   point: Point,

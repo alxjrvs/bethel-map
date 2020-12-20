@@ -1,4 +1,2 @@
-import { PointLike } from "honeycomb-grid"
-
-type CoordsToKey = (points: PointLike) => string
-export const coordsToKey: CoordsToKey = ({ x, y }) => `${x}-${y}`
+type CoordsToKey = (points: [string, string]) => string
+export const coordsToKey: CoordsToKey = ([x, y]) => `${x}-${y}`

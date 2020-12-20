@@ -1,4 +1,6 @@
-export const persistedMapData = [
+import { PersistedHexConfig } from "../types"
+
+export const persistedMapData: PersistedHexConfig[] = [
   {
     borderVisible: true,
     showFeature: false,

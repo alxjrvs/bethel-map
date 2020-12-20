@@ -1,24 +1,26 @@
 import React, { FC } from "react"
 import { Container } from "@inlet/react-pixi"
-import { BaseGrid } from "../../constants"
+
 import { coordsToKey } from "../../utils/coordsToKey"
 import { Highlighted } from "./Highlighted"
+import { HexConfig } from "../../types"
 
 type HighltedLayerProps = {
   highlightedCoords: string
+  mapData: HexConfig[]
 }
 export const HighlightedLayer: FC<HighltedLayerProps> = ({
   highlightedCoords,
+  mapData,
 }) => {
-  const HighlightedGrid = BaseGrid.map(hex => ({
-    point: hex.toPoint(),
-    key: coordsToKey(hex.coordinates()),
-  })).filter(({ key }) => key === highlightedCoords)
+  const highlightedGrids = mapData.filter(
+    ({ coords }) => coordsToKey(coords) === highlightedCoords
+  )
 
   return (
     <Container sortableChildren>
-      {HighlightedGrid.map(hex => (
-        <Highlighted key={hex.key} hex={hex} />
+      {highlightedGrids.map(hex => (
+        <Highlighted key={coordsToKey(hex.coords)} hex={hex} />
       ))}
     </Container>
   )

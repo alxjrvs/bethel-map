@@ -10,12 +10,20 @@ import {
 } from "../../types"
 import { drawBang } from "../../utils/drawBang"
 import { drawTower } from "../../utils/drawTower"
+import { coordsToKey } from "../../utils/coordsToKey"
 
 type HexProps = {
   hex: HexConfig
 }
 
-export const Marker: FC<HexProps> = ({ hex: { key, point, fog, marker } }) => {
+export const Marker: FC<HexProps> = ({
+  hex: {
+    coords,
+    graphics: { point },
+    fog,
+    marker,
+  },
+}) => {
   const instructions: Array<DrawInstructions> = []
   if (fog !== Fog.hard) {
     switch (marker) {
@@ -41,7 +49,7 @@ export const Marker: FC<HexProps> = ({ hex: { key, point, fog, marker } }) => {
 
   return (
     <GraphicsComponent
-      key={key}
+      key={coordsToKey(coords)}
       draw={g => {
         g.clear()
         instructions.forEach(fn => fn(g))

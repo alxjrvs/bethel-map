@@ -5,13 +5,19 @@ import { drawTerrain } from "../../utils/drawTerrain"
 import { addInteractors } from "../../utils/addInteractors"
 
 import { HexConfig } from "../../types"
+import { coordsToKey } from "../../utils/coordsToKey"
 
 type HexProps = {
   hex: HexConfig
   setHighlightedCoords: Dispatch<SetStateAction<string>>
 }
 export const TerrainHex: FC<HexProps> = ({
-  hex: { key, corners, terrain, fog },
+  hex: {
+    coords,
+    graphics: { corners },
+    terrain,
+    fog,
+  },
   setHighlightedCoords,
 }) => (
   <GraphicsComponent
@@ -21,7 +27,7 @@ export const TerrainHex: FC<HexProps> = ({
         drawTerrain(corners, terrain, fog),
         addInteractors({
           clickCallback: () => {
-            setHighlightedCoords(key)
+            setHighlightedCoords(coordsToKey(coords))
           },
         }),
       ]

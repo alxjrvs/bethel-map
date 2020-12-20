@@ -1,9 +1,7 @@
 import { Graphics } from "pixi.js"
-import { Point } from "honeycomb-grid"
 
 export type HexConfigLookup = { [key: string]: Partial<HexConfig> }
 export type HexConfigKeyArray = Array<string | [string, Partial<HexConfig>]>
-
 export type DrawInstructions = (g: Graphics) => unknown
 
 export enum Shape {
@@ -38,22 +36,36 @@ export enum Terrain {
   Weird = "weird",
 }
 
-export type DerivedHexData = {
-  key: string
-  point: Point
-  corners: Point[]
-}
-
 export type HexStyleData = {
   fill: number
   lineFill: number
   lineWidth?: number
 }
 
-export interface HexConfig extends DerivedHexData {
-  fog: Fog
-  marker?: Marker
-  terrain: Terrain
-  description?: string[]
+export interface Point {
+  x: number
+  y: number
+}
+export interface PersistedHexConfig {
+  borderVisible: boolean
+  showFeature: boolean
+  visible: boolean
+  terrain: string
+  marker?: string
+  coords: [string, string]
+  graphics: {
+    point: Point
+    corners: [Point, Point, Point, Point, Point, Point]
+  }
   name?: string
+  description?: string[]
+}
+export interface HexConfig
+  extends Pick<
+    PersistedHexConfig,
+    "coords" | "graphics" | "name" | "description"
+  > {
+  terrain: Terrain
+  marker?: Marker
+  fog: Fog
 }
