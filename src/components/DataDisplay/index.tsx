@@ -7,7 +7,6 @@ import { useHighlightedCoordinates } from "../../state/HighlightedCoordinatesCon
 import styles from "./DataDisplay.module.scss"
 
 import { HexConfig, Fog, Terrain } from "../../types"
-import { coordsToPoint } from "../../utils/coordsToKey"
 
 interface Props {
   mapData: HexConfig[]
@@ -82,10 +81,7 @@ export const DataDisplay: FC<Props> = ({ mapData }) => {
   const [highlightedCoords] = useHighlightedCoordinates()
 
   const currentHex = useMemo(
-    () =>
-      mapData.find(({ coords }) =>
-        isEqual(coordsToPoint(coords), highlightedCoords)
-      ),
+    () => mapData.find(({ coords }) => isEqual(coords, highlightedCoords)),
     [highlightedCoords, mapData]
   )
 

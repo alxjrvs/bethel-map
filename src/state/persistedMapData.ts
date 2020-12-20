@@ -38,7 +38,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "0"],
+    coords: {
+      x: 0,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -77,7 +80,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "0"],
+    coords: {
+      x: 1,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -116,7 +122,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "0"],
+    coords: {
+      x: 2,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -155,7 +164,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "0"],
+    coords: {
+      x: 3,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -194,7 +206,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "0"],
+    coords: {
+      x: 4,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -233,7 +248,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "0"],
+    coords: {
+      x: 5,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -272,7 +290,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "0"],
+    coords: {
+      x: 6,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -311,7 +332,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "0"],
+    coords: {
+      x: 7,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -350,7 +374,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "0"],
+    coords: {
+      x: 8,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -389,7 +416,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "0"],
+    coords: {
+      x: 9,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -428,7 +458,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "0"],
+    coords: {
+      x: 10,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -467,7 +500,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "0"],
+    coords: {
+      x: 11,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -506,7 +542,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "0"],
+    coords: {
+      x: 12,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -545,7 +584,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "0"],
+    coords: {
+      x: 13,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -584,7 +626,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "0"],
+    coords: {
+      x: 14,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -623,7 +668,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "0"],
+    coords: {
+      x: 15,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -662,7 +710,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "0"],
+    coords: {
+      x: 16,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -701,7 +752,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "0"],
+    coords: {
+      x: 17,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -740,7 +794,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "0"],
+    coords: {
+      x: 18,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -779,7 +836,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "0"],
+    coords: {
+      x: 19,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -818,7 +878,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "0"],
+    coords: {
+      x: 20,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -857,7 +920,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "0"],
+    coords: {
+      x: 21,
+      y: 0,
+    },
   },
   {
     borderVisible: true,
@@ -896,7 +962,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "1"],
+    coords: {
+      x: 0,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -936,7 +1005,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "1"],
+    coords: {
+      x: 1,
+      y: 1,
+    },
     name: "A Fallen God's Tomb",
     description: ["A God lays here in rest."],
   },
@@ -978,7 +1050,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "1"],
+    coords: {
+      x: 2,
+      y: 1,
+    },
     name: "A Felled Tree",
     description: ["It seems to be leaking Sap."],
   },
@@ -1019,7 +1094,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "1"],
+    coords: {
+      x: 3,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1058,7 +1136,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "1"],
+    coords: {
+      x: 4,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1097,7 +1178,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "1"],
+    coords: {
+      x: 5,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1136,7 +1220,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "1"],
+    coords: {
+      x: 6,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1175,7 +1262,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "1"],
+    coords: {
+      x: 7,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1214,7 +1304,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "1"],
+    coords: {
+      x: 8,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1253,7 +1346,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "1"],
+    coords: {
+      x: 9,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1292,7 +1388,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "1"],
+    coords: {
+      x: 10,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1331,7 +1430,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "1"],
+    coords: {
+      x: 11,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1370,7 +1472,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "1"],
+    coords: {
+      x: 12,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1409,7 +1514,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "1"],
+    coords: {
+      x: 13,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1448,7 +1556,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "1"],
+    coords: {
+      x: 14,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1487,7 +1598,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "1"],
+    coords: {
+      x: 15,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1526,7 +1640,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "1"],
+    coords: {
+      x: 16,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1565,7 +1682,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "1"],
+    coords: {
+      x: 17,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1604,7 +1724,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "1"],
+    coords: {
+      x: 18,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1643,7 +1766,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "1"],
+    coords: {
+      x: 19,
+      y: 1,
+    },
   },
   {
     borderVisible: false,
@@ -1682,7 +1808,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "1"],
+    coords: {
+      x: 20,
+      y: 1,
+    },
   },
   {
     borderVisible: true,
@@ -1721,7 +1850,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "1"],
+    coords: {
+      x: 21,
+      y: 1,
+    },
   },
   {
     borderVisible: true,
@@ -1760,7 +1892,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "2"],
+    coords: {
+      x: 0,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -1799,7 +1934,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "2"],
+    coords: {
+      x: 1,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -1838,7 +1976,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "2"],
+    coords: {
+      x: 2,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -1877,7 +2018,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "2"],
+    coords: {
+      x: 3,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -1916,7 +2060,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "2"],
+    coords: {
+      x: 4,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -1955,7 +2102,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "2"],
+    coords: {
+      x: 5,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -1994,7 +2144,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "2"],
+    coords: {
+      x: 6,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2033,7 +2186,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "2"],
+    coords: {
+      x: 7,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2072,7 +2228,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "2"],
+    coords: {
+      x: 8,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2111,7 +2270,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "2"],
+    coords: {
+      x: 9,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2150,7 +2312,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "2"],
+    coords: {
+      x: 10,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2189,7 +2354,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "2"],
+    coords: {
+      x: 11,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2228,7 +2396,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "2"],
+    coords: {
+      x: 12,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2267,7 +2438,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "2"],
+    coords: {
+      x: 13,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2306,7 +2480,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "2"],
+    coords: {
+      x: 14,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2345,7 +2522,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "2"],
+    coords: {
+      x: 15,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2384,7 +2564,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "2"],
+    coords: {
+      x: 16,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2423,7 +2606,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "2"],
+    coords: {
+      x: 17,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2462,7 +2648,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "2"],
+    coords: {
+      x: 18,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2501,7 +2690,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "2"],
+    coords: {
+      x: 19,
+      y: 2,
+    },
   },
   {
     borderVisible: false,
@@ -2540,7 +2732,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "2"],
+    coords: {
+      x: 20,
+      y: 2,
+    },
   },
   {
     borderVisible: true,
@@ -2579,7 +2774,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "2"],
+    coords: {
+      x: 21,
+      y: 2,
+    },
   },
   {
     borderVisible: true,
@@ -2618,7 +2816,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "3"],
+    coords: {
+      x: 0,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -2657,7 +2858,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "3"],
+    coords: {
+      x: 1,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -2696,7 +2900,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "3"],
+    coords: {
+      x: 2,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -2735,7 +2942,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "3"],
+    coords: {
+      x: 3,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -2774,7 +2984,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "3"],
+    coords: {
+      x: 4,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -2813,7 +3026,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "3"],
+    coords: {
+      x: 5,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -2852,7 +3068,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "3"],
+    coords: {
+      x: 6,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -2891,7 +3110,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "3"],
+    coords: {
+      x: 7,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -2930,7 +3152,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "3"],
+    coords: {
+      x: 8,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -2969,7 +3194,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "3"],
+    coords: {
+      x: 9,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3008,7 +3236,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "3"],
+    coords: {
+      x: 10,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3047,7 +3278,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "3"],
+    coords: {
+      x: 11,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3086,7 +3320,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "3"],
+    coords: {
+      x: 12,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3125,7 +3362,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "3"],
+    coords: {
+      x: 13,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3164,7 +3404,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "3"],
+    coords: {
+      x: 14,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3203,7 +3446,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "3"],
+    coords: {
+      x: 15,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3242,7 +3488,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "3"],
+    coords: {
+      x: 16,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3281,7 +3530,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "3"],
+    coords: {
+      x: 17,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3320,7 +3572,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "3"],
+    coords: {
+      x: 18,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3359,7 +3614,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "3"],
+    coords: {
+      x: 19,
+      y: 3,
+    },
   },
   {
     borderVisible: false,
@@ -3398,7 +3656,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "3"],
+    coords: {
+      x: 20,
+      y: 3,
+    },
   },
   {
     borderVisible: true,
@@ -3437,7 +3698,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "3"],
+    coords: {
+      x: 21,
+      y: 3,
+    },
   },
   {
     borderVisible: true,
@@ -3476,7 +3740,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "4"],
+    coords: {
+      x: 0,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3515,7 +3782,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "4"],
+    coords: {
+      x: 1,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3554,7 +3824,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "4"],
+    coords: {
+      x: 2,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3594,7 +3867,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "4"],
+    coords: {
+      x: 3,
+      y: 4,
+    },
     name: "Observation Tower",
     description: [
       "This tower reaches high above the terrain, allowing you to see a greater distance away.",
@@ -3637,7 +3913,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "4"],
+    coords: {
+      x: 4,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3676,7 +3955,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "4"],
+    coords: {
+      x: 5,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3715,7 +3997,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "4"],
+    coords: {
+      x: 6,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3754,7 +4039,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "4"],
+    coords: {
+      x: 7,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3793,7 +4081,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "4"],
+    coords: {
+      x: 8,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3832,7 +4123,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "4"],
+    coords: {
+      x: 9,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3871,7 +4165,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "4"],
+    coords: {
+      x: 10,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3910,7 +4207,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "4"],
+    coords: {
+      x: 11,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3949,7 +4249,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "4"],
+    coords: {
+      x: 12,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -3988,7 +4291,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "4"],
+    coords: {
+      x: 13,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -4027,7 +4333,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "4"],
+    coords: {
+      x: 14,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -4066,7 +4375,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "4"],
+    coords: {
+      x: 15,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -4105,7 +4417,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "4"],
+    coords: {
+      x: 16,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -4144,7 +4459,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "4"],
+    coords: {
+      x: 17,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -4183,7 +4501,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "4"],
+    coords: {
+      x: 18,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -4222,7 +4543,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "4"],
+    coords: {
+      x: 19,
+      y: 4,
+    },
   },
   {
     borderVisible: false,
@@ -4261,7 +4585,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "4"],
+    coords: {
+      x: 20,
+      y: 4,
+    },
   },
   {
     borderVisible: true,
@@ -4300,7 +4627,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "4"],
+    coords: {
+      x: 21,
+      y: 4,
+    },
   },
   {
     borderVisible: true,
@@ -4339,7 +4669,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "5"],
+    coords: {
+      x: 0,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4378,7 +4711,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "5"],
+    coords: {
+      x: 1,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4417,7 +4753,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "5"],
+    coords: {
+      x: 2,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4456,7 +4795,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "5"],
+    coords: {
+      x: 3,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4495,7 +4837,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "5"],
+    coords: {
+      x: 4,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4534,7 +4879,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "5"],
+    coords: {
+      x: 5,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4573,7 +4921,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "5"],
+    coords: {
+      x: 6,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4612,7 +4963,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "5"],
+    coords: {
+      x: 7,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4651,7 +5005,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "5"],
+    coords: {
+      x: 8,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4690,7 +5047,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "5"],
+    coords: {
+      x: 9,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4729,7 +5089,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "5"],
+    coords: {
+      x: 10,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4768,7 +5131,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "5"],
+    coords: {
+      x: 11,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4807,7 +5173,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "5"],
+    coords: {
+      x: 12,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4846,7 +5215,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "5"],
+    coords: {
+      x: 13,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4885,7 +5257,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "5"],
+    coords: {
+      x: 14,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4924,7 +5299,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "5"],
+    coords: {
+      x: 15,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -4964,7 +5342,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "5"],
+    coords: {
+      x: 16,
+      y: 5,
+    },
     name: "A Fallen God's Tomb",
     description: ["A God lays here in rest."],
   },
@@ -5005,7 +5386,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "5"],
+    coords: {
+      x: 17,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -5044,7 +5428,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "5"],
+    coords: {
+      x: 18,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -5083,7 +5470,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "5"],
+    coords: {
+      x: 19,
+      y: 5,
+    },
   },
   {
     borderVisible: false,
@@ -5122,7 +5512,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "5"],
+    coords: {
+      x: 20,
+      y: 5,
+    },
   },
   {
     borderVisible: true,
@@ -5161,7 +5554,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "5"],
+    coords: {
+      x: 21,
+      y: 5,
+    },
   },
   {
     borderVisible: true,
@@ -5200,7 +5596,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "6"],
+    coords: {
+      x: 0,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5239,7 +5638,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "6"],
+    coords: {
+      x: 1,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5278,7 +5680,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "6"],
+    coords: {
+      x: 2,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5317,7 +5722,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "6"],
+    coords: {
+      x: 3,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5356,7 +5764,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "6"],
+    coords: {
+      x: 4,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5395,7 +5806,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "6"],
+    coords: {
+      x: 5,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5434,7 +5848,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "6"],
+    coords: {
+      x: 6,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5473,7 +5890,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "6"],
+    coords: {
+      x: 7,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5512,7 +5932,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "6"],
+    coords: {
+      x: 8,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5551,7 +5974,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "6"],
+    coords: {
+      x: 9,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5590,7 +6016,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "6"],
+    coords: {
+      x: 10,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5629,7 +6058,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "6"],
+    coords: {
+      x: 11,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5668,7 +6100,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "6"],
+    coords: {
+      x: 12,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5707,7 +6142,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "6"],
+    coords: {
+      x: 13,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5746,7 +6184,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "6"],
+    coords: {
+      x: 14,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5786,7 +6227,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "6"],
+    coords: {
+      x: 15,
+      y: 6,
+    },
     name: "A Felled Tree",
     description: ["It seems to be leaking Sap."],
   },
@@ -5827,7 +6271,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "6"],
+    coords: {
+      x: 16,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5866,7 +6313,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "6"],
+    coords: {
+      x: 17,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5905,7 +6355,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "6"],
+    coords: {
+      x: 18,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5944,7 +6397,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "6"],
+    coords: {
+      x: 19,
+      y: 6,
+    },
   },
   {
     borderVisible: false,
@@ -5983,7 +6439,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "6"],
+    coords: {
+      x: 20,
+      y: 6,
+    },
   },
   {
     borderVisible: true,
@@ -6022,7 +6481,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "6"],
+    coords: {
+      x: 21,
+      y: 6,
+    },
   },
   {
     borderVisible: true,
@@ -6061,7 +6523,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "7"],
+    coords: {
+      x: 0,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6100,7 +6565,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "7"],
+    coords: {
+      x: 1,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6139,7 +6607,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "7"],
+    coords: {
+      x: 2,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6178,7 +6649,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "7"],
+    coords: {
+      x: 3,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6217,7 +6691,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "7"],
+    coords: {
+      x: 4,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6256,7 +6733,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "7"],
+    coords: {
+      x: 5,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6295,7 +6775,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "7"],
+    coords: {
+      x: 6,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6334,7 +6817,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "7"],
+    coords: {
+      x: 7,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6373,7 +6859,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "7"],
+    coords: {
+      x: 8,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6412,7 +6901,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "7"],
+    coords: {
+      x: 9,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6451,7 +6943,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "7"],
+    coords: {
+      x: 10,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6490,7 +6985,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "7"],
+    coords: {
+      x: 11,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6529,7 +7027,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "7"],
+    coords: {
+      x: 12,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6568,7 +7069,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "7"],
+    coords: {
+      x: 13,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6607,7 +7111,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "7"],
+    coords: {
+      x: 14,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6646,7 +7153,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "7"],
+    coords: {
+      x: 15,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6685,7 +7195,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "7"],
+    coords: {
+      x: 16,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6724,7 +7237,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "7"],
+    coords: {
+      x: 17,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6763,7 +7279,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "7"],
+    coords: {
+      x: 18,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6802,7 +7321,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "7"],
+    coords: {
+      x: 19,
+      y: 7,
+    },
   },
   {
     borderVisible: false,
@@ -6841,7 +7363,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "7"],
+    coords: {
+      x: 20,
+      y: 7,
+    },
   },
   {
     borderVisible: true,
@@ -6880,7 +7405,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "7"],
+    coords: {
+      x: 21,
+      y: 7,
+    },
   },
   {
     borderVisible: true,
@@ -6919,7 +7447,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "8"],
+    coords: {
+      x: 0,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -6958,7 +7489,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "8"],
+    coords: {
+      x: 1,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -6997,7 +7531,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "8"],
+    coords: {
+      x: 2,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7036,7 +7573,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "8"],
+    coords: {
+      x: 3,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7075,7 +7615,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "8"],
+    coords: {
+      x: 4,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7114,7 +7657,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "8"],
+    coords: {
+      x: 5,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7153,7 +7699,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "8"],
+    coords: {
+      x: 6,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7192,7 +7741,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "8"],
+    coords: {
+      x: 7,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7231,7 +7783,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "8"],
+    coords: {
+      x: 8,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7270,7 +7825,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "8"],
+    coords: {
+      x: 9,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7309,7 +7867,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "8"],
+    coords: {
+      x: 10,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7348,7 +7909,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "8"],
+    coords: {
+      x: 11,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7387,7 +7951,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "8"],
+    coords: {
+      x: 12,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7426,7 +7993,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "8"],
+    coords: {
+      x: 13,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7465,7 +8035,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "8"],
+    coords: {
+      x: 14,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7504,7 +8077,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "8"],
+    coords: {
+      x: 15,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7543,7 +8119,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "8"],
+    coords: {
+      x: 16,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7583,7 +8162,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "8"],
+    coords: {
+      x: 17,
+      y: 8,
+    },
     name: "Observation Tower",
     description: [
       "This tower reaches high above the terrain, allowing you to see a greater distance away.",
@@ -7626,7 +8208,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "8"],
+    coords: {
+      x: 18,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7665,7 +8250,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "8"],
+    coords: {
+      x: 19,
+      y: 8,
+    },
   },
   {
     borderVisible: false,
@@ -7704,7 +8292,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "8"],
+    coords: {
+      x: 20,
+      y: 8,
+    },
   },
   {
     borderVisible: true,
@@ -7743,7 +8334,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "8"],
+    coords: {
+      x: 21,
+      y: 8,
+    },
   },
   {
     borderVisible: true,
@@ -7782,7 +8376,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "9"],
+    coords: {
+      x: 0,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -7821,7 +8418,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "9"],
+    coords: {
+      x: 1,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -7860,7 +8460,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "9"],
+    coords: {
+      x: 2,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -7899,7 +8502,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "9"],
+    coords: {
+      x: 3,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -7938,7 +8544,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "9"],
+    coords: {
+      x: 4,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -7977,7 +8586,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "9"],
+    coords: {
+      x: 5,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8016,7 +8628,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "9"],
+    coords: {
+      x: 6,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8055,7 +8670,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "9"],
+    coords: {
+      x: 7,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8094,7 +8712,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "9"],
+    coords: {
+      x: 8,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8133,7 +8754,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "9"],
+    coords: {
+      x: 9,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8172,7 +8796,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "9"],
+    coords: {
+      x: 10,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8211,7 +8838,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "9"],
+    coords: {
+      x: 11,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8250,7 +8880,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "9"],
+    coords: {
+      x: 12,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8289,7 +8922,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "9"],
+    coords: {
+      x: 13,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8328,7 +8964,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "9"],
+    coords: {
+      x: 14,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8367,7 +9006,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "9"],
+    coords: {
+      x: 15,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8406,7 +9048,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "9"],
+    coords: {
+      x: 16,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8445,7 +9090,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "9"],
+    coords: {
+      x: 17,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8484,7 +9132,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "9"],
+    coords: {
+      x: 18,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8523,7 +9174,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "9"],
+    coords: {
+      x: 19,
+      y: 9,
+    },
   },
   {
     borderVisible: false,
@@ -8562,7 +9216,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "9"],
+    coords: {
+      x: 20,
+      y: 9,
+    },
   },
   {
     borderVisible: true,
@@ -8601,7 +9258,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "9"],
+    coords: {
+      x: 21,
+      y: 9,
+    },
   },
   {
     borderVisible: true,
@@ -8640,7 +9300,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "10"],
+    coords: {
+      x: 0,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -8679,7 +9342,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "10"],
+    coords: {
+      x: 1,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -8718,7 +9384,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "10"],
+    coords: {
+      x: 2,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -8757,7 +9426,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "10"],
+    coords: {
+      x: 3,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -8796,7 +9468,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "10"],
+    coords: {
+      x: 4,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -8835,7 +9510,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "10"],
+    coords: {
+      x: 5,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -8874,7 +9552,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "10"],
+    coords: {
+      x: 6,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -8913,7 +9594,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "10"],
+    coords: {
+      x: 7,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -8952,7 +9636,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "10"],
+    coords: {
+      x: 8,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -8992,7 +9679,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "10"],
+    coords: {
+      x: 9,
+      y: 10,
+    },
     name: "Observation Tower",
     description: [
       "This tower reaches high above the terrain, allowing you to see a greater distance away.",
@@ -9036,7 +9726,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "10"],
+    coords: {
+      x: 10,
+      y: 10,
+    },
     name: "A Felled Tree",
     description: ["It seems to be leaking Sap."],
   },
@@ -9077,7 +9770,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "10"],
+    coords: {
+      x: 11,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -9116,7 +9812,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "10"],
+    coords: {
+      x: 12,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -9155,7 +9854,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "10"],
+    coords: {
+      x: 13,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -9194,7 +9896,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "10"],
+    coords: {
+      x: 14,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -9233,7 +9938,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "10"],
+    coords: {
+      x: 15,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -9272,7 +9980,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "10"],
+    coords: {
+      x: 16,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -9311,7 +10022,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "10"],
+    coords: {
+      x: 17,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -9350,7 +10064,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "10"],
+    coords: {
+      x: 18,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -9389,7 +10106,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "10"],
+    coords: {
+      x: 19,
+      y: 10,
+    },
   },
   {
     borderVisible: false,
@@ -9428,7 +10148,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "10"],
+    coords: {
+      x: 20,
+      y: 10,
+    },
   },
   {
     borderVisible: true,
@@ -9467,7 +10190,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "10"],
+    coords: {
+      x: 21,
+      y: 10,
+    },
   },
   {
     borderVisible: true,
@@ -9506,7 +10232,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "11"],
+    coords: {
+      x: 0,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -9546,7 +10275,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "11"],
+    coords: {
+      x: 1,
+      y: 11,
+    },
     name: "A Felled Tree",
     description: ["It seems to be leaking Sap."],
   },
@@ -9588,7 +10320,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "11"],
+    coords: {
+      x: 2,
+      y: 11,
+    },
     name: "A Fallen God's Tomb",
     description: ["A God lays here in rest."],
   },
@@ -9630,7 +10365,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "11"],
+    coords: {
+      x: 3,
+      y: 11,
+    },
     name: "Observation Tower",
     description: [
       "This tower reaches high above the terrain, allowing you to see a greater distance away.",
@@ -9673,7 +10411,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "11"],
+    coords: {
+      x: 4,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -9712,7 +10453,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "11"],
+    coords: {
+      x: 5,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -9751,7 +10495,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "11"],
+    coords: {
+      x: 6,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -9790,7 +10537,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "11"],
+    coords: {
+      x: 7,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -9829,7 +10579,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "11"],
+    coords: {
+      x: 8,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -9868,7 +10621,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "11"],
+    coords: {
+      x: 9,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -9908,7 +10664,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "11"],
+    coords: {
+      x: 10,
+      y: 11,
+    },
     name: "The Dying God",
     description: ["According to the natives, a God lays here dying."],
   },
@@ -9949,7 +10708,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "11"],
+    coords: {
+      x: 11,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -9988,7 +10750,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "11"],
+    coords: {
+      x: 12,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -10027,7 +10792,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "11"],
+    coords: {
+      x: 13,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -10066,7 +10834,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "11"],
+    coords: {
+      x: 14,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -10105,7 +10876,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "11"],
+    coords: {
+      x: 15,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -10144,7 +10918,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "11"],
+    coords: {
+      x: 16,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -10183,7 +10960,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "11"],
+    coords: {
+      x: 17,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -10222,7 +11002,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "11"],
+    coords: {
+      x: 18,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -10261,7 +11044,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "11"],
+    coords: {
+      x: 19,
+      y: 11,
+    },
   },
   {
     borderVisible: false,
@@ -10300,7 +11086,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "11"],
+    coords: {
+      x: 20,
+      y: 11,
+    },
   },
   {
     borderVisible: true,
@@ -10339,7 +11128,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "11"],
+    coords: {
+      x: 21,
+      y: 11,
+    },
   },
   {
     borderVisible: true,
@@ -10378,7 +11170,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "12"],
+    coords: {
+      x: 0,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10417,7 +11212,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "12"],
+    coords: {
+      x: 1,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10456,7 +11254,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "12"],
+    coords: {
+      x: 2,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10495,7 +11296,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "12"],
+    coords: {
+      x: 3,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10534,7 +11338,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "12"],
+    coords: {
+      x: 4,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10573,7 +11380,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "12"],
+    coords: {
+      x: 5,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10612,7 +11422,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "12"],
+    coords: {
+      x: 6,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10651,7 +11464,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "12"],
+    coords: {
+      x: 7,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10690,7 +11506,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "12"],
+    coords: {
+      x: 8,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10729,7 +11548,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "12"],
+    coords: {
+      x: 9,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10768,7 +11590,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "12"],
+    coords: {
+      x: 10,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10807,7 +11632,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "12"],
+    coords: {
+      x: 11,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10846,7 +11674,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "12"],
+    coords: {
+      x: 12,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10885,7 +11716,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "12"],
+    coords: {
+      x: 13,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10924,7 +11758,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "12"],
+    coords: {
+      x: 14,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -10963,7 +11800,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "12"],
+    coords: {
+      x: 15,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -11002,7 +11842,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "12"],
+    coords: {
+      x: 16,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -11041,7 +11884,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "12"],
+    coords: {
+      x: 17,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -11081,7 +11927,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "12"],
+    coords: {
+      x: 18,
+      y: 12,
+    },
     name: "A Felled Tree",
     description: ["It seems to be leaking Sap."],
   },
@@ -11122,7 +11971,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "12"],
+    coords: {
+      x: 19,
+      y: 12,
+    },
   },
   {
     borderVisible: false,
@@ -11161,7 +12013,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "12"],
+    coords: {
+      x: 20,
+      y: 12,
+    },
   },
   {
     borderVisible: true,
@@ -11200,7 +12055,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "12"],
+    coords: {
+      x: 21,
+      y: 12,
+    },
   },
   {
     borderVisible: true,
@@ -11239,7 +12097,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "13"],
+    coords: {
+      x: 0,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11278,7 +12139,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "13"],
+    coords: {
+      x: 1,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11317,7 +12181,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "13"],
+    coords: {
+      x: 2,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11356,7 +12223,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "13"],
+    coords: {
+      x: 3,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11396,7 +12266,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "13"],
+    coords: {
+      x: 4,
+      y: 13,
+    },
     name: "A Rugged Sinner",
     description: [
       "Fenrik knows very little about this, but believes it may help you get to the western tomb.",
@@ -11439,7 +12312,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "13"],
+    coords: {
+      x: 5,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11478,7 +12354,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "13"],
+    coords: {
+      x: 6,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11517,7 +12396,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "13"],
+    coords: {
+      x: 7,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11556,7 +12438,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "13"],
+    coords: {
+      x: 8,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11595,7 +12480,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "13"],
+    coords: {
+      x: 9,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11634,7 +12522,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "13"],
+    coords: {
+      x: 10,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11673,7 +12564,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "13"],
+    coords: {
+      x: 11,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11712,7 +12606,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "13"],
+    coords: {
+      x: 12,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11751,7 +12648,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "13"],
+    coords: {
+      x: 13,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11790,7 +12690,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "13"],
+    coords: {
+      x: 14,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11829,7 +12732,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "13"],
+    coords: {
+      x: 15,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11868,7 +12774,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "13"],
+    coords: {
+      x: 16,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11907,7 +12816,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "13"],
+    coords: {
+      x: 17,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11946,7 +12858,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "13"],
+    coords: {
+      x: 18,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -11985,7 +12900,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "13"],
+    coords: {
+      x: 19,
+      y: 13,
+    },
   },
   {
     borderVisible: false,
@@ -12024,7 +12942,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "13"],
+    coords: {
+      x: 20,
+      y: 13,
+    },
   },
   {
     borderVisible: true,
@@ -12063,7 +12984,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "13"],
+    coords: {
+      x: 21,
+      y: 13,
+    },
   },
   {
     borderVisible: true,
@@ -12102,7 +13026,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "14"],
+    coords: {
+      x: 0,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12141,7 +13068,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "14"],
+    coords: {
+      x: 1,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12180,7 +13110,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "14"],
+    coords: {
+      x: 2,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12219,7 +13152,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "14"],
+    coords: {
+      x: 3,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12258,7 +13194,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "14"],
+    coords: {
+      x: 4,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12297,7 +13236,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "14"],
+    coords: {
+      x: 5,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12336,7 +13278,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "14"],
+    coords: {
+      x: 6,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12376,7 +13321,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "14"],
+    coords: {
+      x: 7,
+      y: 14,
+    },
     name: "Observation Post",
     description: [
       "The Sunny-side have been using this to investigate a strange new phenomena in the great rift.",
@@ -12419,7 +13367,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "14"],
+    coords: {
+      x: 8,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12458,7 +13409,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "14"],
+    coords: {
+      x: 9,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12497,7 +13451,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "14"],
+    coords: {
+      x: 10,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12536,7 +13493,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "14"],
+    coords: {
+      x: 11,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12575,7 +13535,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "14"],
+    coords: {
+      x: 12,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12614,7 +13577,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "14"],
+    coords: {
+      x: 13,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12654,7 +13620,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "14"],
+    coords: {
+      x: 14,
+      y: 14,
+    },
     name: "Observation Tower",
     description: [
       "This tower reaches high above the terrain, allowing you to see a greater distance away.",
@@ -12697,7 +13666,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "14"],
+    coords: {
+      x: 15,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12736,7 +13708,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "14"],
+    coords: {
+      x: 16,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12775,7 +13750,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "14"],
+    coords: {
+      x: 17,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12814,7 +13792,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "14"],
+    coords: {
+      x: 18,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12853,7 +13834,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "14"],
+    coords: {
+      x: 19,
+      y: 14,
+    },
   },
   {
     borderVisible: false,
@@ -12892,7 +13876,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "14"],
+    coords: {
+      x: 20,
+      y: 14,
+    },
   },
   {
     borderVisible: true,
@@ -12931,7 +13918,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "14"],
+    coords: {
+      x: 21,
+      y: 14,
+    },
   },
   {
     borderVisible: true,
@@ -12970,7 +13960,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "15"],
+    coords: {
+      x: 0,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13009,7 +14002,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "15"],
+    coords: {
+      x: 1,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13048,7 +14044,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "15"],
+    coords: {
+      x: 2,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13087,7 +14086,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "15"],
+    coords: {
+      x: 3,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13126,7 +14128,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "15"],
+    coords: {
+      x: 4,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13165,7 +14170,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "15"],
+    coords: {
+      x: 5,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13204,7 +14212,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "15"],
+    coords: {
+      x: 6,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13243,7 +14254,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "15"],
+    coords: {
+      x: 7,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13282,7 +14296,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "15"],
+    coords: {
+      x: 8,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13321,7 +14338,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "15"],
+    coords: {
+      x: 9,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13360,7 +14380,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "15"],
+    coords: {
+      x: 10,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13399,7 +14422,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "15"],
+    coords: {
+      x: 11,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13438,7 +14464,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "15"],
+    coords: {
+      x: 12,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13477,7 +14506,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "15"],
+    coords: {
+      x: 13,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13516,7 +14548,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "15"],
+    coords: {
+      x: 14,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13555,7 +14590,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "15"],
+    coords: {
+      x: 15,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13594,7 +14632,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "15"],
+    coords: {
+      x: 16,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13633,7 +14674,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "15"],
+    coords: {
+      x: 17,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13672,7 +14716,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "15"],
+    coords: {
+      x: 18,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13711,7 +14758,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "15"],
+    coords: {
+      x: 19,
+      y: 15,
+    },
   },
   {
     borderVisible: false,
@@ -13750,7 +14800,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "15"],
+    coords: {
+      x: 20,
+      y: 15,
+    },
   },
   {
     borderVisible: true,
@@ -13789,7 +14842,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "15"],
+    coords: {
+      x: 21,
+      y: 15,
+    },
   },
   {
     borderVisible: true,
@@ -13828,7 +14884,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "16"],
+    coords: {
+      x: 0,
+      y: 16,
+    },
   },
   {
     borderVisible: true,
@@ -13867,7 +14926,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "16"],
+    coords: {
+      x: 1,
+      y: 16,
+    },
   },
   {
     borderVisible: true,
@@ -13906,7 +14968,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "16"],
+    coords: {
+      x: 2,
+      y: 16,
+    },
   },
   {
     borderVisible: true,
@@ -13945,7 +15010,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "16"],
+    coords: {
+      x: 3,
+      y: 16,
+    },
   },
   {
     borderVisible: true,
@@ -13984,7 +15052,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "16"],
+    coords: {
+      x: 4,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14024,7 +15095,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "16"],
+    coords: {
+      x: 5,
+      y: 16,
+    },
     name: "The Infinite Hive",
     description: ["A bizarre, non-euclidean maze full of sentient squirrels"],
   },
@@ -14065,7 +15139,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "16"],
+    coords: {
+      x: 6,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14104,7 +15181,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "16"],
+    coords: {
+      x: 7,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14143,7 +15223,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "16"],
+    coords: {
+      x: 8,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14182,7 +15265,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "16"],
+    coords: {
+      x: 9,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14221,7 +15307,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "16"],
+    coords: {
+      x: 10,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14260,7 +15349,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "16"],
+    coords: {
+      x: 11,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14299,7 +15391,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "16"],
+    coords: {
+      x: 12,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14338,7 +15433,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "16"],
+    coords: {
+      x: 13,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14377,7 +15475,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "16"],
+    coords: {
+      x: 14,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14416,7 +15517,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "16"],
+    coords: {
+      x: 15,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14455,7 +15559,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "16"],
+    coords: {
+      x: 16,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14494,7 +15601,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "16"],
+    coords: {
+      x: 17,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14533,7 +15643,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "16"],
+    coords: {
+      x: 18,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14572,7 +15685,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "16"],
+    coords: {
+      x: 19,
+      y: 16,
+    },
   },
   {
     borderVisible: false,
@@ -14611,7 +15727,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "16"],
+    coords: {
+      x: 20,
+      y: 16,
+    },
   },
   {
     borderVisible: true,
@@ -14650,7 +15769,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "16"],
+    coords: {
+      x: 21,
+      y: 16,
+    },
   },
   {
     borderVisible: true,
@@ -14689,7 +15811,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "17"],
+    coords: {
+      x: 0,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -14728,7 +15853,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "17"],
+    coords: {
+      x: 1,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -14767,7 +15895,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "17"],
+    coords: {
+      x: 2,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -14806,7 +15937,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "17"],
+    coords: {
+      x: 3,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -14845,7 +15979,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "17"],
+    coords: {
+      x: 4,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -14884,7 +16021,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "17"],
+    coords: {
+      x: 5,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -14923,7 +16063,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "17"],
+    coords: {
+      x: 6,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -14962,7 +16105,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "17"],
+    coords: {
+      x: 7,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15001,7 +16147,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "17"],
+    coords: {
+      x: 8,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15040,7 +16189,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "17"],
+    coords: {
+      x: 9,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15079,7 +16231,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "17"],
+    coords: {
+      x: 10,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15118,7 +16273,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "17"],
+    coords: {
+      x: 11,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15157,7 +16315,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "17"],
+    coords: {
+      x: 12,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15196,7 +16357,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "17"],
+    coords: {
+      x: 13,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15235,7 +16399,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "17"],
+    coords: {
+      x: 14,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15274,7 +16441,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "17"],
+    coords: {
+      x: 15,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15313,7 +16483,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "17"],
+    coords: {
+      x: 16,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15352,7 +16525,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "17"],
+    coords: {
+      x: 17,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15391,7 +16567,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "17"],
+    coords: {
+      x: 18,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15430,7 +16609,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "17"],
+    coords: {
+      x: 19,
+      y: 17,
+    },
   },
   {
     borderVisible: false,
@@ -15469,7 +16651,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "17"],
+    coords: {
+      x: 20,
+      y: 17,
+    },
   },
   {
     borderVisible: true,
@@ -15508,7 +16693,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "17"],
+    coords: {
+      x: 21,
+      y: 17,
+    },
   },
   {
     borderVisible: true,
@@ -15547,7 +16735,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "18"],
+    coords: {
+      x: 0,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15586,7 +16777,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "18"],
+    coords: {
+      x: 1,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15625,7 +16819,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "18"],
+    coords: {
+      x: 2,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15664,7 +16861,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "18"],
+    coords: {
+      x: 3,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15703,7 +16903,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "18"],
+    coords: {
+      x: 4,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15742,7 +16945,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "18"],
+    coords: {
+      x: 5,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15781,7 +16987,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "18"],
+    coords: {
+      x: 6,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15820,7 +17029,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "18"],
+    coords: {
+      x: 7,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15859,7 +17071,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "18"],
+    coords: {
+      x: 8,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15898,7 +17113,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "18"],
+    coords: {
+      x: 9,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15937,7 +17155,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "18"],
+    coords: {
+      x: 10,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -15976,7 +17197,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "18"],
+    coords: {
+      x: 11,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -16015,7 +17239,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "18"],
+    coords: {
+      x: 12,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -16054,7 +17281,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "18"],
+    coords: {
+      x: 13,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -16093,7 +17323,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "18"],
+    coords: {
+      x: 14,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -16132,7 +17365,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "18"],
+    coords: {
+      x: 15,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -16171,7 +17407,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "18"],
+    coords: {
+      x: 16,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -16210,7 +17449,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "18"],
+    coords: {
+      x: 17,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -16249,7 +17491,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "18"],
+    coords: {
+      x: 18,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -16288,7 +17533,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "18"],
+    coords: {
+      x: 19,
+      y: 18,
+    },
   },
   {
     borderVisible: false,
@@ -16327,7 +17575,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "18"],
+    coords: {
+      x: 20,
+      y: 18,
+    },
   },
   {
     borderVisible: true,
@@ -16366,7 +17617,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "18"],
+    coords: {
+      x: 21,
+      y: 18,
+    },
   },
   {
     borderVisible: true,
@@ -16405,7 +17659,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "19"],
+    coords: {
+      x: 0,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16444,7 +17701,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "19"],
+    coords: {
+      x: 1,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16483,7 +17743,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "19"],
+    coords: {
+      x: 2,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16523,7 +17786,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "19"],
+    coords: {
+      x: 3,
+      y: 19,
+    },
     name: "Forest",
     description: ["A Dense forest of thick trees"],
   },
@@ -16564,7 +17830,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "19"],
+    coords: {
+      x: 4,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16603,7 +17872,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "19"],
+    coords: {
+      x: 5,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16642,7 +17914,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "19"],
+    coords: {
+      x: 6,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16682,7 +17957,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "19"],
+    coords: {
+      x: 7,
+      y: 19,
+    },
     name: "Stonework Graveyard",
     description: ["A graveyard made of stone"],
   },
@@ -16723,7 +18001,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "19"],
+    coords: {
+      x: 8,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16762,7 +18043,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "19"],
+    coords: {
+      x: 9,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16801,7 +18085,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "19"],
+    coords: {
+      x: 10,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16840,7 +18127,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "19"],
+    coords: {
+      x: 11,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16879,7 +18169,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "19"],
+    coords: {
+      x: 12,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16918,7 +18211,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "19"],
+    coords: {
+      x: 13,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16957,7 +18253,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "19"],
+    coords: {
+      x: 14,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -16996,7 +18295,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "19"],
+    coords: {
+      x: 15,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -17035,7 +18337,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "19"],
+    coords: {
+      x: 16,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -17074,7 +18379,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "19"],
+    coords: {
+      x: 17,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -17113,7 +18421,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "19"],
+    coords: {
+      x: 18,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -17152,7 +18463,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "19"],
+    coords: {
+      x: 19,
+      y: 19,
+    },
   },
   {
     borderVisible: false,
@@ -17191,7 +18505,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "19"],
+    coords: {
+      x: 20,
+      y: 19,
+    },
   },
   {
     borderVisible: true,
@@ -17230,7 +18547,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "19"],
+    coords: {
+      x: 21,
+      y: 19,
+    },
   },
   {
     borderVisible: true,
@@ -17269,7 +18589,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "20"],
+    coords: {
+      x: 0,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17308,7 +18631,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "20"],
+    coords: {
+      x: 1,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17347,7 +18673,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "20"],
+    coords: {
+      x: 2,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17386,7 +18715,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "20"],
+    coords: {
+      x: 3,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17425,7 +18757,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "20"],
+    coords: {
+      x: 4,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17464,7 +18799,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "20"],
+    coords: {
+      x: 5,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17503,7 +18841,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "20"],
+    coords: {
+      x: 6,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17542,7 +18883,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "20"],
+    coords: {
+      x: 7,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17581,7 +18925,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "20"],
+    coords: {
+      x: 8,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17620,7 +18967,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "20"],
+    coords: {
+      x: 9,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17659,7 +19009,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "20"],
+    coords: {
+      x: 10,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17699,7 +19052,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "20"],
+    coords: {
+      x: 11,
+      y: 20,
+    },
     name: "The Clam",
     description: ["A Giant, eldritch clam waits at the bottom of a whirlpool."],
   },
@@ -17741,7 +19097,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "20"],
+    coords: {
+      x: 12,
+      y: 20,
+    },
     name: "A Fallen God's Tomb",
     description: ["A God lays here in rest."],
   },
@@ -17783,7 +19142,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "20"],
+    coords: {
+      x: 13,
+      y: 20,
+    },
     name: "A Felled Tree",
     description: ["It seems to be leaking Sap."],
   },
@@ -17824,7 +19186,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "20"],
+    coords: {
+      x: 14,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17863,7 +19228,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "20"],
+    coords: {
+      x: 15,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17902,7 +19270,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "20"],
+    coords: {
+      x: 16,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17941,7 +19312,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "20"],
+    coords: {
+      x: 17,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -17980,7 +19354,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "20"],
+    coords: {
+      x: 18,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -18019,7 +19396,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "20"],
+    coords: {
+      x: 19,
+      y: 20,
+    },
   },
   {
     borderVisible: false,
@@ -18058,7 +19438,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "20"],
+    coords: {
+      x: 20,
+      y: 20,
+    },
   },
   {
     borderVisible: true,
@@ -18097,7 +19480,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "20"],
+    coords: {
+      x: 21,
+      y: 20,
+    },
   },
   {
     borderVisible: true,
@@ -18136,7 +19522,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "21"],
+    coords: {
+      x: 0,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18176,7 +19565,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "21"],
+    coords: {
+      x: 1,
+      y: 21,
+    },
     name: "Forest",
     description: ["A Dense forest of thick trees"],
   },
@@ -18217,7 +19609,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "21"],
+    coords: {
+      x: 2,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18256,7 +19651,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "21"],
+    coords: {
+      x: 3,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18295,7 +19693,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "21"],
+    coords: {
+      x: 4,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18334,7 +19735,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "21"],
+    coords: {
+      x: 5,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18374,7 +19778,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "21"],
+    coords: {
+      x: 6,
+      y: 21,
+    },
     name: "Curious Sculpture",
     description: [
       "A curious sculpture depicts two large stone constructs at a forge.  ",
@@ -18418,7 +19825,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "21"],
+    coords: {
+      x: 7,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18457,7 +19867,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "21"],
+    coords: {
+      x: 8,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18496,7 +19909,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "21"],
+    coords: {
+      x: 9,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18535,7 +19951,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "21"],
+    coords: {
+      x: 10,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18574,7 +19993,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "21"],
+    coords: {
+      x: 11,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18613,7 +20035,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "21"],
+    coords: {
+      x: 12,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18652,7 +20077,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "21"],
+    coords: {
+      x: 13,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18691,7 +20119,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "21"],
+    coords: {
+      x: 14,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18730,7 +20161,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "21"],
+    coords: {
+      x: 15,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18769,7 +20203,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "21"],
+    coords: {
+      x: 16,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18808,7 +20245,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "21"],
+    coords: {
+      x: 17,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18847,7 +20287,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "21"],
+    coords: {
+      x: 18,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18886,7 +20329,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "21"],
+    coords: {
+      x: 19,
+      y: 21,
+    },
   },
   {
     borderVisible: false,
@@ -18925,7 +20371,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "21"],
+    coords: {
+      x: 20,
+      y: 21,
+    },
   },
   {
     borderVisible: true,
@@ -18964,7 +20413,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "21"],
+    coords: {
+      x: 21,
+      y: 21,
+    },
   },
   {
     borderVisible: true,
@@ -19003,7 +20455,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "22"],
+    coords: {
+      x: 0,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19042,7 +20497,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "22"],
+    coords: {
+      x: 1,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19081,7 +20539,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "22"],
+    coords: {
+      x: 2,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19120,7 +20581,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "22"],
+    coords: {
+      x: 3,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19159,7 +20623,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "22"],
+    coords: {
+      x: 4,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19198,7 +20665,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "22"],
+    coords: {
+      x: 5,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19237,7 +20707,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "22"],
+    coords: {
+      x: 6,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19276,7 +20749,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "22"],
+    coords: {
+      x: 7,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19315,7 +20791,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "22"],
+    coords: {
+      x: 8,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19355,7 +20834,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "22"],
+    coords: {
+      x: 9,
+      y: 22,
+    },
     name: "Sand",
     description: [
       "Warm sand covers the ground in all direction, with only the toughest surviving.",
@@ -19398,7 +20880,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "22"],
+    coords: {
+      x: 10,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19437,7 +20922,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "22"],
+    coords: {
+      x: 11,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19477,7 +20965,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "22"],
+    coords: {
+      x: 12,
+      y: 22,
+    },
     name: "Deep Water",
     description: ["Who knows what secrets the Water of Beth'El provides?"],
   },
@@ -19518,7 +21009,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "22"],
+    coords: {
+      x: 13,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19557,7 +21051,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "22"],
+    coords: {
+      x: 14,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19596,7 +21093,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "22"],
+    coords: {
+      x: 15,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19635,7 +21135,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "22"],
+    coords: {
+      x: 16,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19674,7 +21177,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "22"],
+    coords: {
+      x: 17,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19713,7 +21219,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "22"],
+    coords: {
+      x: 18,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19752,7 +21261,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "22"],
+    coords: {
+      x: 19,
+      y: 22,
+    },
   },
   {
     borderVisible: false,
@@ -19791,7 +21303,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "22"],
+    coords: {
+      x: 20,
+      y: 22,
+    },
   },
   {
     borderVisible: true,
@@ -19830,7 +21345,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "22"],
+    coords: {
+      x: 21,
+      y: 22,
+    },
   },
   {
     borderVisible: true,
@@ -19869,7 +21387,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "23"],
+    coords: {
+      x: 0,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -19908,7 +21429,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "23"],
+    coords: {
+      x: 1,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -19947,7 +21471,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "23"],
+    coords: {
+      x: 2,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -19987,7 +21514,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "23"],
+    coords: {
+      x: 3,
+      y: 23,
+    },
     name: "Observation Tower",
     description: [
       "This tower reaches high above the terrain, allowing you to see a greater distance away.",
@@ -20030,7 +21560,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "23"],
+    coords: {
+      x: 4,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20069,7 +21602,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "23"],
+    coords: {
+      x: 5,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20108,7 +21644,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "23"],
+    coords: {
+      x: 6,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20147,7 +21686,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "23"],
+    coords: {
+      x: 7,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20186,7 +21728,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "23"],
+    coords: {
+      x: 8,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20225,7 +21770,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "23"],
+    coords: {
+      x: 9,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20264,7 +21812,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "23"],
+    coords: {
+      x: 10,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20303,7 +21854,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "23"],
+    coords: {
+      x: 11,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20342,7 +21896,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "23"],
+    coords: {
+      x: 12,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20381,7 +21938,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "23"],
+    coords: {
+      x: 13,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20420,7 +21980,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "23"],
+    coords: {
+      x: 14,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20460,7 +22023,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "23"],
+    coords: {
+      x: 15,
+      y: 23,
+    },
     name: "Observation Tower",
     description: [
       "This tower reaches high above the terrain, allowing you to see a greater distance away.",
@@ -20503,7 +22069,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "23"],
+    coords: {
+      x: 16,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20542,7 +22111,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "23"],
+    coords: {
+      x: 17,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20581,7 +22153,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "23"],
+    coords: {
+      x: 18,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20620,7 +22195,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "23"],
+    coords: {
+      x: 19,
+      y: 23,
+    },
   },
   {
     borderVisible: false,
@@ -20659,7 +22237,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "23"],
+    coords: {
+      x: 20,
+      y: 23,
+    },
   },
   {
     borderVisible: true,
@@ -20698,7 +22279,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "23"],
+    coords: {
+      x: 21,
+      y: 23,
+    },
   },
   {
     borderVisible: true,
@@ -20737,7 +22321,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "24"],
+    coords: {
+      x: 0,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -20777,7 +22364,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "24"],
+    coords: {
+      x: 1,
+      y: 24,
+    },
     name: "Beirut's Flock",
     description: [
       "The Party-loving former host of divine assistants of Beirut call this place home.",
@@ -20821,7 +22411,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "24"],
+    coords: {
+      x: 2,
+      y: 24,
+    },
     name: "Dude's Cage",
     description: [
       "Dude, the Kenku, transforms into a demonic beast when let out of his cage.",
@@ -20864,7 +22457,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "24"],
+    coords: {
+      x: 3,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -20903,7 +22499,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "24"],
+    coords: {
+      x: 4,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -20942,7 +22541,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "24"],
+    coords: {
+      x: 5,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -20981,7 +22583,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "24"],
+    coords: {
+      x: 6,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21020,7 +22625,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "24"],
+    coords: {
+      x: 7,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21059,7 +22667,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "24"],
+    coords: {
+      x: 8,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21098,7 +22709,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "24"],
+    coords: {
+      x: 9,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21137,7 +22751,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "24"],
+    coords: {
+      x: 10,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21176,7 +22793,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "24"],
+    coords: {
+      x: 11,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21215,7 +22835,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "24"],
+    coords: {
+      x: 12,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21254,7 +22877,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "24"],
+    coords: {
+      x: 13,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21293,7 +22919,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "24"],
+    coords: {
+      x: 14,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21332,7 +22961,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "24"],
+    coords: {
+      x: 15,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21371,7 +23003,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "24"],
+    coords: {
+      x: 16,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21410,7 +23045,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "24"],
+    coords: {
+      x: 17,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21449,7 +23087,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "24"],
+    coords: {
+      x: 18,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21488,7 +23129,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "24"],
+    coords: {
+      x: 19,
+      y: 24,
+    },
   },
   {
     borderVisible: false,
@@ -21527,7 +23171,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "24"],
+    coords: {
+      x: 20,
+      y: 24,
+    },
   },
   {
     borderVisible: true,
@@ -21566,7 +23213,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "24"],
+    coords: {
+      x: 21,
+      y: 24,
+    },
   },
   {
     borderVisible: true,
@@ -21605,7 +23255,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "25"],
+    coords: {
+      x: 0,
+      y: 25,
+    },
   },
   {
     borderVisible: true,
@@ -21644,7 +23297,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "25"],
+    coords: {
+      x: 1,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -21684,7 +23340,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "25"],
+    coords: {
+      x: 2,
+      y: 25,
+    },
     name: "Mursha's",
     description: [
       "A tavern run and operated by the divine Orc Bartender, Mursha",
@@ -21728,7 +23387,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "25"],
+    coords: {
+      x: 3,
+      y: 25,
+    },
     name: "Tomb of Beirut",
     description: ["Final resting place of Beirut, also known as Bier'Pohn."],
   },
@@ -21769,7 +23431,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "25"],
+    coords: {
+      x: 4,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -21808,7 +23473,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "25"],
+    coords: {
+      x: 5,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -21848,7 +23516,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "25"],
+    coords: {
+      x: 6,
+      y: 25,
+    },
     name: "Dry and Rocky",
     description: ["This area is humid and dry, with sparse plant life."],
   },
@@ -21889,7 +23560,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "25"],
+    coords: {
+      x: 7,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -21928,7 +23602,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "25"],
+    coords: {
+      x: 8,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -21967,7 +23644,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "25"],
+    coords: {
+      x: 9,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22006,7 +23686,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "25"],
+    coords: {
+      x: 10,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22045,7 +23728,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "25"],
+    coords: {
+      x: 11,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22084,7 +23770,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "25"],
+    coords: {
+      x: 12,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22123,7 +23812,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "25"],
+    coords: {
+      x: 13,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22162,7 +23854,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "25"],
+    coords: {
+      x: 14,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22201,7 +23896,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "25"],
+    coords: {
+      x: 15,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22240,7 +23938,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "25"],
+    coords: {
+      x: 16,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22279,7 +23980,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "25"],
+    coords: {
+      x: 17,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22318,7 +24022,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "25"],
+    coords: {
+      x: 18,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22357,7 +24064,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "25"],
+    coords: {
+      x: 19,
+      y: 25,
+    },
   },
   {
     borderVisible: false,
@@ -22396,7 +24106,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "25"],
+    coords: {
+      x: 20,
+      y: 25,
+    },
   },
   {
     borderVisible: true,
@@ -22435,7 +24148,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "25"],
+    coords: {
+      x: 21,
+      y: 25,
+    },
   },
   {
     borderVisible: true,
@@ -22474,7 +24190,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "26"],
+    coords: {
+      x: 0,
+      y: 26,
+    },
   },
   {
     borderVisible: true,
@@ -22513,7 +24232,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "26"],
+    coords: {
+      x: 1,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -22553,7 +24275,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "26"],
+    coords: {
+      x: 2,
+      y: 26,
+    },
     name: "The Fallen Tree Encampment",
     description: [
       "An established camp and rest site on the isle of Beth'el.",
@@ -22598,7 +24323,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "26"],
+    coords: {
+      x: 3,
+      y: 26,
+    },
   },
   {
     borderVisible: true,
@@ -22637,7 +24365,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "26"],
+    coords: {
+      x: 4,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -22676,7 +24407,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "26"],
+    coords: {
+      x: 5,
+      y: 26,
+    },
   },
   {
     borderVisible: true,
@@ -22715,7 +24449,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "26"],
+    coords: {
+      x: 6,
+      y: 26,
+    },
   },
   {
     borderVisible: true,
@@ -22754,7 +24491,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "26"],
+    coords: {
+      x: 7,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -22793,7 +24533,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "26"],
+    coords: {
+      x: 8,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -22832,7 +24575,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "26"],
+    coords: {
+      x: 9,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -22871,7 +24617,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "26"],
+    coords: {
+      x: 10,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -22910,7 +24659,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "26"],
+    coords: {
+      x: 11,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -22949,7 +24701,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "26"],
+    coords: {
+      x: 12,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -22988,7 +24743,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "26"],
+    coords: {
+      x: 13,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -23027,7 +24785,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "26"],
+    coords: {
+      x: 14,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -23066,7 +24827,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "26"],
+    coords: {
+      x: 15,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -23105,7 +24869,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "26"],
+    coords: {
+      x: 16,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -23144,7 +24911,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "26"],
+    coords: {
+      x: 17,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -23183,7 +24953,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "26"],
+    coords: {
+      x: 18,
+      y: 26,
+    },
   },
   {
     borderVisible: false,
@@ -23223,7 +24996,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "26"],
+    coords: {
+      x: 19,
+      y: 26,
+    },
     name: "A Felled Tree",
     description: ["It seems to be leaking Sap."],
   },
@@ -23264,7 +25040,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "26"],
+    coords: {
+      x: 20,
+      y: 26,
+    },
   },
   {
     borderVisible: true,
@@ -23303,7 +25082,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "26"],
+    coords: {
+      x: 21,
+      y: 26,
+    },
   },
   {
     borderVisible: true,
@@ -23342,7 +25124,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["0", "27"],
+    coords: {
+      x: 0,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23381,7 +25166,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["1", "27"],
+    coords: {
+      x: 1,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23420,7 +25208,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["2", "27"],
+    coords: {
+      x: 2,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23459,7 +25250,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["3", "27"],
+    coords: {
+      x: 3,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23498,7 +25292,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["4", "27"],
+    coords: {
+      x: 4,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23537,7 +25334,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["5", "27"],
+    coords: {
+      x: 5,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23576,7 +25376,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["6", "27"],
+    coords: {
+      x: 6,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23615,7 +25418,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["7", "27"],
+    coords: {
+      x: 7,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23654,7 +25460,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["8", "27"],
+    coords: {
+      x: 8,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23693,7 +25502,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["9", "27"],
+    coords: {
+      x: 9,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23732,7 +25544,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["10", "27"],
+    coords: {
+      x: 10,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23771,7 +25586,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["11", "27"],
+    coords: {
+      x: 11,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23810,7 +25628,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["12", "27"],
+    coords: {
+      x: 12,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23849,7 +25670,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["13", "27"],
+    coords: {
+      x: 13,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23888,7 +25712,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["14", "27"],
+    coords: {
+      x: 14,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23927,7 +25754,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["15", "27"],
+    coords: {
+      x: 15,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -23966,7 +25796,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["16", "27"],
+    coords: {
+      x: 16,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -24005,7 +25838,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["17", "27"],
+    coords: {
+      x: 17,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -24044,7 +25880,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["18", "27"],
+    coords: {
+      x: 18,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -24083,7 +25922,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["19", "27"],
+    coords: {
+      x: 19,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -24122,7 +25964,10 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["20", "27"],
+    coords: {
+      x: 20,
+      y: 27,
+    },
   },
   {
     borderVisible: true,
@@ -24161,6 +26006,9 @@ export const persistedMapData: PersistedHexConfig[] = [
         },
       ],
     },
-    coords: ["21", "27"],
+    coords: {
+      x: 21,
+      y: 27,
+    },
   },
 ]

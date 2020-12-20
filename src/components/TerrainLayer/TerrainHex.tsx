@@ -6,7 +6,6 @@ import { drawTerrain } from "../../utils/drawTerrain"
 import { addInteractors } from "../../utils/addInteractors"
 
 import { Point, HexConfig } from "../../types"
-import { coordsToPoint } from "../../utils/coordsToKey"
 
 type HexProps = {
   hex: HexConfig
@@ -27,16 +26,10 @@ export const TerrainHex: FC<HexProps> = ({
     draw={g => {
       g.clear()
       const instructions = [
-        drawTerrain(
-          corners,
-          terrain,
-          fog,
-          isEqual(coordsToPoint(coords), currentCoords)
-        ),
+        drawTerrain(corners, terrain, fog, isEqual(coords, currentCoords)),
         addInteractors({
           clickCallback: () => {
-            const point = coordsToPoint(coords)
-            setHighlightedCoords(point)
+            setHighlightedCoords(coords)
           },
         }),
       ]

@@ -1,6 +1,7 @@
 import React, { useState, FC } from "react"
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import isEqual from "lodash/isEqual"
 
 import flatten from "lodash/flatten"
 import styles from "./App.module.scss"
@@ -15,7 +16,7 @@ import { useIsAdmin } from "../../hooks/useIsAdmin"
 import { Fog, Marker, Terrain } from "../../types"
 import { persistedMapData } from "../../state/persistedMapData"
 import { findNearbyCoords } from "../../utils/findNearbyCoords"
-import { coordsToKey } from "../../utils/coordsToKey"
+
 import { persistedPlayerData } from "../../state/persistedPlayerData"
 
 export const App: FC = () => {
@@ -37,9 +38,12 @@ export const App: FC = () => {
   )
 }
 
-const softHexes = persistedMapData
-  .filter(({ visible, borderVisible }) => visible && !borderVisible)
-  .map(findNearbyCoords)
+const softHexes = flatten(
+  persistedMapData
+    .filter(({ visible, borderVisible }) => visible && !borderVisible)
+    .map(findNearbyCoords)
+)
+
 const InnerRouter: FC = () => {
   const showAll = useIsAdmin()
   const mapData = persistedMapData.map(hex => {
@@ -48,14 +52,11 @@ const InnerRouter: FC = () => {
         showAll ||
         hex.visible ||
         hex.borderVisible ||
-        persistedPlayerData.visited.includes({
-          x: Number(hex.coords[0]),
-          y: Number(hex.coords[1]),
-        })
+        persistedPlayerData.visited.includes(hex.coords)
       )
         return Fog.none
       if (hex.showFeature) return Fog.showFeature
-      if (flatten(softHexes).includes(coordsToKey(hex.coords))) return Fog.soft
+      if (softHexes.find(coords => isEqual(hex.coords, coords))) return Fog.soft
       return Fog.hard
     }
 

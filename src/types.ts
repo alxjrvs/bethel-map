@@ -52,7 +52,7 @@ export interface PersistedHexConfig {
   visible: boolean
   terrain: string
   marker?: string
-  coords: [string, string]
+  coords: Point
   graphics: {
     point: Point
     corners: [Point, Point, Point, Point, Point, Point]
