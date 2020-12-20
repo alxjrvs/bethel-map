@@ -60,16 +60,22 @@ const InnerRouter: FC = () => {
 
   console.log(
     JSON.stringify(
-      mapData.map(({ terrain, name, description, marker, key, fog }) => ({
-        borderVisible: defaultMapDataState.meta.visibleWater.includes(key),
-        showFeature: fog === Fog.showFeature,
-        visible: fog === Fog.none,
-        terrain,
-        marker,
-        coords: key.split("-"),
-        name: marker ? name : undefined,
-        description: marker ? description : undefined,
-      }))
+      mapData.map(
+        ({ terrain, point, corners, name, description, marker, key, fog }) => ({
+          borderVisible: defaultMapDataState.meta.visibleWater.includes(key),
+          showFeature: fog === Fog.showFeature,
+          visible: fog === Fog.none,
+          terrain,
+          marker,
+          graphics: {
+            point,
+            corners,
+          },
+          coords: key.split("-"),
+          name: marker ? name : undefined,
+          description: marker ? description : undefined,
+        })
+      )
     )
   )
 
