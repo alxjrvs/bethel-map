@@ -6,7 +6,6 @@ export const calcFogType = (
   showAll: boolean,
   { players: { visible }, meta: { showFeature, fogless } }: MapDataState
 ): Fog => {
-  debugger
   if (showAll) return Fog.none
   if (fogless.includes(key)) return Fog.none
   if (showFeature.includes(key)) return Fog.showFeature

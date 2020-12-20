@@ -6,10 +6,24 @@ import { useHighlightedCoordinates } from "../../state/HighlightedCoordinatesCon
 import styles from "./DataDisplay.module.scss"
 
 import { Grid } from "honeycomb-grid"
-import { HexConfig } from "../../types"
+import { HexConfig, Fog } from "../../types"
 
 interface Props {
   mapData: Grid<HexConfig>
+}
+
+const displayDescription = (hex?: HexConfig) => {
+  const unknownDescription = "What waits for you on the Isle of Beth'el?"
+  if (!hex) return unknownDescription
+  if (hex.fog === Fog.hard) return unknownDescription
+  return hex.description
+}
+
+const displayName = (hex?: HexConfig) => {
+  const unknownName = "Unknown"
+  if (!hex) return unknownName
+  if (hex.fog === Fog.hard) return unknownName
+  return hex.name
 }
 
 export const DataDisplay: FC<Props> = ({ mapData }) => {
@@ -23,8 +37,8 @@ export const DataDisplay: FC<Props> = ({ mapData }) => {
 
   return (
     <div>
-      <h1>{currentHex?.name || "UNKNOWN"}</h1>
-      <p>{currentHex?.description || "UNKNOWN"}</p>
+      <h1>{displayName(currentHex)}</h1>
+      <p>{displayDescription(currentHex)}</p>
       <button onClick={() => setCurrentCoords(highlightedCoords)}>
         Move Here
       </button>

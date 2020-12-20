@@ -18,6 +18,7 @@ import { defaultMapDataState } from "../../state/MapData"
 
 import { calcFogType } from "../../utils/calcFogType"
 import { getCorners } from "../../utils/getCorners"
+import { Terrain } from "../../types"
 
 export const App: FC = () => {
   const currentCoordsState = useState(PlayerCurrentHex)
@@ -47,6 +48,7 @@ const InnerRouter: FC = () => {
     const fog = calcFogType(key, showAll, defaultMapDataState)
 
     return {
+      terrain: Terrain.Forest,
       ...terrainConfig,
       ...markerConfig,
       point: hex.toPoint(),

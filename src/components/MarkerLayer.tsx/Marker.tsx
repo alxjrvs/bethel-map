@@ -10,7 +10,6 @@ import {
 } from "../../types"
 import { drawBang } from "../../utils/drawBang"
 import { drawTower } from "../../utils/drawTower"
-import { lightenNumeric } from "../../utils/numericColorUtils"
 
 type HexProps = {
   hex: HexConfig
@@ -27,7 +26,7 @@ export const Marker: FC<HexProps> = ({ hex: { key, point, fog, marker } }) => {
         instructions.push(
           drawCircle(point, {
             fill: 16711680,
-            lineFill: lightenNumeric(17611680),
+            lineFill: 16777215,
           })
         )
         break

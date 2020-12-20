@@ -53,7 +53,7 @@ export type HexStyleData = {
 export interface HexConfig extends DerivedHexData {
   fog: Fog
   marker?: Marker
-  terrain?: Terrain
+  terrain: Terrain
   description?: string[]
   name?: string
 }

@@ -25,4 +25,5 @@ export const TombsList: HexConfigKeyArray = [
 export const Tombs = buildHexList(TombsList, {
   marker: Marker.Tomb,
   name: "A Fallen God's Tomb",
+  description: ["A God lays here in rest."],
 })

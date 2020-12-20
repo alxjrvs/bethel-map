@@ -11,14 +11,14 @@ type HexProps = {
   setHighlightedCoords: Dispatch<SetStateAction<string>>
 }
 export const TerrainHex: FC<HexProps> = ({
-  hex: { key, corners, terrain },
+  hex: { key, corners, terrain, fog },
   setHighlightedCoords,
 }) => (
   <GraphicsComponent
     draw={g => {
       g.clear()
       const instructions = [
-        drawTerrain(corners, terrain),
+        drawTerrain(corners, terrain, fog),
         addInteractors({
           clickCallback: () => {
             setHighlightedCoords(key)
