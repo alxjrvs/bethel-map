@@ -2,27 +2,26 @@ import React, { FC } from "react"
 
 import { drawCircle } from "../../utils/drawCircle"
 import { Graphics as GraphicsComponent } from "@inlet/react-pixi"
-import { DrawInstructions, Shape, HexConfig, Fog } from "../../types"
+import { DrawInstructions, Shape, Fog, NewHexConfig } from "../../types"
 import { drawBang } from "../../utils/drawBang"
 import { drawTower } from "../../utils/drawTower"
 
 type HexProps = {
-  hex: HexConfig
+  hex: NewHexConfig
 }
 
 export const Marker: FC<HexProps> = ({
-  hex: { key, point, fog, ...hexConfig },
+  hex: { key, point, fog, style, ...hexConfig },
 }) => {
   const instructions: Array<DrawInstructions> = []
   if (fog !== Fog.hard) {
     hexConfig.shape === Shape.circle &&
-      instructions.push(drawCircle(point, hexConfig))
+      instructions.push(drawCircle(point, style))
 
     hexConfig.shape === Shape.tower &&
-      instructions.push(drawTower(point, hexConfig))
+      instructions.push(drawTower(point, style))
 
-    hexConfig.shape === Shape.bang &&
-      instructions.push(drawBang(point, hexConfig))
+    hexConfig.shape === Shape.bang && instructions.push(drawBang(point, style))
   }
 
   return (

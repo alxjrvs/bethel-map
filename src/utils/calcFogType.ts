@@ -1,5 +1,5 @@
 import { Fog } from "../types"
-import { MapDataState } from "../state/MapDataContext"
+import { MapDataState } from "../state/MapData"
 
 export const calcFogType = (
   key: string,

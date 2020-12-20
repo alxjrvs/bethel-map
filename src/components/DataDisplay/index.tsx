@@ -1,44 +1,24 @@
 import React, { FC } from "react"
-import { calcFogType } from "../../utils/calcFogType"
-import { BaseHexConfig, Fog } from "../../types"
-import { rawHexConfig } from "../../constants"
-import { useIsAdmin } from "../../hooks/useIsAdmin"
+
 import { useCurrentCoordinates } from "../../state/CurrentCoordinatesContext"
 import { useHighlightedCoordinates } from "../../state/HighlightedCoordinatesContext"
-import { useMapDataContext, MapDataState } from "../../state/MapDataContext"
+
 import styles from "./DataDisplay.module.scss"
 
-const displayConfig = (
-  coords: string,
-  showAll: boolean,
-  mapData: MapDataState
-): BaseHexConfig => {
-  const terrainConfig = mapData.terrain.all[coords]
-  const locationConfig = mapData.locations.all[coords]
+import { NewHexConfig } from "../../types"
 
-  const fog = calcFogType(coords, showAll, mapData)
-  switch (fog) {
-    case Fog.hard:
-      return rawHexConfig
-    case Fog.soft:
-      return terrainConfig
-    default:
-      return locationConfig || terrainConfig
-  }
+interface Props {
+  currentHex?: NewHexConfig
 }
 
-export const DataDisplay: FC = () => {
+export const DataDisplay: FC<Props> = ({ currentHex }) => {
   const [, setCurrentCoords] = useCurrentCoordinates()
   const [highlightedCoords] = useHighlightedCoordinates()
-  const mapData = useMapDataContext()
-  const showAll = useIsAdmin()
-
-  const config = displayConfig(highlightedCoords, showAll, mapData)
 
   return (
     <div>
-      <h1>{config?.name || "UNKNOWN"}</h1>
-      <p>{config?.description || "UNKNOWN"}</p>
+      <h1>{currentHex?.name || "UNKNOWN"}</h1>
+      <p>{currentHex?.description || "UNKNOWN"}</p>
       <button onClick={() => setCurrentCoords(highlightedCoords)}>
         Move Here
       </button>

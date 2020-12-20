@@ -1,11 +1,11 @@
 import { Point } from "honeycomb-grid"
 import { Graphics } from "pixi.js"
-import { DrawInstructions, BaseHexConfig } from "../types"
+import { DrawInstructions, HexStyleData } from "../types"
 import { rawHexConfig } from "../constants"
 
 type DrawCircle = (
   point: Point,
-  hexConfig: Partial<Pick<BaseHexConfig, "fill" | "lineFill">>
+  style: Partial<HexStyleData>
 ) => DrawInstructions
 
 export const drawCircle: DrawCircle = (

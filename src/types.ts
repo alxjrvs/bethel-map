@@ -30,9 +30,27 @@ export enum Fog {
   none = "none",
 }
 
-export type HexConfig = BaseHexConfig & {
+export type DerivedHexData = {
   key: string
-  fog: Fog
   point: Point
   corners: Point[]
+}
+
+export type HexConfig = DerivedHexData &
+  BaseHexConfig & {
+    fog: Fog
+  }
+
+export type HexStyleData = {
+  fill: number
+  lineFill: number
+  lineWidth?: number
+}
+
+export interface NewHexConfig extends DerivedHexData {
+  fog: Fog
+  style: HexStyleData
+  shape?: Shape
+  description?: string[]
+  name?: string
 }

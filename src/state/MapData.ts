@@ -1,4 +1,3 @@
-import { createContext, useContext } from "react"
 import { BaseHexConfigLookup } from "../types"
 import {
   PlayerCurrentHex,
@@ -102,6 +101,3 @@ export const defaultMapDataState: MapDataState = {
     },
   },
 }
-export const MapDataContext = createContext(defaultMapDataState)
-
-export const useMapDataContext = (): MapDataState => useContext(MapDataContext)

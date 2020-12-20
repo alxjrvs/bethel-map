@@ -1,23 +1,24 @@
 import React, { FC, Dispatch, SetStateAction } from "react"
-import { HexConfig } from "../../types"
 
 import { Graphics as GraphicsComponent } from "@inlet/react-pixi"
 import { drawHex } from "../../utils/drawHex"
 import { addInteractors } from "../../utils/addInteractors"
 
+import { NewHexConfig } from "../../types"
+
 type HexProps = {
-  hex: Omit<HexConfig, "terrain">
+  hex: NewHexConfig
   setHighlightedCoords: Dispatch<SetStateAction<string>>
 }
 export const TerrainHex: FC<HexProps> = ({
-  hex: { key, corners, ...terrain },
+  hex: { key, corners, style },
   setHighlightedCoords,
 }) => (
   <GraphicsComponent
     draw={g => {
       g.clear()
       const instructions = [
-        drawHex(corners, terrain),
+        drawHex(corners, style),
         addInteractors({
           clickCallback: () => {
             setHighlightedCoords(key)

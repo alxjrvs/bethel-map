@@ -1,11 +1,8 @@
 import { Point } from "honeycomb-grid"
-import { BaseHexConfig, DrawInstructions } from "../types"
+import { DrawInstructions, HexStyleData } from "../types"
 import { lightenNumeric } from "./numericColorUtils"
 
-type DrawTower = (
-  point: Point,
-  hexConfig: Pick<BaseHexConfig, "fill">
-) => DrawInstructions
+type DrawTower = (point: Point, style: HexStyleData) => DrawInstructions
 
 export const drawTower: DrawTower = ({ x, y }, { fill }) => g => {
   g.beginFill(fill)
