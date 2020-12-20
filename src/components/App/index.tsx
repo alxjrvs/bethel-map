@@ -16,7 +16,7 @@ import { useIsAdmin } from "../../hooks/useIsAdmin"
 
 import { Fog, Marker, Terrain } from "../../types"
 import { persistedMapData } from "../../state/persistedMapData"
-import { findNearbyCoords } from "../../utils/findNearbyKeysFactory"
+import { findNearbyCoords } from "../../utils/findNearbyCoords"
 import { coordsToKey } from "../../utils/coordsToKey"
 
 export const App: FC = () => {
