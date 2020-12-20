@@ -1,4 +1,3 @@
-import { BaseHexConfig, Shape } from "./types"
 import { extendHex, defineGrid } from "honeycomb-grid"
 
 export const height = 28
@@ -12,14 +11,6 @@ for (let i = 0; i <= height; i += 1) {
 export const xCoords: number[] = []
 for (let i = 0; i <= width; i += 1) {
   xCoords.push(i)
-}
-
-export const rawHexConfig: BaseHexConfig = {
-  shape: Shape.hex,
-  fill: 11252410,
-  lineFill: 0,
-  name: "Unknown...",
-  description: ["Who knows what mysteries might lay here..."],
 }
 
 const BaseHex = extendHex({ size: 17, offset: 1 })

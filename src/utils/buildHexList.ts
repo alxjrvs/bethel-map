@@ -1,16 +1,12 @@
-import {
-  BaseHexConfigKeyArray,
-  BaseHexConfig,
-  BaseHexConfigLookup,
-} from "../types"
+import { HexConfigKeyArray, HexConfigLookup, HexConfig } from "../types"
 
 type BuildHexList = (
-  keys: BaseHexConfigKeyArray,
-  config: BaseHexConfig
-) => BaseHexConfigLookup
+  keys: HexConfigKeyArray,
+  config: Partial<HexConfig>
+) => HexConfigLookup
 
 export const buildHexList: BuildHexList = (keys, config) =>
-  keys.reduce<BaseHexConfigLookup>((lookup, currentValue) => {
+  keys.reduce<HexConfigLookup>((lookup, currentValue) => {
     if (typeof currentValue === "string") {
       return { ...lookup, [currentValue]: config }
     }

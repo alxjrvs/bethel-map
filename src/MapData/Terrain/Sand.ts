@@ -1,8 +1,7 @@
 import { buildHexList } from "../../utils/buildHexList"
-import { rawHexConfig } from "../../constants"
-import { BaseHexConfigKeyArray } from "../../types"
+import { HexConfigKeyArray, Terrain } from "../../types"
 
-export const SandList: BaseHexConfigKeyArray = [
+export const SandList: HexConfigKeyArray = [
   "9-22",
   "9-23",
   "10-24",
@@ -61,8 +60,7 @@ export const SandList: BaseHexConfigKeyArray = [
 ]
 
 export const Sand = buildHexList(SandList, {
-  ...rawHexConfig,
-  fill: 15726519,
+  terrain: Terrain.Sand,
   name: "Sand",
   description: [
     "Warm sand covers the ground in all direction, with only the toughest surviving.",

@@ -1,20 +1,19 @@
 import { buildHexList } from "../../utils/buildHexList"
-import { xCoords, height, yCoords, width, rawHexConfig } from "../../constants"
+import { xCoords, height, yCoords, width } from "../../constants"
 import {
-  BaseHexConfigLookup,
-  BaseHexConfigKeyArray,
-  BaseHexConfig,
+  HexConfig,
+  HexConfigLookup,
+  Terrain,
+  HexConfigKeyArray,
 } from "../../types"
 
-const baseOceanBaseHexConfig: BaseHexConfig = {
-  ...rawHexConfig,
-  fill: 255,
-  lineFill: 0,
+const baseOceanBaseHexConfig: Partial<HexConfig> = {
+  terrain: Terrain.Water,
   description: ["Who knows what secrets the Water of Beth'El provides?"],
   name: "Deep Water",
 }
-export const generateBorderOceans = (): BaseHexConfigLookup => {
-  const borderOceanBaseHexConfigs: BaseHexConfigLookup = {}
+export const generateBorderOceans = (): HexConfigLookup => {
+  const borderOceanBaseHexConfigs: HexConfigLookup = {}
   xCoords.forEach(x => {
     borderOceanBaseHexConfigs[`${x}-0`] = baseOceanBaseHexConfig
     borderOceanBaseHexConfigs[`${x}-${height - 1}`] = baseOceanBaseHexConfig
@@ -40,7 +39,7 @@ export const VisibleWaterList = [
   "4-16",
   ...Object.keys(BorderOceans),
 ]
-export const WaterList: BaseHexConfigKeyArray = [
+export const WaterList: HexConfigKeyArray = [
   ...Object.keys(BorderOceans),
   ...VisibleWaterList,
   "1-14",

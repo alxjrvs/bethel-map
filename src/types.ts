@@ -1,27 +1,17 @@
 import { Graphics } from "pixi.js"
 import { Point } from "honeycomb-grid"
 
+export type HexConfigLookup = { [key: string]: Partial<HexConfig> }
+export type HexConfigKeyArray = Array<string | [string, Partial<HexConfig>]>
+
+export type DrawInstructions = (g: Graphics) => unknown
+
 export enum Shape {
   circle = "circle",
   hex = "hex",
   tower = "tower",
   bang = "bang",
 }
-
-export type BaseHexConfig = {
-  shape: Shape
-  fill: number
-  lineFill: number
-  lineWidth?: number
-  description?: string[]
-  name?: string
-}
-
-export type BaseHexConfigLookup = { [key: string]: BaseHexConfig }
-type DetailedBaseHexConfigKey = [string, Partial<BaseHexConfig>]
-export type BaseHexConfigKeyArray = Array<string | DetailedBaseHexConfigKey>
-
-export type DrawInstructions = (g: Graphics) => unknown
 
 export enum Fog {
   hard = "hard",
@@ -30,16 +20,29 @@ export enum Fog {
   none = "none",
 }
 
+export enum Marker {
+  PointOfInterest = "points_of_interest",
+  RestStop = "rest_stop",
+  Tomb = "tomb",
+  Tower = "towers",
+}
+
+export enum Terrain {
+  Chasm = "chasm",
+  Forest = "forest",
+  Lava = "lava",
+  RockyTerrain = "rocky_terrain",
+  Sand = "sand",
+  Tundra = "tundra",
+  Water = "water",
+  Weird = "weird",
+}
+
 export type DerivedHexData = {
   key: string
   point: Point
   corners: Point[]
 }
-
-export type HexConfig = DerivedHexData &
-  BaseHexConfig & {
-    fog: Fog
-  }
 
 export type HexStyleData = {
   fill: number
@@ -47,10 +50,10 @@ export type HexStyleData = {
   lineWidth?: number
 }
 
-export interface NewHexConfig extends DerivedHexData {
+export interface HexConfig extends DerivedHexData {
   fog: Fog
-  style: HexStyleData
-  shape?: Shape
+  marker?: Marker
+  terrain?: Terrain
   description?: string[]
   name?: string
 }

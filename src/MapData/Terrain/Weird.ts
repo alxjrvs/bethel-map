@@ -1,8 +1,7 @@
 import { buildHexList } from "../../utils/buildHexList"
-import { rawHexConfig } from "../../constants"
-import { BaseHexConfigKeyArray } from "../../types"
+import { HexConfigKeyArray, Terrain } from "../../types"
 
-export const WeirdList: BaseHexConfigKeyArray = [
+export const WeirdList: HexConfigKeyArray = [
   "14-4",
   "13-4",
   "12-4",
@@ -28,8 +27,7 @@ export const WeirdList: BaseHexConfigKeyArray = [
 ]
 
 export const Weird = buildHexList(WeirdList, {
-  ...rawHexConfig,
-  fill: 16711935,
+  terrain: Terrain.Weird,
   name: "Weird Space",
   description: [
     "Odd distortions fill the air and the laws of the universe take a rest in this weird space.",

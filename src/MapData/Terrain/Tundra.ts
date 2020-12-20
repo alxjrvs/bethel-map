@@ -1,8 +1,7 @@
 import { buildHexList } from "../../utils/buildHexList"
-import { rawHexConfig } from "../../constants"
-import { BaseHexConfigKeyArray } from "../../types"
+import { HexConfigKeyArray, Terrain } from "../../types"
 
-export const TundraList: BaseHexConfigKeyArray = [
+export const TundraList: HexConfigKeyArray = [
   "14-7",
   "15-7",
   "13-6",
@@ -51,8 +50,7 @@ export const TundraList: BaseHexConfigKeyArray = [
 ]
 
 export const Tundra = buildHexList(TundraList, {
-  ...rawHexConfig,
-  fill: 15856363,
+  terrain: Terrain.Tundra,
   name: "Tundra",
   description: ["The land is a snowstorm, frozen in time."],
 })

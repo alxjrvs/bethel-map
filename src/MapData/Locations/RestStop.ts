@@ -1,9 +1,7 @@
-import { BaseHexConfigKeyArray, Shape } from "../../types"
+import { HexConfigKeyArray, Marker } from "../../types"
 import { buildHexList } from "../../utils/buildHexList"
-import { rawHexConfig } from "../../constants"
-import { lightenNumeric } from "../../utils/numericColorUtils"
 
-export const RestStopList: BaseHexConfigKeyArray = [
+export const RestStopList: HexConfigKeyArray = [
   ["10-10", {}],
   ["13-20", {}],
   ["15-6", {}],
@@ -24,12 +22,8 @@ export const RestStopList: BaseHexConfigKeyArray = [
   ["1-11", {}],
 ]
 
-const fill = 16711680
 export const RestStops = buildHexList(RestStopList, {
-  ...rawHexConfig,
-  fill,
-  lineFill: lightenNumeric(fill),
-  shape: Shape.circle,
+  marker: Marker.RestStop,
   name: "A Felled Tree",
   description: ["It seems to be leaking Sap."],
 })

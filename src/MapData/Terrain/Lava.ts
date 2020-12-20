@@ -1,8 +1,8 @@
 import { buildHexList } from "../../utils/buildHexList"
-import { rawHexConfig } from "../../constants"
-import { BaseHexConfigKeyArray } from "../../types"
 
-export const LavaList: BaseHexConfigKeyArray = [
+import { HexConfigKeyArray, Terrain } from "../../types"
+
+export const LavaList: HexConfigKeyArray = [
   "5-5",
   "4-4",
   "5-4",
@@ -25,8 +25,7 @@ export const LavaList: BaseHexConfigKeyArray = [
 ]
 
 export const Lava = buildHexList(LavaList, {
-  ...rawHexConfig,
-  fill: 16751872,
+  terrain: Terrain.Lava,
   name: "Lava",
   description: ["Blistering hot molten earth covers most of the terrain."],
 })

@@ -1,7 +1,7 @@
 import { Point } from "honeycomb-grid"
 import { DrawInstructions, HexStyleData } from "../types"
 
-type DrawBang = (point: Point, style: HexStyleData) => DrawInstructions
+type DrawBang = (point: Point, style: Partial<HexStyleData>) => DrawInstructions
 
 export const drawBang: DrawBang = ({ x, y }, { fill }) => g => {
   g.beginFill(fill)

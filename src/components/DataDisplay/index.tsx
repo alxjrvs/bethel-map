@@ -1,19 +1,25 @@
-import React, { FC } from "react"
+import React, { FC, useMemo } from "react"
 
 import { useCurrentCoordinates } from "../../state/CurrentCoordinatesContext"
 import { useHighlightedCoordinates } from "../../state/HighlightedCoordinatesContext"
 
 import styles from "./DataDisplay.module.scss"
 
-import { NewHexConfig } from "../../types"
+import { Grid } from "honeycomb-grid"
+import { HexConfig } from "../../types"
 
 interface Props {
-  currentHex?: NewHexConfig
+  mapData: Grid<HexConfig>
 }
 
-export const DataDisplay: FC<Props> = ({ currentHex }) => {
+export const DataDisplay: FC<Props> = ({ mapData }) => {
   const [, setCurrentCoords] = useCurrentCoordinates()
   const [highlightedCoords] = useHighlightedCoordinates()
+
+  const currentHex = useMemo(
+    () => mapData.find(({ key }) => key === highlightedCoords),
+    [highlightedCoords, mapData]
+  )
 
   return (
     <div>

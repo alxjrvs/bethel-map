@@ -1,7 +1,6 @@
 import { Point } from "honeycomb-grid"
 import { Graphics } from "pixi.js"
 import { DrawInstructions, HexStyleData } from "../types"
-import { rawHexConfig } from "../constants"
 
 type DrawCircle = (
   point: Point,
@@ -10,7 +9,7 @@ type DrawCircle = (
 
 export const drawCircle: DrawCircle = (
   { x, y },
-  { fill = 7680680, lineFill = rawHexConfig.fill }
+  { fill = 7680680, lineFill = 11252410 }
 ) => (g: Graphics) => {
   g.lineStyle(3, lineFill)
   g.beginFill(fill)

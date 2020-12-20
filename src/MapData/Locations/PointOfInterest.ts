@@ -1,8 +1,7 @@
-import { BaseHexConfigKeyArray, Shape } from "../../types"
+import { HexConfigKeyArray, Marker } from "../../types"
 import { buildHexList } from "../../utils/buildHexList"
-import { rawHexConfig } from "../../constants"
 
-export const PointOfInterestList: BaseHexConfigKeyArray = [
+export const PointOfInterestList: HexConfigKeyArray = [
   [
     "11-20",
     {
@@ -88,7 +87,5 @@ export const PointOfInterestList: BaseHexConfigKeyArray = [
   ],
 ]
 export const PointsOfInterest = buildHexList(PointOfInterestList, {
-  ...rawHexConfig,
-  shape: Shape.bang,
-  fill: 13565997,
+  marker: Marker.PointOfInterest,
 })

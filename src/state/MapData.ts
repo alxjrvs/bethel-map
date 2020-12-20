@@ -1,4 +1,3 @@
-import { BaseHexConfigLookup } from "../types"
 import {
   PlayerCurrentHex,
   PlayerVisitedHexes,
@@ -22,6 +21,7 @@ import {
   Tombs,
 } from "../MapData/Locations"
 import { findNearbyKeysFactory } from "../utils/findNearbyKeysFactory"
+import { HexConfigLookup } from "../types"
 
 export type MapDataState = {
   players: {
@@ -30,16 +30,16 @@ export type MapDataState = {
     visible: string[]
   }
   terrain: {
-    borderOceans: BaseHexConfigLookup
-    chasm: BaseHexConfigLookup
-    forest: BaseHexConfigLookup
-    lava: BaseHexConfigLookup
-    rockyTerrain: BaseHexConfigLookup
-    sand: BaseHexConfigLookup
-    tundra: BaseHexConfigLookup
-    water: BaseHexConfigLookup
-    weird: BaseHexConfigLookup
-    all: BaseHexConfigLookup
+    borderOceans: HexConfigLookup
+    chasm: HexConfigLookup
+    forest: HexConfigLookup
+    lava: HexConfigLookup
+    rockyTerrain: HexConfigLookup
+    sand: HexConfigLookup
+    tundra: HexConfigLookup
+    water: HexConfigLookup
+    weird: HexConfigLookup
+    all: HexConfigLookup
   }
   meta: {
     showFeature: string[]
@@ -47,11 +47,11 @@ export type MapDataState = {
     fogless: string[]
   }
   locations: {
-    pointOfInterest: BaseHexConfigLookup
-    restStop: BaseHexConfigLookup
-    tomb: BaseHexConfigLookup
-    towers: BaseHexConfigLookup
-    all: BaseHexConfigLookup
+    pointOfInterest: HexConfigLookup
+    restStop: HexConfigLookup
+    tomb: HexConfigLookup
+    towers: HexConfigLookup
+    all: HexConfigLookup
   }
 }
 
