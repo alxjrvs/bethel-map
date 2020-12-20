@@ -18,7 +18,7 @@ import { defaultMapDataState } from "../../state/MapData"
 
 import { calcFogType } from "../../utils/calcFogType"
 import { getCorners } from "../../utils/getCorners"
-import { Terrain } from "../../types"
+import { Terrain, Fog } from "../../types"
 
 export const App: FC = () => {
   const currentCoordsState = useState(PlayerCurrentHex)
@@ -57,6 +57,21 @@ const InnerRouter: FC = () => {
       fog,
     }
   })
+
+  console.log(
+    JSON.stringify(
+      mapData.map(({ terrain, name, description, marker, key, fog }) => ({
+        borderVisible: defaultMapDataState.meta.visibleWater.includes(key),
+        showFeature: fog === Fog.showFeature,
+        visible: fog === Fog.none,
+        terrain,
+        marker,
+        key,
+        name: marker ? name : undefined,
+        description: marker ? description : undefined,
+      }))
+    )
+  )
 
   return (
     <Route path="*">
