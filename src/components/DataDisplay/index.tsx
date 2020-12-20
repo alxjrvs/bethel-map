@@ -6,7 +6,7 @@ import { useHighlightedCoordinates } from "../../state/HighlightedCoordinatesCon
 import styles from "./DataDisplay.module.scss"
 
 import { HexConfig, Fog, Terrain } from "../../types"
-import { coordsToKey } from "../../utils/coordsToKey"
+import { coordsToPoint } from "../../utils/coordsToKey"
 
 interface Props {
   mapData: HexConfig[]
@@ -82,7 +82,7 @@ export const DataDisplay: FC<Props> = ({ mapData }) => {
 
   const currentHex = useMemo(
     () =>
-      mapData.find(({ coords }) => coordsToKey(coords) === highlightedCoords),
+      mapData.find(({ coords }) => coordsToPoint(coords) === highlightedCoords),
     [highlightedCoords, mapData]
   )
 
@@ -93,7 +93,9 @@ export const DataDisplay: FC<Props> = ({ mapData }) => {
       <button onClick={() => setCurrentCoords(highlightedCoords)}>
         Move Here
       </button>
-      <span className={styles.Coordinates}>{highlightedCoords}</span>
+      <span className={styles.Coordinates}>
+        {String(`${highlightedCoords.x}-${highlightedCoords.y}`)}
+      </span>
     </div>
   )
 }

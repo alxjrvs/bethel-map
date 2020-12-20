@@ -9,8 +9,6 @@ import { DataDisplay } from "../DataDisplay"
 
 import { HighlightedCoordinatesContext } from "../../state/HighlightedCoordinatesContext"
 
-import { PlayerCurrentHex } from "../../MapData/PlayerDataLists"
-
 import { CurrentCoordinatesContext } from "../../state/CurrentCoordinatesContext"
 import { useIsAdmin } from "../../hooks/useIsAdmin"
 
@@ -18,10 +16,11 @@ import { Fog, Marker, Terrain } from "../../types"
 import { persistedMapData } from "../../state/persistedMapData"
 import { findNearbyCoords } from "../../utils/findNearbyCoords"
 import { coordsToKey } from "../../utils/coordsToKey"
+import { persistedPlayerData } from "../../state/persistedPlayerData"
 
 export const App: FC = () => {
-  const currentCoordsState = useState(PlayerCurrentHex)
-  const highlightedCoordsState = useState("")
+  const currentCoordsState = useState(persistedPlayerData.current)
+  const highlightedCoordsState = useState(persistedPlayerData.current)
 
   return (
     <CurrentCoordinatesContext.Provider value={currentCoordsState}>
@@ -45,7 +44,16 @@ const InnerRouter: FC = () => {
   const showAll = useIsAdmin()
   const mapData = persistedMapData.map(hex => {
     const calcFog = () => {
-      if (showAll || hex.visible || hex.borderVisible) return Fog.none
+      if (
+        showAll ||
+        hex.visible ||
+        hex.borderVisible ||
+        persistedPlayerData.visited.includes({
+          x: Number(hex.coords[0]),
+          y: Number(hex.coords[1]),
+        })
+      )
+        return Fog.none
       if (hex.showFeature) return Fog.showFeature
       if (flatten(softHexes).includes(coordsToKey(hex.coords))) return Fog.soft
       return Fog.hard

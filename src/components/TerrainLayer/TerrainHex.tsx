@@ -1,15 +1,17 @@
 import React, { FC, Dispatch, SetStateAction } from "react"
+import isEqual from "lodash/isEqual"
 
 import { Graphics as GraphicsComponent } from "@inlet/react-pixi"
 import { drawTerrain } from "../../utils/drawTerrain"
 import { addInteractors } from "../../utils/addInteractors"
 
-import { HexConfig } from "../../types"
-import { coordsToKey } from "../../utils/coordsToKey"
+import { Point, HexConfig } from "../../types"
+import { coordsToPoint } from "../../utils/coordsToKey"
 
 type HexProps = {
   hex: HexConfig
-  setHighlightedCoords: Dispatch<SetStateAction<string>>
+  setHighlightedCoords: Dispatch<SetStateAction<Point>>
+  currentCoords: Point
 }
 export const TerrainHex: FC<HexProps> = ({
   hex: {
@@ -19,15 +21,22 @@ export const TerrainHex: FC<HexProps> = ({
     fog,
   },
   setHighlightedCoords,
+  currentCoords,
 }) => (
   <GraphicsComponent
     draw={g => {
       g.clear()
       const instructions = [
-        drawTerrain(corners, terrain, fog),
+        drawTerrain(
+          corners,
+          terrain,
+          fog,
+          isEqual(coordsToPoint(coords), currentCoords)
+        ),
         addInteractors({
           clickCallback: () => {
-            setHighlightedCoords(coordsToKey(coords))
+            const point = coordsToPoint(coords)
+            setHighlightedCoords(point)
           },
         }),
       ]

@@ -2,23 +2,26 @@ import React, { FC, Dispatch, SetStateAction } from "react"
 import { Container } from "@inlet/react-pixi"
 import { TerrainHex } from "./TerrainHex"
 
-import { HexConfig } from "../../types"
+import { Point, HexConfig } from "../../types"
 import { coordsToKey } from "../../utils/coordsToKey"
 
 type TerrainLayerProps = {
   mapData: HexConfig[]
-  setHighlightedCoords: Dispatch<SetStateAction<string>>
+  setHighlightedCoords: Dispatch<SetStateAction<Point>>
+  currentCoords: Point
 }
 export const TerrainLayer: FC<TerrainLayerProps> = ({
   mapData,
   setHighlightedCoords,
+  currentCoords,
 }) => (
   <Container sortableChildren>
     {mapData.map(hex => (
       <TerrainHex
         key={coordsToKey(hex.coords)}
         hex={hex}
-        {...{ setHighlightedCoords }}
+        currentCoords={currentCoords}
+        setHighlightedCoords={setHighlightedCoords}
       />
     ))}
   </Container>

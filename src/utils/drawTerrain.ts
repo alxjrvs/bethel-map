@@ -5,7 +5,8 @@ import { darkenNumeric } from "./numericColorUtils"
 type DrawHex = (
   corners: [Point, Point, Point, Point, Point, Point],
   terrain: Terrain,
-  fog: Fog
+  fog: Fog,
+  isCurrent: boolean
 ) => DrawInstructions
 type PaintHex = (
   g: Graphics,
@@ -33,7 +34,7 @@ export const paintHex: PaintHex = (
   fog
 ) => {
   g.zIndex = lineWidth
-  g.lineStyle(lineWidth, lineFill || 0)
+  g.lineStyle(lineWidth, lineFill)
   if (fog === Fog.hard || fog === Fog.showFeature) {
     g.beginFill(Fill.fog)
   } else if (fog === Fog.soft) {
@@ -48,33 +49,34 @@ export const paintHex: PaintHex = (
   g.endFill()
 }
 
-export const drawTerrain: DrawHex = (corners, terrain, fog) => (
+export const drawTerrain: DrawHex = (corners, terrain, fog, isCurrent) => (
   g: Graphics
 ) => {
+  const border = isCurrent ? { lineWidth: 2, lineFill: 16777215 } : {}
   switch (terrain) {
     case Terrain.Lava:
-      paintHex(g, corners, { fill: Fill.lava }, fog)
+      paintHex(g, corners, { ...border, fill: Fill.lava }, fog)
       break
     case Terrain.Forest:
-      paintHex(g, corners, { fill: Fill.forest }, fog)
+      paintHex(g, corners, { ...border, fill: Fill.forest }, fog)
       break
     case Terrain.Chasm:
-      paintHex(g, corners, { fill: Fill.chasm }, fog)
+      paintHex(g, corners, { ...border, fill: Fill.chasm }, fog)
       break
     case Terrain.RockyTerrain:
-      paintHex(g, corners, { fill: Fill.rockyTerrain }, fog)
+      paintHex(g, corners, { ...border, fill: Fill.rockyTerrain }, fog)
       break
     case Terrain.Sand:
-      paintHex(g, corners, { fill: Fill.sand }, fog)
+      paintHex(g, corners, { ...border, fill: Fill.sand }, fog)
       break
     case Terrain.Tundra:
-      paintHex(g, corners, { fill: Fill.tundra }, fog)
+      paintHex(g, corners, { ...border, fill: Fill.tundra }, fog)
       break
     case Terrain.Water:
-      paintHex(g, corners, { fill: Fill.water, lineFill: 0 }, fog)
+      paintHex(g, corners, { ...border, fill: Fill.water, lineFill: 0 }, fog)
       break
     case Terrain.Weird:
-      paintHex(g, corners, { fill: Fill.weird }, fog)
+      paintHex(g, corners, { ...border, fill: Fill.weird }, fog)
       break
   }
 }

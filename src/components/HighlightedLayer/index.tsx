@@ -1,20 +1,21 @@
 import React, { FC } from "react"
 import { Container } from "@inlet/react-pixi"
+import isEqual from "lodash/isEqual"
 
-import { coordsToKey } from "../../utils/coordsToKey"
+import { coordsToKey, coordsToPoint } from "../../utils/coordsToKey"
 import { Highlighted } from "./Highlighted"
-import { HexConfig } from "../../types"
+import { HexConfig, Point } from "../../types"
 
 type HighltedLayerProps = {
-  highlightedCoords: string
+  highlightedCoords: Point
   mapData: HexConfig[]
 }
 export const HighlightedLayer: FC<HighltedLayerProps> = ({
   highlightedCoords,
   mapData,
 }) => {
-  const highlightedGrids = mapData.filter(
-    ({ coords }) => coordsToKey(coords) === highlightedCoords
+  const highlightedGrids = mapData.filter(({ coords }) =>
+    isEqual(coordsToPoint(coords), highlightedCoords)
   )
 
   return (
