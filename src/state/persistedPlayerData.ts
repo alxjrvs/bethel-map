@@ -1,5 +1,5 @@
 export const persistedPlayerData = {
-  current: { x: 4, y: 13 },
+  current: { x: 13, y: 20 },
   visited: [
     { x: 3, y: 25 },
     { x: 4, y: 13 },
