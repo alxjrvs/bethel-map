@@ -1,4 +1,4 @@
-export const PlayerCurrentHex = "4-13"
+export const PlayerCurrentHex = "13-20"
 
 export const PlayerVisitedHexes = [
   "3-25",
