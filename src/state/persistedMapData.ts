@@ -19196,6 +19196,7 @@ export const persistedMapData: PersistedHexConfig[] = [
     showFeature: false,
     visible: false,
     terrain: "water",
+    marker: "points_of_interest",
     graphics: {
       point: {
         x: 441.6729559300637,
